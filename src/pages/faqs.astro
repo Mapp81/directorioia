@@ -1,0 +1,66 @@
+---
+import Layout from '../Components/Layout.astro';
+
+const faqs = [
+  {
+    pregunta: "¿Cuál es el mejor buscador de IAs en 2026?",
+    respuesta: "El mejor buscador de IAs es aquel que ofrece resultados actualizados, filtros por categorías y reseñas honestas de usuarios. Nuestro directorio deCero se enfoca en clasificar las herramientas por su utilidad real. Además de estar actualizado diariamente."
+  },
+  {
+    pregunta: "¿Cómo encontrar IAs para trabajar?",
+    respuesta: "En nuestro buscador puedes filtrar por etiquetas por categorías."
+  },
+  {
+    pregunta: "¿Qué es una IA generativa y para qué sirve?",
+    respuesta: "La IA generativa es una tecnología capaz de crear contenido original (texto, imagen, video o audio) a partir de instrucciones o 'prompts'. Sirve para optimizar procesos creativos, programar código y analizar grandes volúmenes de datos en segundos."
+  },
+  {
+    pregunta: "¿Es seguro usar herramientas de inteligencia artificial?",
+    respuesta: "La seguridad depende de la política de privacidad de cada herramienta. En deCero 2026, revisamos que las IAs listadas tengan términos claros sobre el manejo de datos de los usuarios."
+  }
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.pregunta,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.respuesta
+    }
+  }))
+};
+---
+
+<Layout title="Preguntas Frecuentes - Buscador de IAs deCero">
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <main class="max-w-3xl mx-auto px-4 py-16 grow">
+    <h1 class="text-4xl font-bold mb-8 text-center bg-linear-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+      Preguntas Frecuentes
+    </h1>
+
+    <div class="space-y-6">
+      {faqs.map((faq) => (
+        <section class="p-6 rounded-xl border border-white/10 bg-white/5 hover:border-blue-500/50 transition-all">
+          <h2 class="text-xl font-semibold mb-3 text-blue-400">
+            {faq.pregunta}
+          </h2>
+          <p class="text-gray-300 leading-relaxed">
+            {faq.respuesta}
+          </p>
+        </section>
+      ))}
+    </div>
+
+    <div class="mt-12 text-center p-8 rounded-2xl bg-blue-600/10 border border-blue-500/20">
+      <h3 class="text-lg font-medium mb-2 text-gray-300">¿No encuentras lo que buscas?</h3>
+      <p class="text-sm text-gray-400 mb-4">Estamos actualizando nuestro buscador de IAs diariamente.</p>
+      <a href="/" class="inline-block px-6 py-2 bg-blue-600 hover:bg-blue-700 hover:text-gray-300 rounded-full transition-colors font-bold text-white">
+        Volver al Buscador
+      </a>
+    </div>
+  </main>
+</Layout>

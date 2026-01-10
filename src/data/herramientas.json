@@ -1,0 +1,2402 @@
+[
+    {
+        "titulo": "DALL-E 2",
+        "descripcion_corta": "Transforma tus ideas en imágenes hiperrealistas con un simple texto.",
+        "uso_principal": "Genera imágenes originales y realistas a partir de descripciones textuales. También permite editar imágenes existentes con instrucciones textuales.",
+        "url": "https://openai.com/dall-e-2/",
+        "url_limpia": "openai.com",
+        "categoria": "Generación de Imágenes"
+    },
+    {
+        "titulo": "Midjourney",
+        "descripcion_corta": "Crea arte digital impresionante con una comunidad de artistas de IA.",
+        "uso_principal": "Permite generar imágenes detalladas y artísticas a partir de prompts de texto, ideal para la creación de arte conceptual y visualizaciones creativas. Es accesible principalmente a través de Discord.",
+        "url": "https://www.midjourney.com/",
+        "url_limpia": "midjourney.com",
+        "categoria": "Generación de Imágenes"
+    },
+    {
+        "titulo": "Stable Diffusion",
+        "descripcion_corta": "Libera tu creatividad con la IA de código abierto que crea imágenes increíbles.",
+        "uso_principal": "Genera imágenes de alta calidad con un alto nivel de personalización y control, gracias a su naturaleza de código abierto. Se puede ejecutar localmente o a través de diversas interfaces web.",
+        "url": "https://stability.ai/",
+        "url_limpia": "stability.ai",
+        "categoria": "Generación de Imágenes"
+    },
+    {
+        "titulo": "NightCafe Creator",
+        "descripcion_corta": "Convierte tus palabras en arte visual único con múltiples algoritmos de IA.",
+        "uso_principal": "Ofrece diversos algoritmos de generación de imágenes, incluyendo Stable Diffusion, DALL-E 2, y CLIP-Guided Diffusion. Facilita la creación de arte digital y la experimentación con diferentes estilos.",
+        "url": "https://creator.nightcafe.studio/",
+        "url_limpia": "nightcafe.studio",
+        "categoria": "Generación de Imágenes"
+    },
+    {
+        "titulo": "DeepAI",
+        "descripcion_corta": "Experimenta con la IA para crear imágenes personalizadas sin necesidad de conocimientos técnicos.",
+        "uso_principal": "Ofrece una variedad de herramientas de IA, incluyendo la generación de imágenes, con una API simple de usar. Permite generar imágenes de forma rápida y sencilla para diversos propósitos.",
+        "url": "https://deepai.org/",
+        "url_limpia": "deepai.org",
+        "categoria": "Generación de Imágenes"
+    },
+    {
+        "titulo": "Artbreeder",
+        "descripcion_corta": "Mezcla y modifica imágenes generadas por IA para crear retratos y paisajes únicos.",
+        "uso_principal": "Permite a los usuarios 'criar' imágenes, combinando características de diferentes imágenes para crear resultados novedosos y sorprendentes. Ideal para la creación de personajes y mundos fantásticos.",
+        "url": "https://www.artbreeder.com/",
+        "url_limpia": "artbreeder.com",
+        "categoria": "Generación de Imágenes"
+    },
+    {
+        "titulo": "RunwayML",
+        "descripcion_corta": "Una suite completa para crear, entrenar y desplegar modelos de IA para la generación de imágenes.",
+        "uso_principal": "Permite la creación de modelos de IA personalizados para la generación de imágenes, así como el acceso a modelos pre-entrenados. Ofrece herramientas para la edición de video y la creación de efectos visuales.",
+        "url": "https://runwayml.com/",
+        "url_limpia": "runwayml.com",
+        "categoria": "Generación de Imágenes"
+    },
+    {
+        "titulo": "Craiyon (anteriormente DALL-E mini)",
+        "descripcion_corta": "Genera imágenes divertidas y surrealistas a partir de cualquier texto, ¡perfecto para un buen meme!",
+        "uso_principal": "Crea imágenes de baja resolución, a menudo con resultados humorísticos o inesperados, a partir de cualquier prompt de texto. Es una herramienta rápida y fácil de usar para generar ideas visuales.",
+        "url": "https://www.craiyon.com/",
+        "url_limpia": "craiyon.com",
+        "categoria": "Generación de Imágenes"
+    },
+    {
+        "titulo": "Fotor AI Image Generator",
+        "descripcion_corta": "Transforma tus ideas en imágenes impresionantes al instante, con control total sobre el estilo.",
+        "uso_principal": "Genera imágenes de alta calidad con diversas opciones de estilo y personalización. Se integra con un editor de fotos para refinar aún más las imágenes generadas.",
+        "url": "https://www.fotor.com/features/ai-image-generator/",
+        "url_limpia": "fotor.com",
+        "categoria": "Generación de Imágenes"
+    },
+    {
+        "titulo": "StarryAI",
+        "descripcion_corta": "Simplemente escribe lo que quieres ver y StarryAI lo creará. ¡Tienes todos los derechos!",
+        "uso_principal": "Genera arte con IA con control total sobre las imágenes creadas, incluyendo la propiedad total. Permite la creación de imágenes con estilos diversos y prompts complejos.",
+        "url": "https://starryai.com/",
+        "url_limpia": "starryai.com",
+        "categoria": "Generación de Imágenes"
+    },
+    {
+        "titulo": "Photosonic",
+        "descripcion_corta": "Transforma tus ideas en impresionantes obras de arte con IA en segundos.",
+        "uso_principal": "Genera imágenes de alta calidad rápidamente con una interfaz intuitiva. Ofrece una variedad de estilos y opciones de personalización para crear arte único.",
+        "url": "https://photosonic.writesonic.com/",
+        "url_limpia": "writesonic.com",
+        "categoria": "Generación de Imágenes"
+    },
+    {
+        "titulo": "Lexica",
+        "descripcion_corta": "Un buscador y generador de imágenes con IA para encontrar la inspiración que necesitas.",
+        "uso_principal": "Permite buscar imágenes generadas por IA y generar imágenes nuevas con prompts de texto. Útil para encontrar inspiración y explorar diferentes estilos visuales.",
+        "url": "https://lexica.art/",
+        "url_limpia": "lexica.art",
+        "categoria": "Generación de Imágenes"
+    },
+    {
+        "titulo": "GetIMG",
+        "descripcion_corta": "Todas las herramientas de IA que necesitas para crear imágenes originales y únicas.",
+        "uso_principal": "Ofrece una variedad de herramientas de IA para la generación y edición de imágenes, incluyendo Stable Diffusion. Permite la creación de imágenes personalizadas y la mejora de fotos existentes.",
+        "url": "https://getimg.ai/",
+        "url_limpia": "getimg.ai",
+        "categoria": "Generación de Imágenes"
+    },
+    {
+        "titulo": "Imagine by Magic AI",
+        "descripcion_corta": "Crea arte asombroso con el poder de la inteligencia artificial, ¡solo con texto!",
+        "uso_principal": "Convierte prompts de texto en imágenes de alta calidad con una variedad de estilos artísticos. Facilita la creación de arte digital para diversos propósitos.",
+        "url": "https://imagine.art/",
+        "url_limpia": "imagine.art",
+        "categoria": "Generación de Imágenes"
+    },
+    {
+        "titulo": "Deep Dream Generator",
+        "descripcion_corta": "Libera el poder de la red neuronal de Google para transformar tus fotos en obras de arte psicodélicas.",
+        "uso_principal": "Utiliza algoritmos de aprendizaje profundo para transformar imágenes existentes en obras de arte con un estilo onírico y psicodélico. Permite la creación de imágenes únicas y llamativas.",
+        "url": "https://deepdreamgenerator.com/",
+        "url_limpia": "deepdreamgenerator.com",
+        "categoria": "Generación de Imágenes"
+    },
+    {
+        "titulo": "Jasper",
+        "descripcion_corta": "Tu asistente de IA para contenido de marketing que genera copias atractivas y originales en segundos.",
+        "uso_principal": "Crea contenido de alta calidad para blogs, redes sociales y publicidad. Optimiza el SEO y aumenta la conversión con facilidad.",
+        "url": "https://www.jasper.ai",
+        "url_limpia": "jasper.ai",
+        "categoria": "Escritura y Copywriting"
+    },
+    {
+        "titulo": "Copy.ai",
+        "descripcion_corta": "Desbloquea la creatividad y genera textos convincentes para cada necesidad con el poder de la IA.",
+        "uso_principal": "Genera ideas de contenido, redacta descripciones de productos y crea textos de ventas impactantes. Acelera tu flujo de trabajo y ahorra tiempo.",
+        "url": "https://www.copy.ai",
+        "url_limpia": "copy.ai",
+        "categoria": "Escritura y Copywriting"
+    },
+    {
+        "titulo": "Rytr",
+        "descripcion_corta": "Escribe contenido increíblemente rápido con la ayuda de la IA, desde emails hasta posts de blog.",
+        "uso_principal": "Genera contenido creativo en diversos formatos con múltiples tonos de voz. Supera el bloqueo del escritor y publica contenido fresco constantemente.",
+        "url": "https://www.rytr.me",
+        "url_limpia": "rytr.me",
+        "categoria": "Escritura y Copywriting"
+    },
+    {
+        "titulo": "Scalenut",
+        "descripcion_corta": "Simplifica tu estrategia de contenido con una plataforma de IA todo en uno para investigación, creación y optimización.",
+        "uso_principal": "Planifica y crea contenido optimizado para SEO con análisis de palabras clave y competencia. Mejora tu ranking y atrae más tráfico orgánico.",
+        "url": "https://www.scalenut.com",
+        "url_limpia": "scalenut.com",
+        "categoria": "Escritura y Copywriting"
+    },
+    {
+        "titulo": "Writesonic",
+        "descripcion_corta": "Crea contenido de marketing de alto impacto y libre de plagio con esta herramienta de IA versátil.",
+        "uso_principal": "Escribe descripciones de productos, posts de blog, anuncios y más con facilidad. Aumenta la productividad y mejora la calidad del contenido.",
+        "url": "https://www.writesonic.com",
+        "url_limpia": "writesonic.com",
+        "categoria": "Escritura y Copywriting"
+    },
+    {
+        "titulo": "Anyword",
+        "descripcion_corta": "Optimiza tu copy para obtener el máximo rendimiento con predicciones basadas en datos y análisis de la IA.",
+        "uso_principal": "Predice el rendimiento de tu copy antes de publicarlo y optimiza para obtener mejores resultados. Aumenta las conversiones y el ROI de tus campañas.",
+        "url": "https://www.anyword.com",
+        "url_limpia": "anyword.com",
+        "categoria": "Escritura y Copywriting"
+    },
+    {
+        "titulo": "Simplified",
+        "descripcion_corta": "Crea contenido de marketing impresionante de forma rápida y sencilla con esta plataforma impulsada por IA.",
+        "uso_principal": "Diseña, escribe y publica contenido atractivo para redes sociales, blogs y más. Simplifica tu flujo de trabajo y ahorra tiempo.",
+        "url": "https://simplified.com",
+        "url_limpia": "simplified.com",
+        "categoria": "Escritura y Copywriting"
+    },
+    {
+        "titulo": "ClosersCopy",
+        "descripcion_corta": "Domina el arte de la persuasión con esta herramienta de copywriting impulsada por la IA y diseñada para conversiones.",
+        "uso_principal": "Crea copies de ventas irresistibles con frameworks probados y análisis de emociones. Aumenta las ventas y fideliza a tus clientes.",
+        "url": "https://www.closerscopy.com",
+        "url_limpia": "closerscopy.com",
+        "categoria": "Escritura y Copywriting"
+    },
+    {
+        "titulo": "Article Forge",
+        "descripcion_corta": "Genera artículos únicos y optimizados para SEO automáticamente con esta potente herramienta de IA.",
+        "uso_principal": "Crea contenido de calidad para tus blogs y sitios web sin esfuerzo. Aumenta el tráfico orgánico y establece tu autoridad en tu nicho.",
+        "url": "https://www.articleforge.com",
+        "url_limpia": "articleforge.com",
+        "categoria": "Escritura y Copywriting"
+    },
+    {
+        "titulo": "QuillBot",
+        "descripcion_corta": "Parafrasea y mejora tu escritura con esta herramienta de IA inteligente y versátil.",
+        "uso_principal": "Reescribe textos, mejora la gramática y el estilo de tu escritura. Evita el plagio y comunica tus ideas con claridad.",
+        "url": "https://quillbot.com",
+        "url_limpia": "quillbot.com",
+        "categoria": "Escritura y Copywriting"
+    },
+    {
+        "titulo": "Wordtune",
+        "descripcion_corta": "Comunica tus ideas de forma clara, concisa y impactante con este asistente de escritura impulsado por IA.",
+        "uso_principal": "Reescribe frases, mejora tu estilo de escritura y encuentra las palabras perfectas. Comunica tus ideas con confianza y precisión.",
+        "url": "https://www.wordtune.com",
+        "url_limpia": "wordtune.com",
+        "categoria": "Escritura y Copywriting"
+    },
+    {
+        "titulo": "Grammarly",
+        "descripcion_corta": "Escribe con confianza y sin errores con este corrector gramatical y estilístico impulsado por IA.",
+        "uso_principal": "Revisa tu gramática, ortografía, puntuación y estilo en tiempo real. Mejora la claridad y profesionalismo de tu escritura.",
+        "url": "https://www.grammarly.com",
+        "url_limpia": "grammarly.com",
+        "categoria": "Escritura y Copywriting"
+    },
+    {
+        "titulo": "Outwrite",
+        "descripcion_corta": "Eleva tu escritura a un nivel superior con este asistente de IA que te ayuda a pulir tu gramática, estilo y claridad.",
+        "uso_principal": "Detecta errores gramaticales y de estilo, ofrece sugerencias de mejora y te ayuda a escribir de forma más clara y concisa. Perfecciona cada texto.",
+        "url": "https://www.outwrite.com",
+        "url_limpia": "outwrite.com",
+        "categoria": "Escritura y Copywriting"
+    },
+    {
+        "titulo": "Peppertype.ai",
+        "descripcion_corta": "Genera contenido creativo y original en una variedad de formatos con esta plataforma de IA fácil de usar.",
+        "uso_principal": "Crea publicaciones de redes sociales, descripciones de productos, artículos de blog y más. Acelera la producción de contenido y mantén la frescura.",
+        "url": "https://www.peppertype.ai",
+        "url_limpia": "peppertype.ai",
+        "categoria": "Escritura y Copywriting"
+    },
+    {
+        "titulo": "CopySmith",
+        "descripcion_corta": "Desarrolla copias publicitarias y descripciones de producto efectivas impulsadas por la inteligencia artificial.",
+        "uso_principal": "Ideal para e-commerce y marketing digital, optimiza tus textos para conversiones y engagement. Incrementa las ventas con mensajes convincentes.",
+        "url": "https://www.copysmith.ai",
+        "url_limpia": "copysmith.ai",
+        "categoria": "Escritura y Copywriting"
+    },
+    {
+        "titulo": "RunwayML",
+        "descripcion_corta": "Desbloquea un universo de posibilidades creativas con herramientas de IA para la edición de vídeo.",
+        "uso_principal": "Permite edición de vídeo con IA generativa, facilitando tareas complejas como rotoscopia y eliminación de objetos. Ideal para prototipado rápido y experimentación creativa.",
+        "url": "https://runwayml.com/",
+        "url_limpia": "runwayml.com",
+        "categoria": "Edición de Video"
+    },
+    {
+        "titulo": "Descript",
+        "descripcion_corta": "Edita vídeo tan fácil como editar un documento de texto, gracias a la IA.",
+        "uso_principal": "Ofrece transcripción automática y edición basada en texto, simplificando la edición de vídeo y audio. Perfecto para podcasts y contenido educativo.",
+        "url": "https://www.descript.com/",
+        "url_limpia": "descript.com",
+        "categoria": "Edición de Video"
+    },
+    {
+        "titulo": "Pictory",
+        "descripcion_corta": "Convierte automáticamente tus publicaciones de blog en atractivos vídeos para redes sociales.",
+        "uso_principal": "Crea vídeos cortos a partir de texto largo utilizando IA, ideal para marketing de contenidos y generación de leads. Ahorra tiempo y esfuerzo en la producción de vídeo.",
+        "url": "https://pictory.ai/",
+        "url_limpia": "pictory.ai",
+        "categoria": "Edición de Video"
+    },
+    {
+        "titulo": "Synthesia",
+        "descripcion_corta": "Crea vídeos con avatares de IA realistas sin necesidad de cámaras ni micrófonos.",
+        "uso_principal": "Genera vídeos explicativos y de formación con avatares de IA personalizables. Reduce costos de producción y escala la creación de contenido.",
+        "url": "https://www.synthesia.io/",
+        "url_limpia": "synthesia.io",
+        "categoria": "Edición de Video"
+    },
+    {
+        "titulo": "Hour One",
+        "descripcion_corta": "Transforma texto en vídeos con presentadores de IA hiperrealistas en minutos.",
+        "uso_principal": "Permite crear vídeos profesionales con presentadores de IA, ideal para comunicaciones internas y marketing. Agiliza la producción de vídeos atractivos.",
+        "url": "https://hourone.ai/",
+        "url_limpia": "hourone.ai",
+        "categoria": "Edición de Video"
+    },
+    {
+        "titulo": "Wisecut",
+        "descripcion_corta": "Edita tus vídeos automáticamente con cortes inteligentes y música de fondo con IA.",
+        "uso_principal": "Crea vídeos más atractivos eliminando silencios y agregando música automáticamente. Aumenta el engagement del espectador sin edición manual exhaustiva.",
+        "url": "https://wisecut.video/",
+        "url_limpia": "wisecut.video",
+        "categoria": "Edición de Video"
+    },
+    {
+        "titulo": "Veed.io",
+        "descripcion_corta": "Edita, graba y transmite vídeo con una suite completa de herramientas de IA online.",
+        "uso_principal": "Ofrece herramientas de edición de vídeo online con IA para subtítulos automáticos, traducciones y más. Perfecto para creadores de contenido y marketers.",
+        "url": "https://www.veed.io/",
+        "url_limpia": "veed.io",
+        "categoria": "Edición de Video"
+    },
+    {
+        "titulo": "GliaCloud",
+        "descripcion_corta": "Convierte artículos y datos en atractivos vídeos de noticias con IA en segundos.",
+        "uso_principal": "Automatiza la creación de vídeos de noticias a partir de contenido textual. Ideal para medios de comunicación y agencias de noticias.",
+        "url": "https://www.gliacloud.com/",
+        "url_limpia": "gliacloud.com",
+        "categoria": "Edición de Video"
+    },
+    {
+        "titulo": "Movio",
+        "descripcion_corta": "Crea vídeos de marketing profesionales con avatares de IA de alta calidad.",
+        "uso_principal": "Genera vídeos de marketing personalizados con avatares de IA que representan tu marca. Aumenta la conversión y reduce los costos de producción.",
+        "url": "https://www.movio.la/",
+        "url_limpia": "movio.la",
+        "categoria": "Edición de Video"
+    },
+    {
+        "titulo": "Topaz Video Enhance AI",
+        "descripcion_corta": "Mejora la calidad de tus vídeos con IA, escalando la resolución y reduciendo el ruido.",
+        "uso_principal": "Optimiza la calidad de vídeo antiguo o de baja resolución utilizando IA. Ideal para preservar recuerdos y mejorar el contenido visual.",
+        "url": "https://www.topazlabs.com/topaz-video-ai",
+        "url_limpia": "topazlabs.com",
+        "categoria": "Edición de Video"
+    },
+    {
+        "titulo": "Autopod",
+        "descripcion_corta": "Automatiza la edición de tus podcasts de vídeo con cortes inteligentes impulsados por IA.",
+        "uso_principal": "Edita automáticamente podcasts de vídeo multicámara, enfocándose en quien está hablando. Ahorra tiempo y esfuerzo en la postproducción.",
+        "url": "https://autopod.fm/",
+        "url_limpia": "autopod.fm",
+        "categoria": "Edición de Video"
+    },
+    {
+        "titulo": "Submagic",
+        "descripcion_corta": "Añade subtítulos dinámicos y atractivos a tus vídeos automáticamente con IA.",
+        "uso_principal": "Genera subtítulos atractivos y personalizados para tus vídeos en redes sociales. Aumenta la accesibilidad y el alcance de tu contenido.",
+        "url": "https://www.submagic.co/",
+        "url_limpia": "submagic.co",
+        "categoria": "Edición de Video"
+    },
+    {
+        "titulo": "Colossyan Creator",
+        "descripcion_corta": "Crea vídeos de formación con avatares de IA multilingües sin necesidad de experiencia en edición.",
+        "uso_principal": "Permite crear vídeos de aprendizaje y desarrollo con IA en múltiples idiomas. Ideal para empresas globales y contenido educativo.",
+        "url": "https://www.colossyan.com/",
+        "url_limpia": "colossyan.com",
+        "categoria": "Edición de Video"
+    },
+    {
+        "titulo": "HeyGen",
+        "descripcion_corta": "Crea vídeos profesionales con avatares de IA en minutos, sin necesidad de equipo especializado.",
+        "uso_principal": "Genera vídeos explicativos y de marketing con avatares de IA personalizables y realistas. Simplifica la producción y reduce costos.",
+        "url": "https://www.heygen.com/",
+        "url_limpia": "heygen.com",
+        "categoria": "Edición de Video"
+    },
+    {
+        "titulo": "Steve AI",
+        "descripcion_corta": "Transforma guiones y artículos de blog en vídeos animados con IA en un abrir y cerrar de ojos.",
+        "uso_principal": "Crea vídeos animados explicativos y de marketing a partir de texto con la ayuda de IA. Facilita la creación de contenido visual atractivo sin habilidades de diseño.",
+        "url": "https://www.steve.ai/",
+        "url_limpia": "steve.ai",
+        "categoria": "Edición de Video"
+    },
+    {
+        "titulo": "Otter.ai",
+        "descripcion_corta": "Transforma tus conversaciones en texto con la magia de la IA, facilitando la colaboración y el seguimiento.",
+        "uso_principal": "Convierte grabaciones de audio en texto en tiempo real, ideal para reuniones y entrevistas. Facilita la transcripción y el resumen de contenido hablado.",
+        "url": "https://otter.ai",
+        "url_limpia": "otter.ai",
+        "categoria": "Productividad y Asistentes"
+    },
+    {
+        "titulo": "Fireflies.ai",
+        "descripcion_corta": "Automatiza tus notas de reuniones y libera tu mente para participar activamente.",
+        "uso_principal": "Graba, transcribe y resume automáticamente reuniones en plataformas como Zoom, Google Meet y Microsoft Teams. Ofrece análisis de sentimientos y detección de temas clave.",
+        "url": "https://fireflies.ai",
+        "url_limpia": "fireflies.ai",
+        "categoria": "Productividad y Asistentes"
+    },
+    {
+        "titulo": "Mem.ai",
+        "descripcion_corta": "El espacio de trabajo que recuerda todo, para que tú no tengas que hacerlo.",
+        "uso_principal": "Organiza automáticamente tus notas y documentos, conectándolos por contexto y relaciones. Permite una búsqueda inteligente y descubre conexiones ocultas entre la información.",
+        "url": "https://mem.ai",
+        "url_limpia": "mem.ai",
+        "categoria": "Productividad y Asistentes"
+    },
+    {
+        "titulo": "Taskade",
+        "descripcion_corta": "Colabora y organiza tus tareas de manera más inteligente con este espacio de trabajo unificado impulsado por IA.",
+        "uso_principal": "Gestiona proyectos, crea listas de tareas y colabora en tiempo real con tu equipo. La IA ayuda a automatizar flujos de trabajo y a generar contenido.",
+        "url": "https://taskade.com",
+        "url_limpia": "taskade.com",
+        "categoria": "Productividad y Asistentes"
+    },
+    {
+        "titulo": "Microsoft Copilot",
+        "descripcion_corta": "Tu copiloto impulsado por IA para el trabajo, desbloquea tu creatividad y productividad.",
+        "uso_principal": "Integra IA en las aplicaciones de Microsoft 365 para ayudarte a escribir correos electrónicos, crear presentaciones y analizar datos. También te ayuda a resumir contenido y a generar ideas.",
+        "url": "https://www.microsoft.com/en-us/microsoft-copilot",
+        "url_limpia": "microsoft.com",
+        "categoria": "Productividad y Asistentes"
+    },
+    {
+        "titulo": "Grammarly",
+        "descripcion_corta": "Escribe con confianza y claridad con este asistente de escritura impulsado por IA.",
+        "uso_principal": "Revisa tu gramática, ortografía, puntuación y estilo en tiempo real. Ofrece sugerencias para mejorar la claridad y la concisión de tu escritura.",
+        "url": "https://www.grammarly.com",
+        "url_limpia": "grammarly.com",
+        "categoria": "Productividad y Asistentes"
+    },
+    {
+        "titulo": "Krisp",
+        "descripcion_corta": "Elimina el ruido de fondo de tus reuniones para una comunicación clara y profesional.",
+        "uso_principal": "Cancela el ruido de fondo tanto de tu micrófono como del de otros participantes en llamadas y reuniones. Mejora la calidad del audio y reduce las distracciones.",
+        "url": "https://krisp.ai",
+        "url_limpia": "krisp.ai",
+        "categoria": "Productividad y Asistentes"
+    },
+    {
+        "titulo": "Beautiful.ai",
+        "descripcion_corta": "Crea presentaciones impresionantes en minutos con esta herramienta impulsada por IA.",
+        "uso_principal": "Automatiza el diseño de presentaciones con plantillas inteligentes y sugerencias de diseño. Facilita la creación de diapositivas visualmente atractivas y profesionales.",
+        "url": "https://www.beautiful.ai",
+        "url_limpia": "beautiful.ai",
+        "categoria": "Productividad y Asistentes"
+    },
+    {
+        "titulo": "Calendly",
+        "descripcion_corta": "Programa reuniones sin complicaciones y ahorra tiempo con este asistente de programación inteligente.",
+        "uso_principal": "Automatiza la programación de reuniones permitiendo que otros elijan entre tus horarios disponibles. Evita el ir y venir de correos electrónicos para encontrar un horario que funcione para todos.",
+        "url": "https://calendly.com",
+        "url_limpia": "calendly.com",
+        "categoria": "Productividad y Asistentes"
+    },
+    {
+        "titulo": "OtterPilot for Sales",
+        "descripcion_corta": "Aumenta tus ventas con transcripciones en tiempo real, resúmenes y análisis de llamadas de ventas con esta IA especializada.",
+        "uso_principal": "Automatiza las notas de las llamadas de ventas, analiza el sentimiento del cliente y proporciona información valiosa para mejorar tu estrategia de ventas. Mejora la productividad de tu equipo de ventas.",
+        "url": "https://otter.ai/solutions/sales",
+        "url_limpia": "otter.ai",
+        "categoria": "Productividad y Asistentes"
+    },
+    {
+        "titulo": "Scribble by ClickUp",
+        "descripcion_corta": "Genera documentos y textos rápidamente con esta IA integrada directamente en tu plataforma de gestión de proyectos.",
+        "uso_principal": "Crea documentos, correos electrónicos y contenido de marketing con la ayuda de la IA. Ahorra tiempo y mejora la calidad de tu escritura.",
+        "url": "https://clickup.com/features/ai",
+        "url_limpia": "clickup.com",
+        "categoria": "Productividad y Asistentes"
+    },
+    {
+        "titulo": "Bard by Google (Google AI)",
+        "descripcion_corta": "Explora ideas y aumenta tu creatividad con este modelo de lenguaje avanzado de Google.",
+        "uso_principal": "Genera texto, traduce idiomas, escribe diferentes tipos de contenido creativo y responde a tus preguntas de manera informativa. Sirve como un punto de partida para la creatividad y la productividad.",
+        "url": "https://bard.google.com/",
+        "url_limpia": "bard.google.com",
+        "categoria": "Productividad y Asistentes"
+    },
+    {
+        "titulo": "ChatGPT",
+        "descripcion_corta": "El asistente conversacional de IA que revoluciona tu productividad con respuestas inteligentes y creativas.",
+        "uso_principal": "Responde preguntas, genera textos, traduce idiomas y escribe diferentes tipos de contenido creativo. Te ayuda a automatizar tareas y a obtener información rápidamente.",
+        "url": "https://chat.openai.com/",
+        "url_limpia": "chat.openai.com",
+        "categoria": "Productividad y Asistentes"
+    },
+    {
+        "titulo": "Notion AI",
+        "descripcion_corta": "Desbloquea el poder de la IA dentro de tu espacio de trabajo de Notion para aumentar tu productividad y creatividad.",
+        "uso_principal": "Genera ideas, resume contenido, traduce idiomas, escribe correos electrónicos y mucho más directamente dentro de Notion. Mejora la eficiencia y facilita la colaboración.",
+        "url": "https://www.notion.so/product/ai",
+        "url_limpia": "notion.so",
+        "categoria": "Productividad y Asistentes"
+    },
+    {
+        "titulo": "Tome.app",
+        "descripcion_corta": "Crea historias cautivadoras y presentaciones impactantes con la ayuda de la IA.",
+        "uso_principal": "Genera automáticamente presentaciones con imágenes y texto relevantes a partir de un tema. Ahorra tiempo y crea presentaciones visualmente atractivas.",
+        "url": "https://tome.app",
+        "url_limpia": "tome.app",
+        "categoria": "Productividad y Asistentes"
+    },
+    {
+        "titulo": "GitHub Copilot",
+        "descripcion_corta": "Tu compañero de programación impulsado por IA que sugiere código en tiempo real.",
+        "uso_principal": "Autocompleta líneas de código y funciones enteras directamente en tu IDE. Acelera el desarrollo y reduce errores comunes.",
+        "url": "https://github.com/features/copilot",
+        "url_limpia": "github.com",
+        "categoria": "Programación y Código"
+    },
+    {
+        "titulo": "Tabnine",
+        "descripcion_corta": "El asistente de código impulsado por IA que aprende de tus patrones y te ofrece sugerencias precisas.",
+        "uso_principal": "Predice y completa código basándose en tu estilo de programación y el contexto del proyecto. Reduce el tiempo de escritura y mejora la consistencia.",
+        "url": "https://www.tabnine.com/",
+        "url_limpia": "tabnine.com",
+        "categoria": "Programación y Código"
+    },
+    {
+        "titulo": "Codiga",
+        "descripcion_corta": "Analiza tu código y te ayuda a detectar errores y vulnerabilidades antes de que lleguen a producción.",
+        "uso_principal": "Realiza análisis estático del código para identificar problemas de seguridad y rendimiento. Ofrece sugerencias para mejorar la calidad y robustez del software.",
+        "url": "https://www.codiga.io/",
+        "url_limpia": "codiga.io",
+        "categoria": "Programación y Código"
+    },
+    {
+        "titulo": "DeepCode",
+        "descripcion_corta": "La IA que comprende la semántica de tu código para ofrecerte las mejores recomendaciones.",
+        "uso_principal": "Analiza el código a un nivel profundo, comprendiendo las relaciones entre diferentes componentes. Ofrece sugerencias más precisas y relevantes para la optimización.",
+        "url": "https://www.deepcode.ai/",
+        "url_limpia": "deepcode.ai",
+        "categoria": "Programación y Código"
+    },
+    {
+        "titulo": "Mutable.ai",
+        "descripcion_corta": "Transforma descripciones en lenguaje natural en código funcional, haciéndote más productivo.",
+        "uso_principal": "Genera código a partir de descripciones en lenguaje natural, automatizando la creación de prototipos y la implementación de funciones. Permite la rápida creación de aplicaciones.",
+        "url": "https://mutable.ai/",
+        "url_limpia": "mutable.ai",
+        "categoria": "Programación y Código"
+    },
+    {
+        "titulo": "AskCodi",
+        "descripcion_corta": "Tu asistente de código personal impulsado por IA que resuelve tus dudas y te ayuda a depurar.",
+        "uso_principal": "Responde a preguntas sobre código, explica conceptos complejos y ofrece soluciones a problemas de depuración. Es como tener un experto a tu lado.",
+        "url": "https://www.askcodi.com/",
+        "url_limpia": "askcodi.com",
+        "categoria": "Programación y Código"
+    },
+    {
+        "titulo": "Codeium",
+        "descripcion_corta": "Impulsa tu productividad con autocompletado de código, generación de código y búsqueda inteligente impulsada por IA.",
+        "uso_principal": "Acelera el desarrollo con sugerencias de código, generación de código completo y búsqueda de código inteligente basada en IA.  Reduce la sobrecarga cognitiva.",
+        "url": "https://www.codeium.com/",
+        "url_limpia": "codeium.com",
+        "categoria": "Programación y Código"
+    },
+    {
+        "titulo": "Amazon CodeWhisperer",
+        "descripcion_corta": "Mejora tu velocidad y seguridad con recomendaciones de código en tiempo real de AWS.",
+        "uso_principal": "Ofrece recomendaciones de código en tiempo real basadas en el contexto, con soporte para lenguajes populares y servicios de AWS. Facilita el uso de la plataforma.",
+        "url": "https://aws.amazon.com/codewhisperer/",
+        "url_limpia": "aws.amazon.com",
+        "categoria": "Programación y Código"
+    },
+    {
+        "titulo": "Sourcegraph Cody",
+        "descripcion_corta": "Un asistente de IA en tu IDE que entiende todo tu código y documentos.",
+        "uso_principal": "Cody se conecta a todo tu código para responder preguntas, escribir documentación y incluso ayudarte a refactorizar el código existente.  Aumenta la visibilidad del código.",
+        "url": "https://about.sourcegraph.com/cody",
+        "url_limpia": "about.sourcegraph.com",
+        "categoria": "Programación y Código"
+    },
+    {
+        "titulo": "Replit Ghostwriter",
+        "descripcion_corta": "Escribe código más rápido y aprende sobre la marcha con la ayuda de la IA de Replit.",
+        "uso_principal": "Ghostwriter te ayuda a completar código, generar explicaciones y transformar código existente, directamente en el entorno de desarrollo de Replit. Ideal para aprender a programar.",
+        "url": "https://replit.com/site/ghostwriter",
+        "url_limpia": "replit.com",
+        "categoria": "Programación y Código"
+    },
+    {
+        "titulo": "PolyCoder",
+        "descripcion_corta": "Modelo de lenguaje para código de gran tamaño que puede generar código en múltiples lenguajes.",
+        "uso_principal": "Genera código en diversos lenguajes a partir de descripciones en lenguaje natural o ejemplos de código.  Facilita la migración y adaptación de código.",
+        "url": "https://huggingface.co/EleutherAI/polycode-15B",
+        "url_limpia": "huggingface.co",
+        "categoria": "Programación y Código"
+    },
+    {
+        "titulo": "Blackbox AI",
+        "descripcion_corta": "El editor de código potenciado por IA que hace que la programación sea 10 veces más rápida.",
+        "uso_principal": "Autocompleta código, genera fragmentos de código a partir de lenguaje natural y te ayuda a encontrar soluciones a problemas comunes. Reduce la curva de aprendizaje.",
+        "url": "https://www.blackbox.ai/",
+        "url_limpia": "blackbox.ai",
+        "categoria": "Programación y Código"
+    },
+    {
+        "titulo": "Function AI",
+        "descripcion_corta": "Crea y gestiona funciones serverless con facilidad, impulsado por inteligencia artificial.",
+        "uso_principal": "Genera, depura y despliega funciones serverless utilizando IA, simplificando el desarrollo de aplicaciones en la nube.  Aumenta la eficiencia del despliegue.",
+        "url": "https://function.ai/",
+        "url_limpia": "function.ai",
+        "categoria": "Programación y Código"
+    },
+    {
+        "titulo": "Stepsize AI",
+        "descripcion_corta": "AI para equipos de ingeniería: une el conocimiento y la documentación del código.",
+        "uso_principal": "Captura el conocimiento del código, integra documentación directamente en el IDE y ayuda a los equipos a colaborar mejor. Mejora la calidad del código.",
+        "url": "https://stepsize.com/",
+        "url_limpia": "stepsize.com",
+        "categoria": "Programación y Código"
+    },
+    {
+        "titulo": "Digma AI",
+        "descripcion_corta": "Obtén perspectivas impulsadas por IA en tu código, desde el IDE hasta la producción.",
+        "uso_principal": "Digma ofrece información en tiempo real sobre el rendimiento y el comportamiento del código tanto en el desarrollo como en producción. Ayuda a prevenir problemas.",
+        "url": "https://digma.ai/",
+        "url_limpia": "digma.ai",
+        "categoria": "Programación y Código"
+    },
+    {
+        "titulo": "Semrush",
+        "descripcion_corta": "Domina el SEO y el marketing de contenidos con análisis exhaustivos y palabras clave estratégicas.",
+        "uso_principal": "Realiza auditorías SEO completas, analiza a la competencia y descubre oportunidades de palabras clave. Mejora tu visibilidad en línea y atrae tráfico orgánico de calidad.",
+        "url": "https://www.semrush.com",
+        "url_limpia": "semrush.com",
+        "categoria": "Marketing y SEO"
+    },
+    {
+        "titulo": "Ahrefs",
+        "descripcion_corta": "Lleva tu estrategia SEO al siguiente nivel con análisis de backlinks y palabras clave de alto rendimiento.",
+        "uso_principal": "Analiza el perfil de backlinks de cualquier sitio web, encuentra palabras clave rentables y realiza un seguimiento de tu clasificación en los motores de búsqueda. Supera a tu competencia con datos precisos y perspicaces.",
+        "url": "https://www.ahrefs.com",
+        "url_limpia": "ahrefs.com",
+        "categoria": "Marketing y SEO"
+    },
+    {
+        "titulo": "Google Analytics",
+        "descripcion_corta": "Desbloquea el poder de tus datos web y optimiza tu estrategia de marketing con análisis precisos.",
+        "uso_principal": "Realiza un seguimiento del tráfico del sitio web, el comportamiento del usuario y las conversiones. Obtén información valiosa para mejorar tu contenido, la experiencia del usuario y el retorno de la inversión (ROI).",
+        "url": "https://analytics.google.com",
+        "url_limpia": "analytics.google.com",
+        "categoria": "Marketing y SEO"
+    },
+    {
+        "titulo": "Surfer SEO",
+        "descripcion_corta": "Crea contenido optimizado para SEO que rankee alto y atraiga a tu público objetivo.",
+        "uso_principal": "Analiza los principales resultados de búsqueda para palabras clave específicas y proporciona recomendaciones para optimizar tu contenido. Mejora tu clasificación en los motores de búsqueda con estrategias basadas en datos.",
+        "url": "https://surferseo.com",
+        "url_limpia": "surferseo.com",
+        "categoria": "Marketing y SEO"
+    },
+    {
+        "titulo": "Jasper",
+        "descripcion_corta": "Genera contenido creativo y persuasivo para marketing con la ayuda de la IA.",
+        "uso_principal": "Escribe artículos de blog, copias de anuncios, correos electrónicos y publicaciones en redes sociales de alta calidad. Ahorra tiempo y esfuerzo con la generación de contenido impulsada por IA.",
+        "url": "https://www.jasper.ai",
+        "url_limpia": "jasper.ai",
+        "categoria": "Marketing y SEO"
+    },
+    {
+        "titulo": "MarketMuse",
+        "descripcion_corta": "Planifica y crea contenido estratégico que domine tu nicho de mercado con inteligencia artificial.",
+        "uso_principal": "Analiza tu contenido y el de la competencia para identificar brechas y oportunidades. Crea contenido completo y relevante que satisfaga la intención del usuario y mejore tu clasificación.",
+        "url": "https://www.marketmuse.com",
+        "url_limpia": "marketmuse.com",
+        "categoria": "Marketing y SEO"
+    },
+    {
+        "titulo": "Scalenut",
+        "descripcion_corta": "Crea contenido SEO de larga duración con un enfoque en la investigación de palabras clave y la optimización.",
+        "uso_principal": "Descubre palabras clave de alto valor, crea resúmenes de contenido optimizados y genera contenido de alta calidad con la ayuda de la IA. Impulsa tu estrategia de contenido con datos precisos.",
+        "url": "https://www.scalenut.com",
+        "url_limpia": "scalenut.com",
+        "categoria": "Marketing y SEO"
+    },
+    {
+        "titulo": "Frase.io",
+        "descripcion_corta": "Optimiza tu contenido para responder preguntas de la audiencia y dominar los resultados de búsqueda.",
+        "uso_principal": "Identifica las preguntas que hace tu audiencia sobre un tema específico y crea contenido que responda a esas preguntas de manera completa y concisa. Mejora tu clasificación y atrae tráfico cualificado.",
+        "url": "https://www.frase.io",
+        "url_limpia": "frase.io",
+        "categoria": "Marketing y SEO"
+    },
+    {
+        "titulo": "Rytr",
+        "descripcion_corta": "Genera copias de marketing atractivas y contenido creativo en segundos con inteligencia artificial.",
+        "uso_principal": "Crea copias de anuncios, descripciones de productos, publicaciones en redes sociales y más. Ahorra tiempo y esfuerzo con la generación de contenido impulsada por IA.",
+        "url": "https://rytr.me",
+        "url_limpia": "rytr.me",
+        "categoria": "Marketing y SEO"
+    },
+    {
+        "titulo": "Outwrite",
+        "descripcion_corta": "Perfecciona tu escritura para marketing con un asistente de IA que mejora la claridad y el impacto.",
+        "uso_principal": "Revisa tu contenido para detectar errores gramaticales, mejorar la claridad y optimizar el estilo. Asegúrate de que tu mensaje sea claro, conciso y persuasivo.",
+        "url": "https://www.outwrite.com",
+        "url_limpia": "outwrite.com",
+        "categoria": "Marketing y SEO"
+    },
+    {
+        "titulo": "Article Forge",
+        "descripcion_corta": "Genera artículos únicos y optimizados para SEO en minutos con inteligencia artificial.",
+        "uso_principal": "Crea contenido de alta calidad para tu blog, sitio web o campañas de marketing. Ahorra tiempo y esfuerzo con la generación de contenido impulsada por IA.",
+        "url": "https://www.articleforge.com",
+        "url_limpia": "articleforge.com",
+        "categoria": "Marketing y SEO"
+    },
+    {
+        "titulo": "INK",
+        "descripcion_corta": "Optimiza tu contenido para el SEO con un editor impulsado por IA que te guía en cada paso.",
+        "uso_principal": "Recibe sugerencias en tiempo real sobre cómo mejorar tu contenido para el SEO, incluyendo la optimización de palabras clave, la estructura y la legibilidad. Mejora tu clasificación y atrae tráfico cualificado.",
+        "url": "https://inkforall.com",
+        "url_limpia": "inkforall.com",
+        "categoria": "Marketing y SEO"
+    },
+    {
+        "titulo": "Wordtune",
+        "descripcion_corta": "Reescribe y mejora tu escritura para que sea más clara, concisa y persuasiva con inteligencia artificial.",
+        "uso_principal": "Obtén sugerencias para reescribir frases, mejorar el tono y el estilo, y hacer que tu escritura sea más atractiva. Mejora la calidad de tu contenido y atrae a tu audiencia.",
+        "url": "https://www.wordtune.com",
+        "url_limpia": "wordtune.com",
+        "categoria": "Marketing y SEO"
+    },
+    {
+        "titulo": "Copy.ai",
+        "descripcion_corta": "Genera copias de marketing creativas y persuasivas para cualquier propósito con inteligencia artificial.",
+        "uso_principal": "Crea copias de anuncios, descripciones de productos, correos electrónicos, publicaciones en redes sociales y más. Ahorra tiempo y esfuerzo con la generación de contenido impulsada por IA.",
+        "url": "https://www.copy.ai",
+        "url_limpia": "copy.ai",
+        "categoria": "Marketing y SEO"
+    },
+    {
+        "titulo": "Moz Pro",
+        "descripcion_corta": "Impulsa tu estrategia SEO con herramientas de análisis, seguimiento y optimización completas.",
+        "uso_principal": "Realiza un seguimiento de tu clasificación, analiza a la competencia y encuentra oportunidades de palabras clave. Mejora tu visibilidad en línea y atrae tráfico orgánico de calidad.",
+        "url": "https://moz.com/products/pro",
+        "url_limpia": "moz.com",
+        "categoria": "Marketing y SEO"
+    },
+    {
+        "titulo": "Tableau",
+        "descripcion_corta": "Visualiza tus datos como nunca antes y descubre insights ocultos con esta herramienta líder en el mercado.",
+        "uso_principal": "Tableau permite a los usuarios crear dashboards interactivos y visualizaciones de datos para explorar tendencias y patrones. Facilita la toma de decisiones basada en datos mediante el análisis visual.",
+        "url": "https://www.tableau.com/",
+        "url_limpia": "tableau.com",
+        "categoria": "Análisis de Datos"
+    },
+    {
+        "titulo": "RapidMiner",
+        "descripcion_corta": "Automatiza tus flujos de trabajo de ciencia de datos y crea modelos predictivos de alto rendimiento con esta plataforma integral.",
+        "uso_principal": "RapidMiner ofrece una plataforma visual para el desarrollo de modelos predictivos, minería de datos y aprendizaje automático. Simplifica el proceso de análisis de datos para usuarios de todos los niveles de experiencia.",
+        "url": "https://rapidminer.com/",
+        "url_limpia": "rapidminer.com",
+        "categoria": "Análisis de Datos"
+    },
+    {
+        "titulo": "KNIME Analytics Platform",
+        "descripcion_corta": "Construye workflows de análisis de datos personalizados y transforma datos complejos en información útil con esta plataforma de código abierto.",
+        "uso_principal": "KNIME permite a los usuarios crear flujos de trabajo de análisis de datos mediante una interfaz visual de arrastrar y soltar. Es ideal para la integración de datos, el procesamiento de datos y la creación de modelos predictivos.",
+        "url": "https://www.knime.com/",
+        "url_limpia": "knime.com",
+        "categoria": "Análisis de Datos"
+    },
+    {
+        "titulo": "Alteryx",
+        "descripcion_corta": "Empodera a tu equipo con una plataforma de análisis de datos de autoservicio que combina preparación de datos, análisis y ciencia de datos.",
+        "uso_principal": "Alteryx ofrece una plataforma unificada para la preparación, el análisis y la modelización de datos. Permite a los usuarios automatizar los procesos de análisis de datos y obtener insights de manera más rápida.",
+        "url": "https://www.alteryx.com/",
+        "url_limpia": "alteryx.com",
+        "categoria": "Análisis de Datos"
+    },
+    {
+        "titulo": "DataRobot",
+        "descripcion_corta": "Acelera tu transformación de IA con una plataforma automatizada de aprendizaje automático para crear y desplegar modelos predictivos.",
+        "uso_principal": "DataRobot automatiza el proceso de construcción y despliegue de modelos de aprendizaje automático. Permite a los usuarios crear modelos predictivos precisos y escalables sin necesidad de una amplia experiencia en ciencia de datos.",
+        "url": "https://www.datarobot.com/",
+        "url_limpia": "datarobot.com",
+        "categoria": "Análisis de Datos"
+    },
+    {
+        "titulo": "Google Analytics",
+        "descripcion_corta": "Descubre el comportamiento de tus usuarios y optimiza tu sitio web para el éxito con esta herramienta gratuita de análisis web.",
+        "uso_principal": "Google Analytics proporciona información valiosa sobre el tráfico del sitio web, el comportamiento del usuario y el rendimiento de las campañas de marketing. Permite a los usuarios comprender mejor a su audiencia y optimizar su sitio web para mejorar las conversiones.",
+        "url": "https://analytics.google.com/",
+        "url_limpia": "analytics.google.com",
+        "categoria": "Análisis de Datos"
+    },
+    {
+        "titulo": "SAS Visual Analytics",
+        "descripcion_corta": "Explora tus datos visualmente y obtén insights accionables con esta plataforma de análisis empresarial de alto rendimiento.",
+        "uso_principal": "SAS Visual Analytics ofrece una plataforma completa para la visualización y el análisis de datos. Permite a los usuarios crear dashboards interactivos y explorar datos para identificar tendencias y patrones ocultos.",
+        "url": "https://www.sas.com/en_us/software/visual-analytics.html",
+        "url_limpia": "sas.com",
+        "categoria": "Análisis de Datos"
+    },
+    {
+        "titulo": "Qlik Sense",
+        "descripcion_corta": "Transforma tus datos en conocimiento con una plataforma de análisis de datos intuitiva y fácil de usar.",
+        "uso_principal": "Qlik Sense ofrece una plataforma de análisis de datos asociativa que permite a los usuarios explorar datos sin restricciones. Facilita el descubrimiento de insights ocultos y la toma de decisiones informadas.",
+        "url": "https://www.qlik.com/",
+        "url_limpia": "qlik.com",
+        "categoria": "Análisis de Datos"
+    },
+    {
+        "titulo": "Power BI",
+        "descripcion_corta": "Convierte tus datos en visualizaciones impactantes y comparte insights con tu equipo utilizando este servicio de análisis empresarial de Microsoft.",
+        "uso_principal": "Power BI permite a los usuarios crear dashboards interactivos y visualizaciones de datos para explorar tendencias y patrones. Se integra con otros servicios de Microsoft y facilita la colaboración.",
+        "url": "https://powerbi.microsoft.com/",
+        "url_limpia": "powerbi.microsoft.com",
+        "categoria": "Análisis de Datos"
+    },
+    {
+        "titulo": "Apache Spark",
+        "descripcion_corta": "Procesa grandes volúmenes de datos a gran velocidad con este motor de procesamiento de datos de código abierto.",
+        "uso_principal": "Apache Spark es un motor de procesamiento de datos distribuido que permite el procesamiento rápido de grandes conjuntos de datos. Es ideal para el análisis de datos, el aprendizaje automático y el procesamiento de grafos.",
+        "url": "https://spark.apache.org/",
+        "url_limpia": "spark.apache.org",
+        "categoria": "Análisis de Datos"
+    },
+    {
+        "titulo": "Hadoop",
+        "descripcion_corta": "Almacena y procesa datos masivos con este framework de código abierto para el almacenamiento y procesamiento distribuido.",
+        "uso_principal": "Hadoop proporciona un framework para el almacenamiento y procesamiento distribuido de grandes conjuntos de datos. Es ideal para el análisis de datos a gran escala y el almacenamiento de datos no estructurados.",
+        "url": "https://hadoop.apache.org/",
+        "url_limpia": "hadoop.apache.org",
+        "categoria": "Análisis de Datos"
+    },
+    {
+        "titulo": "Splunk",
+        "descripcion_corta": "Analiza datos de máquina y obtén insights en tiempo real con esta plataforma para el análisis de datos operativos.",
+        "uso_principal": "Splunk permite a los usuarios recopilar, indexar y analizar datos de máquina generados por aplicaciones, servidores y dispositivos de red. Es ideal para el análisis de registros, la monitorización del rendimiento y la detección de amenazas.",
+        "url": "https://www.splunk.com/",
+        "url_limpia": "splunk.com",
+        "categoria": "Análisis de Datos"
+    },
+    {
+        "titulo": "TensorFlow",
+        "descripcion_corta": "Construye y entrena modelos de aprendizaje automático con esta biblioteca de código abierto de Google.",
+        "uso_principal": "TensorFlow es una biblioteca de código abierto para el desarrollo de modelos de aprendizaje automático. Es ampliamente utilizada para tareas como el reconocimiento de imágenes, el procesamiento del lenguaje natural y la predicción de series temporales.",
+        "url": "https://www.tensorflow.org/",
+        "url_limpia": "tensorflow.org",
+        "categoria": "Análisis de Datos"
+    },
+    {
+        "titulo": "PyTorch",
+        "descripcion_corta": "Experimenta con la investigación de IA y crea prototipos de aprendizaje profundo rápidamente con este framework flexible de Facebook.",
+        "uso_principal": "PyTorch es un framework de aprendizaje automático de código abierto que se utiliza ampliamente para la investigación y el desarrollo de modelos de aprendizaje profundo. Es conocido por su flexibilidad y facilidad de uso.",
+        "url": "https://pytorch.org/",
+        "url_limpia": "pytorch.org",
+        "categoria": "Análisis de Datos"
+    },
+    {
+        "titulo": "MonkeyLearn",
+        "descripcion_corta": "Extrae valor de tus datos de texto con esta herramienta de análisis de texto impulsada por IA.",
+        "uso_principal": "MonkeyLearn es una plataforma de análisis de texto que utiliza aprendizaje automático para extraer información valiosa de datos de texto. Permite a los usuarios automatizar tareas como el análisis de sentimiento, la clasificación de texto y la extracción de entidades.",
+        "url": "https://monkeylearn.com/",
+        "url_limpia": "monkeylearn.com",
+        "categoria": "Análisis de Datos"
+    },
+    {
+        "titulo": "Uizard",
+        "descripcion_corta": "Transforma tus bocetos en prototipos interactivos con la magia de la IA.",
+        "uso_principal": "Convierte capturas de pantalla y wireframes en diseños editables. Ideal para prototipado rápido y pruebas de usabilidad.",
+        "url": "https://uizard.io/",
+        "url_limpia": "uizard.io",
+        "categoria": "Diseño UI/UX"
+    },
+    {
+        "titulo": "Galileo AI",
+        "descripcion_corta": "Crea interfaces de usuario impresionantes en segundos con la potencia de la inteligencia artificial.",
+        "uso_principal": "Genera diseños UI basados en descripciones textuales. Permite iterar y personalizar rápidamente las interfaces.",
+        "url": "https://www.galileo-ai.com/",
+        "url_limpia": "galileo-ai.com",
+        "categoria": "Diseño UI/UX"
+    },
+    {
+        "titulo": "Khroma",
+        "descripcion_corta": "Descubre, busca y guarda combinaciones de colores ilimitadas con este ayudante de IA.",
+        "uso_principal": "Aprende los colores que te gustan y te ofrece paletas personalizadas. Ideal para mantener la consistencia visual en tus diseños.",
+        "url": "https://www.khroma.co/",
+        "url_limpia": "khroma.co",
+        "categoria": "Diseño UI/UX"
+    },
+    {
+        "titulo": "Fronty",
+        "descripcion_corta": "Convierte imágenes en código HTML y CSS limpio y funcional automáticamente.",
+        "uso_principal": "Acelera el desarrollo front-end convirtiendo diseños en código. Perfecto para maquetación rápida y responsive design.",
+        "url": "https://fronty.com/",
+        "url_limpia": "fronty.com",
+        "categoria": "Diseño UI/UX"
+    },
+    {
+        "titulo": "Deep Image AI",
+        "descripcion_corta": "Mejora la calidad de tus imágenes hasta un 4x con la ayuda de la IA.",
+        "uso_principal": "Escala imágenes sin perder calidad, ideal para assets de diseño y prototipos. Elimina ruido y artefactos para resultados más nítidos.",
+        "url": "https://deepimage.ai/",
+        "url_limpia": "deepimage.ai",
+        "categoria": "Diseño UI/UX"
+    },
+    {
+        "titulo": "Let's Enhance",
+        "descripcion_corta": "Amplía y mejora tus imágenes automáticamente con tecnología de IA.",
+        "uso_principal": "Aumenta la resolución de imágenes pequeñas sin perder detalles. Útil para preparar assets visuales para diferentes dispositivos.",
+        "url": "https://letsenhance.io/",
+        "url_limpia": "letsenhance.io",
+        "categoria": "Diseño UI/UX"
+    },
+    {
+        "titulo": "Remove.bg",
+        "descripcion_corta": "Elimina automáticamente el fondo de cualquier imagen en segundos con IA.",
+        "uso_principal": "Recorta objetos y personas de imágenes de forma rápida y precisa. Ahorra tiempo en la preparación de assets visuales para interfaces.",
+        "url": "https://www.remove.bg/",
+        "url_limpia": "remove.bg",
+        "categoria": "Diseño UI/UX"
+    },
+    {
+        "titulo": "Brandmark.io",
+        "descripcion_corta": "Diseña un logo profesional en minutos con la ayuda de la inteligencia artificial.",
+        "uso_principal": "Genera múltiples opciones de logo basadas en tus preferencias. Permite personalizar y descargar los diseños en diferentes formatos.",
+        "url": "https://brandmark.io/",
+        "url_limpia": "brandmark.io",
+        "categoria": "Diseño UI/UX"
+    },
+    {
+        "titulo": "Designs.ai",
+        "descripcion_corta": "Automatiza la creación de videos, logos y banners con herramientas impulsadas por IA.",
+        "uso_principal": "Crea material de marketing y branding de forma rápida y eficiente. Ideal para prototipos y presentaciones.",
+        "url": "https://designs.ai/",
+        "url_limpia": "designs.ai",
+        "categoria": "Diseño UI/UX"
+    },
+    {
+        "titulo": "AutoDraw",
+        "descripcion_corta": "Convierte tus garabatos en ilustraciones profesionales con el poder de la IA.",
+        "uso_principal": "Sugiere ilustraciones basadas en tus dibujos aproximados. Ideal para crear iconos y gráficos rápidamente.",
+        "url": "https://www.autodraw.com/",
+        "url_limpia": "autodraw.com",
+        "categoria": "Diseño UI/UX"
+    },
+    {
+        "titulo": "Colorable",
+        "descripcion_corta": "Prueba combinaciones de colores para asegurar la accesibilidad en tus diseños con IA.",
+        "uso_principal": "Verifica el contraste entre texto y fondo para cumplir con los estándares de accesibilidad. Asegura que tus diseños sean legibles para todos.",
+        "url": "https://colorable.jxnblk.com/",
+        "url_limpia": "colorable.jxnblk.com",
+        "categoria": "Diseño UI/UX"
+    },
+    {
+        "titulo": "Copy.ai",
+        "descripcion_corta": "Genera textos persuasivos y creativos para tu UI/UX con la ayuda de la IA.",
+        "uso_principal": "Crea microcopy, titulares y descripciones de productos de forma automática. Optimiza el copy para mejorar la conversión.",
+        "url": "https://www.copy.ai/",
+        "url_limpia": "copy.ai",
+        "categoria": "Diseño UI/UX"
+    },
+    {
+        "titulo": "Diagram",
+        "descripcion_corta": "Un espacio de trabajo de diseño impulsado por IA para crear interfaces de usuario rápidamente.",
+        "uso_principal": "Ofrece herramientas de colaboración y prototipado con funcionalidades de IA. Permite generar diseños a partir de descripciones textuales y optimizar flujos de usuario.",
+        "url": "https://diagram.com/",
+        "url_limpia": "diagram.com",
+        "categoria": "Diseño UI/UX"
+    },
+    {
+        "titulo": "Looka",
+        "descripcion_corta": "Crea un logo y identidad de marca con IA.",
+        "uso_principal": "Genera opciones de logos y pautas de marca basadas en tus preferencias. Ideal para empresas que buscan una identidad visual consistente y profesional.",
+        "url": "https://looka.com/",
+        "url_limpia": "looka.com",
+        "categoria": "Diseño UI/UX"
+    },
+    {
+        "titulo": "Microsoft Designer",
+        "descripcion_corta": "Diseña publicaciones impresionantes para redes sociales y más con IA.",
+        "uso_principal": "Sugiere diseños, combinaciones de colores y formatos basados en el contenido que proporcionas. Simplifica la creación de material visual atractivo para diversas plataformas.",
+        "url": "https://designer.microsoft.com/",
+        "url_limpia": "designer.microsoft.com",
+        "categoria": "Diseño UI/UX"
+    },
+    {
+        "titulo": "Loudly",
+        "descripcion_corta": "Crea bandas sonoras personalizadas en segundos con su IA generativa de música.",
+        "uso_principal": "Genera música libre de derechos para videos y contenido multimedia. Permite a los creadores evitar problemas de derechos de autor y ahorrar tiempo en la búsqueda de música.",
+        "url": "https://www.loudly.com/",
+        "url_limpia": "loudly.com",
+        "categoria": "Audio y Música"
+    },
+    {
+        "titulo": "Amper Music",
+        "descripcion_corta": "Compón música original con IA, adaptada a tus necesidades creativas.",
+        "uso_principal": "Permite a los usuarios crear música para diversos fines, desde videos hasta podcasts. Ofrece opciones de personalización para adaptar la música a las necesidades específicas del proyecto.",
+        "url": "https://www.ampermusic.com/",
+        "url_limpia": "ampermusic.com",
+        "categoria": "Audio y Música"
+    },
+    {
+        "titulo": "AIVA",
+        "descripcion_corta": "La IA que compone música emocional y cinemática para tus proyectos.",
+        "uso_principal": "Se especializa en la creación de música para películas, videojuegos y anuncios. Utiliza algoritmos de aprendizaje profundo para componer música original en diferentes estilos.",
+        "url": "https://www.aiva.ai/",
+        "url_limpia": "aiva.ai",
+        "categoria": "Audio y Música"
+    },
+    {
+        "titulo": "Jukebox (OpenAI)",
+        "descripcion_corta": "Genera música con letras de canciones cantadas en los estilos de tus artistas favoritos.",
+        "uso_principal": "Explora la generación de música basada en estilos específicos y letras. Permite experimentar con la creación de música impulsada por IA y descubrir nuevas posibilidades creativas.",
+        "url": "https://openai.com/research/jukebox",
+        "url_limpia": "openai.com",
+        "categoria": "Audio y Música"
+    },
+    {
+        "titulo": "Boomy",
+        "descripcion_corta": "Crea música original en segundos y gane dinero con tus creaciones.",
+        "uso_principal": "Permite a los usuarios crear y distribuir música fácilmente. Ofrece herramientas para la creación, edición y monetización de música original.",
+        "url": "https://boomy.com/",
+        "url_limpia": "boomy.com",
+        "categoria": "Audio y Música"
+    },
+    {
+        "titulo": "LANDR",
+        "descripcion_corta": "Masteriza tu música con IA para un sonido profesional y pulido.",
+        "uso_principal": "Ofrece servicios de masterización de audio impulsados por IA. Permite a los músicos obtener un sonido profesional y pulido para sus canciones sin necesidad de un ingeniero de masterización.",
+        "url": "https://www.landr.com/",
+        "url_limpia": "landr.com",
+        "categoria": "Audio y Música"
+    },
+    {
+        "titulo": "TuneCore",
+        "descripcion_corta": "Distribuye tu música en todo el mundo y controla tus derechos de autor.",
+        "uso_principal": "Ayuda a los músicos independientes a distribuir su música en plataformas como Spotify y Apple Music. Ofrece herramientas para la gestión de derechos de autor y el seguimiento de ingresos.",
+        "url": "https://www.tunecore.com/",
+        "url_limpia": "tunecore.com",
+        "categoria": "Audio y Música"
+    },
+    {
+        "titulo": "Neutron (iZotope)",
+        "descripcion_corta": "Mezcla tu música con IA para obtener un sonido equilibrado y profesional.",
+        "uso_principal": "Ofrece herramientas de mezcla impulsadas por IA para ayudar a los usuarios a obtener un sonido equilibrado y profesional. Analiza el audio y sugiere ajustes para mejorar la claridad y el impacto.",
+        "url": "https://www.izotope.com/en/products/neutron.html",
+        "url_limpia": "izotope.com",
+        "categoria": "Audio y Música"
+    },
+    {
+        "titulo": "RX (iZotope)",
+        "descripcion_corta": "Repara y restaura tu audio con IA para eliminar ruidos y imperfecciones.",
+        "uso_principal": "Ofrece herramientas de reparación de audio impulsadas por IA para eliminar ruidos, clicks y otras imperfecciones. Permite a los usuarios restaurar grabaciones de audio dañadas.",
+        "url": "https://www.izotope.com/en/products/rx.html",
+        "url_limpia": "izotope.com",
+        "categoria": "Audio y Música"
+    },
+    {
+        "titulo": "AudioShake",
+        "descripcion_corta": "Separa cualquier canción en stems con la mejor separación de fuentes impulsada por IA.",
+        "uso_principal": "Permite aislar los instrumentos de una canción (voz, batería, bajo, etc.). Ideal para crear remixes, samples o versiones karaoke.",
+        "url": "https://audioshake.ai/",
+        "url_limpia": "audioshake.ai",
+        "categoria": "Audio y Música"
+    },
+    {
+        "titulo": "Krisp",
+        "descripcion_corta": "Elimina el ruido de fondo de tus llamadas y grabaciones con IA.",
+        "uso_principal": "Utiliza IA para cancelar el ruido de fondo en tiempo real. Mejora la calidad de las llamadas y grabaciones en entornos ruidosos.",
+        "url": "https://krisp.ai/",
+        "url_limpia": "krisp.ai",
+        "categoria": "Audio y Música"
+    },
+    {
+        "titulo": "LALAL.AI",
+        "descripcion_corta": "Extrae voces e instrumentos de cualquier canción con una precisión asombrosa.",
+        "uso_principal": "Separa las voces de los instrumentos en una canción con alta calidad. Permite crear pistas de karaoke, remixes o aislar elementos específicos de una grabación.",
+        "url": "https://www.lalal.ai/",
+        "url_limpia": "lalal.ai",
+        "categoria": "Audio y Música"
+    },
+    {
+        "titulo": "Songmastr",
+        "descripcion_corta": "Crea arreglos musicales completos a partir de fragmentos de audio con IA.",
+        "uso_principal": "Genera arreglos musicales completos a partir de ideas musicales cortas. Ayuda a los compositores a expandir sus ideas y crear canciones completas.",
+        "url": "https://songmastr.com/",
+        "url_limpia": "songmastr.com",
+        "categoria": "Audio y Música"
+    },
+    {
+        "titulo": "BandLab",
+        "descripcion_corta": "Crea música online de forma colaborativa con herramientas de IA integradas.",
+        "uso_principal": "Ofrece una plataforma online para la creación colaborativa de música. Incluye herramientas de IA para ayudar con la composición, mezcla y masterización.",
+        "url": "https://www.bandlab.com/",
+        "url_limpia": "bandlab.com",
+        "categoria": "Audio y Música"
+    },
+    {
+        "titulo": "Beatoven.ai",
+        "descripcion_corta": "Compón música original y libre de derechos con IA para tus videos y podcasts.",
+        "uso_principal": "Genera música original para videos, podcasts y otros proyectos. Ofrece licencias de música libre de derechos para uso comercial.",
+        "url": "https://www.beatoven.ai/",
+        "url_limpia": "beatoven.ai",
+        "categoria": "Audio y Música"
+    },
+    {
+        "titulo": "Intercom",
+        "descripcion_corta": "Potencia la conexión con tus clientes a través de conversaciones personalizadas y automatizadas.",
+        "uso_principal": "Ofrece soporte al cliente en tiempo real y automatiza las interacciones para mejorar la satisfacción y la eficiencia. Permite crear flujos de trabajo personalizados para resolver consultas comunes.",
+        "url": "https://www.intercom.com",
+        "url_limpia": "intercom.com",
+        "categoria": "Chatbots y Atención al Cliente"
+    },
+    {
+        "titulo": "Zendesk",
+        "descripcion_corta": "Transforma la experiencia del cliente con soluciones de soporte omnicanal y chatbots inteligentes.",
+        "uso_principal": "Centraliza las interacciones del cliente desde diferentes canales y ofrece respuestas rápidas a través de chatbots impulsados por IA. Ayuda a los agentes a resolver problemas de manera eficiente.",
+        "url": "https://www.zendesk.com",
+        "url_limpia": "zendesk.com",
+        "categoria": "Chatbots y Atención al Cliente"
+    },
+    {
+        "titulo": "Ada",
+        "descripcion_corta": "Ofrece experiencias de cliente excepcionales con chatbots de IA que escalan el soporte y reducen costos.",
+        "uso_principal": "Automatiza las consultas de los clientes, proporciona respuestas instantáneas y libera a los agentes humanos para tareas más complejas. Mejora la satisfacción del cliente y reduce los tiempos de espera.",
+        "url": "https://www.ada.cx",
+        "url_limpia": "ada.cx",
+        "categoria": "Chatbots y Atención al Cliente"
+    },
+    {
+        "titulo": "Tidio",
+        "descripcion_corta": "Atrae, conecta y da soporte a tus clientes con un chatbot todo en uno y plataforma de chat en vivo.",
+        "uso_principal": "Combina chat en vivo con chatbots para proporcionar soporte instantáneo, calificar leads y aumentar las ventas. Permite personalizar las interacciones y automatizar tareas repetitivas.",
+        "url": "https://www.tidio.com",
+        "url_limpia": "tidio.com",
+        "categoria": "Chatbots y Atención al Cliente"
+    },
+    {
+        "titulo": "Dialogflow (Google)",
+        "descripcion_corta": "Crea chatbots conversacionales de alta calidad con la plataforma de IA de Google.",
+        "uso_principal": "Permite construir chatbots para diversas plataformas, como sitios web, aplicaciones móviles y dispositivos de voz. Ofrece capacidades avanzadas de procesamiento del lenguaje natural para comprender las intenciones del usuario.",
+        "url": "https://cloud.google.com/dialogflow",
+        "url_limpia": "cloud.google.com",
+        "categoria": "Chatbots y Atención al Cliente"
+    },
+    {
+        "titulo": "Azure Bot Service (Microsoft)",
+        "descripcion_corta": "Desarrolla e implementa chatbots inteligentes con la plataforma en la nube de Microsoft.",
+        "uso_principal": "Permite crear bots para diferentes canales, incluyendo Microsoft Teams, Skype y sitios web. Proporciona herramientas para el procesamiento del lenguaje natural y el aprendizaje automático.",
+        "url": "https://azure.microsoft.com/en-us/products/bot-service",
+        "url_limpia": "azure.microsoft.com",
+        "categoria": "Chatbots y Atención al Cliente"
+    },
+    {
+        "titulo": "LivePerson",
+        "descripcion_corta": "Conecta con tus clientes a través de experiencias conversacionales personalizadas y basadas en IA.",
+        "uso_principal": "Ofrece soluciones de chat en vivo y chatbots para mejorar la atención al cliente y aumentar las ventas. Utiliza IA para comprender las intenciones del cliente y personalizar las interacciones.",
+        "url": "https://www.liveperson.com",
+        "url_limpia": "liveperson.com",
+        "categoria": "Chatbots y Atención al Cliente"
+    },
+    {
+        "titulo": "Bold360",
+        "descripcion_corta": "Ofrece experiencias de cliente excepcionales con IA conversacional y automatización inteligente.",
+        "uso_principal": "Proporciona soluciones de chat en vivo y chatbots para mejorar la satisfacción del cliente y aumentar la eficiencia. Utiliza IA para comprender las intenciones del cliente y ofrecer respuestas personalizadas.",
+        "url": "https://www.bold360.com",
+        "url_limpia": "bold360.com",
+        "categoria": "Chatbots y Atención al Cliente"
+    },
+    {
+        "titulo": "Chatfuel",
+        "descripcion_corta": "Crea chatbots para Facebook Messenger e Instagram sin necesidad de codificación.",
+        "uso_principal": "Permite construir chatbots para interactuar con los clientes en redes sociales, ofreciendo respuestas automatizadas y recopilando información. Facilita la creación de flujos de conversación personalizados.",
+        "url": "https://www.chatfuel.com",
+        "url_limpia": "chatfuel.com",
+        "categoria": "Chatbots y Atención al Cliente"
+    },
+    {
+        "titulo": "ManyChat",
+        "descripcion_corta": "Automatiza el marketing y el soporte en Messenger con chatbots potentes y fáciles de usar.",
+        "uso_principal": "Permite crear chatbots para Facebook Messenger para interactuar con los clientes, enviar promociones y ofrecer soporte. Ofrece herramientas para segmentar la audiencia y personalizar las interacciones.",
+        "url": "https://manychat.com",
+        "url_limpia": "manychat.com",
+        "categoria": "Chatbots y Atención al Cliente"
+    },
+    {
+        "titulo": "Kore.ai",
+        "descripcion_corta": "Plataforma de IA conversacional para automatizar interacciones y mejorar la experiencia del cliente.",
+        "uso_principal": "Permite construir chatbots para diversos canales y automatizar tareas complejas. Ofrece capacidades avanzadas de procesamiento del lenguaje natural y aprendizaje automático.",
+        "url": "https://kore.ai",
+        "url_limpia": "kore.ai",
+        "categoria": "Chatbots y Atención al Cliente"
+    },
+    {
+        "titulo": "Rasa",
+        "descripcion_corta": "Framework de código abierto para construir chatbots conversacionales contextuales.",
+        "uso_principal": "Permite crear chatbots personalizados con control total sobre los datos y la lógica. Ofrece herramientas para el procesamiento del lenguaje natural y el aprendizaje automático.",
+        "url": "https://rasa.com",
+        "url_limpia": "rasa.com",
+        "categoria": "Chatbots y Atención al Cliente"
+    },
+    {
+        "titulo": "Pandorabots",
+        "descripcion_corta": "Crea, implementa y monetiza chatbots de IA conversacional.",
+        "uso_principal": "Ofrece una plataforma para construir chatbots basados en AIML (Artificial Intelligence Markup Language). Permite personalizar los chatbots y conectarlos a diferentes canales.",
+        "url": "https://www.pandorabots.com",
+        "url_limpia": "pandorabots.com",
+        "categoria": "Chatbots y Atención al Cliente"
+    },
+    {
+        "titulo": "Salesforce Einstein Bots",
+        "descripcion_corta": "Automatiza tareas repetitivas y mejora la experiencia del cliente con chatbots integrados en Salesforce.",
+        "uso_principal": "Permite construir chatbots para resolver consultas comunes, recopilar información y dirigir a los clientes a los agentes humanos. Se integra con otras soluciones de Salesforce.",
+        "url": "https://www.salesforce.com/solutions/small-business-solutions/einstein-for-small-business/einstein-chatbot/",
+        "url_limpia": "salesforce.com",
+        "categoria": "Chatbots y Atención al Cliente"
+    },
+    {
+        "titulo": "Ultimate.ai",
+        "descripcion_corta": "Automatiza hasta el 80% de tus consultas de soporte al cliente con IA.",
+        "uso_principal": "Desarrolla chatbots que entienden el lenguaje natural, ofrecen respuestas precisas y aprenden continuamente de las interacciones. Se integra con diversas plataformas de soporte al cliente.",
+        "url": "https://ultimate.ai",
+        "url_limpia": "ultimate.ai",
+        "categoria": "Chatbots y Atención al Cliente"
+    },
+    {
+        "titulo": "Duolingo",
+        "descripcion_corta": "Aprende un nuevo idioma de forma divertida y gamificada con la ayuda de la IA.",
+        "uso_principal": "Duolingo utiliza la IA para personalizar las lecciones, adaptándose al ritmo de aprendizaje del usuario y proporcionando retroalimentación específica. Además, predice qué conceptos son más difíciles para cada usuario.",
+        "url": "https://www.duolingo.com/",
+        "url_limpia": "duolingo.com",
+        "categoria": "Educación y Aprendizaje"
+    },
+    {
+        "titulo": "Khan Academy",
+        "descripcion_corta": "Dominio del conocimiento personalizado y gratuito para todos, potenciado por IA.",
+        "uso_principal": "Khan Academy utiliza la IA para identificar las lagunas en el conocimiento de los estudiantes y ofrecer ejercicios personalizados para ayudarles a ponerse al día. Su tutor de IA ofrece soporte a los estudiantes en matemáticas.",
+        "url": "https://www.khanacademy.org/",
+        "url_limpia": "khanacademy.org",
+        "categoria": "Educación y Aprendizaje"
+    },
+    {
+        "titulo": "Quizlet",
+        "descripcion_corta": "Herramientas de estudio impulsadas por IA para aprender cualquier cosa, en cualquier lugar.",
+        "uso_principal": "Quizlet emplea IA para crear conjuntos de estudio adaptativos y juegos educativos. Analiza el progreso del estudiante y prioriza los conceptos que necesitan más atención.",
+        "url": "https://quizlet.com/",
+        "url_limpia": "quizlet.com",
+        "categoria": "Educación y Aprendizaje"
+    },
+    {
+        "titulo": "Brainly",
+        "descripcion_corta": "Recibe ayuda instantánea con tus tareas y comprende conceptos complejos, gracias a la IA.",
+        "uso_principal": "Brainly utiliza IA para conectar a los estudiantes con expertos y compañeros para obtener ayuda con sus tareas. La IA también ayuda a moderar el contenido y garantizar la precisión de las respuestas.",
+        "url": "https://brainly.com/",
+        "url_limpia": "brainly.com",
+        "categoria": "Educación y Aprendizaje"
+    },
+    {
+        "titulo": "Gradescope",
+        "descripcion_corta": "Calificación y retroalimentación más rápida y justa, gracias a la IA.",
+        "uso_principal": "Gradescope utiliza IA para agilizar el proceso de calificación, especialmente para exámenes con preguntas abiertas y tareas. Permite a los instructores proporcionar retroalimentación consistente y detallada a los estudiantes.",
+        "url": "https://www.gradescope.com/",
+        "url_limpia": "gradescope.com",
+        "categoria": "Educación y Aprendizaje"
+    },
+    {
+        "titulo": "Coursera",
+        "descripcion_corta": "Accede a cursos y especializaciones de las mejores universidades del mundo, con IA para guiar tu aprendizaje.",
+        "uso_principal": "Coursera utiliza IA para recomendar cursos relevantes a los usuarios, basándose en sus intereses y objetivos profesionales. También proporciona herramientas de evaluación y retroalimentación automatizadas.",
+        "url": "https://www.coursera.org/",
+        "url_limpia": "coursera.org",
+        "categoria": "Educación y Aprendizaje"
+    },
+    {
+        "titulo": "edX",
+        "descripcion_corta": "Aprende de las mejores instituciones, potenciado por análisis de aprendizaje con IA.",
+        "uso_principal": "EdX utiliza IA para analizar los patrones de aprendizaje de los estudiantes y ofrecer recomendaciones personalizadas. También proporciona herramientas de evaluación y retroalimentación automatizadas.",
+        "url": "https://www.edx.org/",
+        "url_limpia": "edx.org",
+        "categoria": "Educación y Aprendizaje"
+    },
+    {
+        "titulo": "CenturyTech",
+        "descripcion_corta": "Plataforma de aprendizaje personalizada con IA para cada estudiante.",
+        "uso_principal": "CenturyTech utiliza IA para crear rutas de aprendizaje personalizadas para cada estudiante. La IA analiza el rendimiento del estudiante y adapta el contenido para abordar sus necesidades específicas.",
+        "url": "https://www.century.tech/",
+        "url_limpia": "century.tech",
+        "categoria": "Educación y Aprendizaje"
+    },
+    {
+        "titulo": "Nuance Dragon Professional Individual",
+        "descripcion_corta": "Dictado por voz con IA para estudiantes y profesionales.",
+        "uso_principal": "Dragon Professional Individual utiliza IA para convertir la voz en texto con alta precisión. Permite a los estudiantes tomar notas más rápidamente, escribir ensayos y completar tareas con mayor eficiencia.",
+        "url": "https://shop.nuance.com/store/nuanceus/en_US/pd/productID.5242218200",
+        "url_limpia": "shop.nuance.com",
+        "categoria": "Educación y Aprendizaje"
+    },
+    {
+        "titulo": "Writefull",
+        "descripcion_corta": "Mejora tu escritura académica con retroalimentación basada en IA.",
+        "uso_principal": "Writefull utiliza IA para revisar y mejorar la escritura académica. Proporciona retroalimentación sobre gramática, estilo, vocabulario y tono, basándose en bases de datos de publicaciones académicas.",
+        "url": "https://writefull.com/",
+        "url_limpia": "writefull.com",
+        "categoria": "Educación y Aprendizaje"
+    },
+    {
+        "titulo": "Turnitin",
+        "descripcion_corta": "Detecta el plagio y mejora la integridad académica con IA.",
+        "uso_principal": "Turnitin utiliza IA para detectar el plagio en trabajos escritos. Además, ofrece herramientas para ayudar a los estudiantes a desarrollar habilidades de escritura original y citación adecuada.",
+        "url": "https://www.turnitin.com/",
+        "url_limpia": "turnitin.com",
+        "categoria": "Educación y Aprendizaje"
+    },
+    {
+        "titulo": "ProWritingAid",
+        "descripcion_corta": "Tu asistente de escritura personal impulsado por IA.",
+        "uso_principal": "ProWritingAid es una herramienta de edición que utiliza IA para ayudar a los usuarios a mejorar su escritura. Ofrece análisis de estilo, gramática, legibilidad y más, ayudando a los estudiantes a producir trabajos de alta calidad.",
+        "url": "https://prowritingaid.com/",
+        "url_limpia": "prowritingaid.com",
+        "categoria": "Educación y Aprendizaje"
+    },
+    {
+        "titulo": "Querium",
+        "descripcion_corta": "Tutor de IA para STEM que ayuda a los estudiantes a dominar los conceptos.",
+        "uso_principal": "Querium es un tutor de IA diseñado para ayudar a los estudiantes a aprender y comprender los conceptos de STEM (ciencia, tecnología, ingeniería y matemáticas). Ofrece ejercicios interactivos, retroalimentación personalizada y seguimiento del progreso.",
+        "url": "https://www.querium.com/",
+        "url_limpia": "querium.com",
+        "categoria": "Educación y Aprendizaje"
+    },
+    {
+        "titulo": "Third Space Learning",
+        "descripcion_corta": "Clases de matemáticas personalizadas online con IA para el éxito estudiantil.",
+        "uso_principal": "Third Space Learning ofrece clases de matemáticas personalizadas online, utilizando la IA para adaptar el contenido y el ritmo de aprendizaje a las necesidades individuales de cada estudiante. Proporcionan tutores especializados y seguimiento del progreso.",
+        "url": "https://thirdspacelearning.com/",
+        "url_limpia": "thirdspacelearning.com",
+        "categoria": "Educación y Aprendizaje"
+    },
+    {
+        "titulo": "Memrise",
+        "descripcion_corta": "Aprende idiomas y más, con IA que optimiza tu memorización.",
+        "uso_principal": "Memrise utiliza IA para crear cursos de idiomas y otras materias que se adaptan al estilo de aprendizaje individual del usuario. La IA optimiza la repetición espaciada para ayudar a los estudiantes a memorizar información de forma efectiva.",
+        "url": "https://www.memrise.com/",
+        "url_limpia": "memrise.com",
+        "categoria": "Educación y Aprendizaje"
+    },
+    {
+        "titulo": "Kensho",
+        "descripcion_corta": "Kensho ofrece análisis de datos financieros y predicciones impulsadas por IA, revolucionando la forma en que se toman decisiones de inversión.",
+        "uso_principal": "Analiza grandes cantidades de datos para identificar tendencias y patrones, ayudando a los inversores a tomar decisiones más informadas. También proporciona modelos predictivos para anticipar movimientos del mercado.",
+        "url": "https://www.spglobal.com/en/capabilities/kensho-artificial-intelligence",
+        "url_limpia": "spglobal.com",
+        "categoria": "Finanzas y Contabilidad"
+    },
+    {
+        "titulo": "BlackRock Aladdin",
+        "descripcion_corta": "Aladdin de BlackRock integra la gestión de riesgos, el análisis de inversiones y las capacidades operativas en una única plataforma unificada.",
+        "uso_principal": "Ofrece una visión completa del riesgo y el rendimiento de las carteras, permitiendo una gestión más eficaz de los activos. También automatiza los flujos de trabajo operativos para mejorar la eficiencia.",
+        "url": "https://www.blackrock.com/aladdin",
+        "url_limpia": "blackrock.com",
+        "categoria": "Finanzas y Contabilidad"
+    },
+    {
+        "titulo": "DataRobot",
+        "descripcion_corta": "DataRobot automatiza el machine learning para empoderar a los analistas financieros con capacidades avanzadas de modelado predictivo.",
+        "uso_principal": "Permite a los equipos financieros construir e implementar modelos predictivos más rápido y con mayor precisión. Se usa para la detección de fraudes, la evaluación de riesgos de crédito y la previsión financiera.",
+        "url": "https://www.datarobot.com/",
+        "url_limpia": "datarobot.com",
+        "categoria": "Finanzas y Contabilidad"
+    },
+    {
+        "titulo": "UiPath",
+        "descripcion_corta": "UiPath ofrece automatización robótica de procesos (RPA) para optimizar las tareas financieras repetitivas y mejorar la eficiencia.",
+        "uso_principal": "Automatiza tareas como el procesamiento de facturas, la conciliación bancaria y la gestión de informes, liberando a los empleados para tareas más estratégicas. Reduce los errores y mejora la precisión.",
+        "url": "https://www.uipath.com/",
+        "url_limpia": "uipath.com",
+        "categoria": "Finanzas y Contabilidad"
+    },
+    {
+        "titulo": "IBM Watson Discovery",
+        "descripcion_corta": "IBM Watson Discovery proporciona información valiosa a partir de datos no estructurados para ayudar en la toma de decisiones financieras.",
+        "uso_principal": "Analiza documentos, noticias y redes sociales para identificar tendencias y riesgos emergentes. Ayuda a los analistas financieros a obtener información más profunda y a tomar decisiones más rápidas.",
+        "url": "https://www.ibm.com/products/watson-discovery",
+        "url_limpia": "ibm.com",
+        "categoria": "Finanzas y Contabilidad"
+    },
+    {
+        "titulo": "Intuit QuickBooks",
+        "descripcion_corta": "QuickBooks utiliza IA para automatizar la contabilidad y proporcionar información financiera a las pequeñas empresas.",
+        "uso_principal": "Automatiza la categorización de transacciones, la conciliación bancaria y la generación de informes. Ofrece información sobre el flujo de caja y el rendimiento financiero.",
+        "url": "https://quickbooks.intuit.com/",
+        "url_limpia": "quickbooks.intuit.com",
+        "categoria": "Finanzas y Contabilidad"
+    },
+    {
+        "titulo": "Xero",
+        "descripcion_corta": "Xero aprovecha la IA para simplificar la contabilidad y proporcionar una visión clara del estado financiero de las empresas.",
+        "uso_principal": "Automatiza la importación de datos bancarios, la facturación y la conciliación. Ofrece paneles de control intuitivos para comprender el rendimiento financiero.",
+        "url": "https://www.xero.com/",
+        "url_limpia": "xero.com",
+        "categoria": "Finanzas y Contabilidad"
+    },
+    {
+        "titulo": "Sage Intacct",
+        "descripcion_corta": "Sage Intacct ofrece una gestión financiera basada en la nube con IA para empresas en crecimiento.",
+        "uso_principal": "Automatiza procesos contables complejos, como la consolidación financiera y la gestión de ingresos. Proporciona análisis en tiempo real para una toma de decisiones más rápida.",
+        "url": "https://www.sageintacct.com/",
+        "url_limpia": "sageintacct.com",
+        "categoria": "Finanzas y Contabilidad"
+    },
+    {
+        "titulo": "Workday",
+        "descripcion_corta": "Workday ofrece soluciones de gestión financiera y de recursos humanos con IA para impulsar la eficiencia y el crecimiento.",
+        "uso_principal": "Automatiza procesos financieros y de recursos humanos, como la planificación presupuestaria y la gestión del talento. Ofrece análisis predictivos para optimizar la toma de decisiones.",
+        "url": "https://www.workday.com/",
+        "url_limpia": "workday.com",
+        "categoria": "Finanzas y Contabilidad"
+    },
+    {
+        "titulo": "JPMorgan Chase Contract Intelligence (COiN)",
+        "descripcion_corta": "COiN de JPMorgan Chase utiliza IA para analizar contratos y extraer información clave de manera eficiente.",
+        "uso_principal": "Analiza grandes volúmenes de contratos para identificar riesgos, obligaciones y oportunidades. Reduce el tiempo y los costos asociados con la revisión manual de contratos.",
+        "url": "https://www.jpmorganchase.com/",
+        "url_limpia": "jpmorganchase.com",
+        "categoria": "Finanzas y Contabilidad"
+    },
+    {
+        "titulo": "Ayasdi",
+        "descripcion_corta": "Ayasdi utiliza topología algebraica para descubrir patrones ocultos en datos financieros complejos.",
+        "uso_principal": "Identifica conexiones y relaciones complejas en grandes conjuntos de datos financieros. Se utiliza para la detección de fraudes, la evaluación de riesgos y la optimización de carteras.",
+        "url": "https://www.ayasdi.com/",
+        "url_limpia": "ayasdi.com",
+        "categoria": "Finanzas y Contabilidad"
+    },
+    {
+        "titulo": "Anaplan",
+        "descripcion_corta": "Anaplan ofrece una plataforma de planificación conectada con IA para la planificación financiera y operativa integrada.",
+        "uso_principal": "Permite a las empresas crear planes financieros y operativos interconectados y dinámicos. Facilita la colaboración y la alineación entre diferentes departamentos.",
+        "url": "https://www.anaplan.com/",
+        "url_limpia": "anaplan.com",
+        "categoria": "Finanzas y Contabilidad"
+    },
+    {
+        "titulo": "PwC Halo",
+        "descripcion_corta": "PwC Halo es una plataforma de auditoría impulsada por IA que mejora la eficiencia y la calidad de las auditorías.",
+        "uso_principal": "Automatiza las pruebas de auditoría y proporciona análisis avanzados para identificar riesgos y anomalías. Mejora la precisión y la eficiencia del proceso de auditoría.",
+        "url": "https://www.pwc.com/us/en/services/consulting/cybersecurity-risk-regulatory/library/halo.html",
+        "url_limpia": "pwc.com",
+        "categoria": "Finanzas y Contabilidad"
+    },
+    {
+        "titulo": "Kyriba",
+        "descripcion_corta": "Kyriba ofrece gestión de tesorería impulsada por IA para mejorar la visibilidad y el control del efectivo.",
+        "uso_principal": "Optimiza la gestión del efectivo, la gestión de riesgos y la gestión de pagos. Proporciona visibilidad en tiempo real del saldo de caja global.",
+        "url": "https://www.kyriba.com/",
+        "url_limpia": "kyriba.com",
+        "categoria": "Finanzas y Contabilidad"
+    },
+    {
+        "titulo": "Narrative Science Quill",
+        "descripcion_corta": "Quill de Narrative Science transforma datos financieros en narrativas claras y concisas.",
+        "uso_principal": "Genera informes financieros automatizados y fáciles de entender. Ayuda a los usuarios a comprender los datos y a tomar decisiones informadas.",
+        "url": "https://narrativescience.com/",
+        "url_limpia": "narrativescience.com",
+        "categoria": "Finanzas y Contabilidad"
+    },
+    {
+        "titulo": "Ada Health",
+        "descripcion_corta": "Tu compañero de salud personal impulsado por IA, disponible 24/7.",
+        "uso_principal": "Ayuda a los usuarios a comprender sus síntomas y ofrece evaluaciones de salud personalizadas. Facilita la toma de decisiones informadas sobre el cuidado de la salud.",
+        "url": "https://ada.com/",
+        "url_limpia": "ada.com",
+        "categoria": "Salud y Bienestar"
+    },
+    {
+        "titulo": "Babylon Health",
+        "descripcion_corta": "Accede a atención médica de alta calidad desde la comodidad de tu hogar.",
+        "uso_principal": "Ofrece consultas virtuales con médicos, seguimiento de la salud y gestión de medicamentos. Simplifica el acceso a la atención médica y el asesoramiento médico.",
+        "url": "https://www.babylonhealth.com/",
+        "url_limpia": "babylonhealth.com",
+        "categoria": "Salud y Bienestar"
+    },
+    {
+        "titulo": "Ginger",
+        "descripcion_corta": "Salud mental a pedido, cuando y donde la necesites.",
+        "uso_principal": "Brinda apoyo de salud mental a través de entrenamiento personalizado, terapia y psiquiatría. Ayuda a las personas a abordar el estrés, la ansiedad y otros desafíos de salud mental.",
+        "url": "https://www.ginger.com/",
+        "url_limpia": "ginger.com",
+        "categoria": "Salud y Bienestar"
+    },
+    {
+        "titulo": "Woebot",
+        "descripcion_corta": "Tu amigable compañero de salud mental impulsado por IA.",
+        "uso_principal": "Ofrece terapia cognitivo-conductual (TCC) a través de conversaciones de chat. Ayuda a los usuarios a controlar el estrés, la ansiedad y la depresión con técnicas comprobadas.",
+        "url": "https://woebothealth.com/",
+        "url_limpia": "woebothealth.com",
+        "categoria": "Salud y Bienestar"
+    },
+    {
+        "titulo": "Youper",
+        "descripcion_corta": "Mejora tu bienestar emocional con este asistente inteligente.",
+        "uso_principal": "Proporciona herramientas de seguimiento del estado de ánimo, meditación guiada y conversaciones de apoyo. Ayuda a los usuarios a comprender sus emociones y desarrollar mecanismos de afrontamiento saludables.",
+        "url": "https://www.youper.ai/",
+        "url_limpia": "youper.ai",
+        "categoria": "Salud y Bienestar"
+    },
+    {
+        "titulo": "Lark Health",
+        "descripcion_corta": "Entrenamiento de salud personalizado impulsado por IA para un estilo de vida más saludable.",
+        "uso_principal": "Ofrece entrenamiento personalizado para la prevención y el manejo de enfermedades crónicas como la diabetes. Ayuda a los usuarios a mejorar sus hábitos alimenticios, aumentar la actividad física y controlar su peso.",
+        "url": "https://www.lark.com/",
+        "url_limpia": "lark.com",
+        "categoria": "Salud y Bienestar"
+    },
+    {
+        "titulo": "Viz.ai",
+        "descripcion_corta": "IA que revoluciona la atención médica, comenzando con la detección de accidentes cerebrovasculares.",
+        "uso_principal": "Utiliza IA para detectar accidentes cerebrovasculares y otras afecciones médicas críticas en escaneos de imágenes. Acelera el diagnóstico y el tratamiento, mejorando los resultados de los pacientes.",
+        "url": "https://www.viz.ai/",
+        "url_limpia": "viz.ai",
+        "categoria": "Salud y Bienestar"
+    },
+    {
+        "titulo": "PathAI",
+        "descripcion_corta": "Mejorando el diagnóstico con patología impulsada por IA.",
+        "uso_principal": "Ayuda a los patólogos a realizar diagnósticos más precisos y eficientes. Mejora la precisión del diagnóstico del cáncer y acelera el desarrollo de fármacos.",
+        "url": "https://www.pathai.com/",
+        "url_limpia": "pathai.com",
+        "categoria": "Salud y Bienestar"
+    },
+    {
+        "titulo": "Butterfly Network",
+        "descripcion_corta": "Ecografía de cuerpo entero en tu bolsillo.",
+        "uso_principal": "Ha creado un dispositivo de ecografía portátil que se puede conectar a un teléfono inteligente. Facilita el acceso a imágenes médicas y permite la detección temprana de enfermedades.",
+        "url": "https://www.butterflynetwork.com/",
+        "url_limpia": "butterflynetwork.com",
+        "categoria": "Salud y Bienestar"
+    },
+    {
+        "titulo": "Imagen Technologies",
+        "descripcion_corta": "Inteligencia artificial para mejorar la salud cardiovascular.",
+        "uso_principal": "Utiliza IA para analizar imágenes cardíacas y detectar enfermedades cardíacas en una etapa temprana. Ayuda a los médicos a tomar decisiones más informadas sobre el tratamiento.",
+        "url": "https://imagen.ai/",
+        "url_limpia": "imagen.ai",
+        "categoria": "Salud y Bienestar"
+    },
+    {
+        "titulo": "Qventus",
+        "descripcion_corta": "IA para optimizar las operaciones hospitalarias y mejorar la atención al paciente.",
+        "uso_principal": "Utiliza IA para optimizar el flujo de pacientes, la asignación de personal y la gestión de recursos en los hospitales. Reduce los tiempos de espera, mejora la eficiencia y mejora la atención al paciente.",
+        "url": "https://www.qventus.com/",
+        "url_limpia": "qventus.com",
+        "categoria": "Salud y Bienestar"
+    },
+    {
+        "titulo": "Olive",
+        "descripcion_corta": "Automatización de la salud impulsada por IA para hospitales y sistemas de salud.",
+        "uso_principal": "Automatiza tareas administrativas repetitivas en hospitales y sistemas de salud. Reduce los costos, mejora la eficiencia y permite que el personal se centre en la atención al paciente.",
+        "url": "https://oliveai.com/",
+        "url_limpia": "oliveai.com",
+        "categoria": "Salud y Bienestar"
+    },
+    {
+        "titulo": "Insitro",
+        "descripcion_corta": "Empresa de descubrimiento y desarrollo de fármacos impulsada por el aprendizaje automático.",
+        "uso_principal": "Utiliza el aprendizaje automático para descubrir y desarrollar nuevos fármacos para enfermedades graves. Acelera el proceso de descubrimiento de fármacos y aumenta la probabilidad de éxito.",
+        "url": "https://www.insitro.com/",
+        "url_limpia": "insitro.com",
+        "categoria": "Salud y Bienestar"
+    },
+    {
+        "titulo": "Atomwise",
+        "descripcion_corta": "Utilizando la IA para transformar el descubrimiento de fármacos.",
+        "uso_principal": "Utiliza IA para predecir la actividad de las moléculas de fármacos y acelerar el descubrimiento de fármacos. Reduce el tiempo y el costo del descubrimiento de fármacos.",
+        "url": "https://www.atomwise.com/",
+        "url_limpia": "atomwise.com",
+        "categoria": "Salud y Bienestar"
+    },
+    {
+        "titulo": "Healx",
+        "descripcion_corta": "IA que descubre tratamientos para enfermedades raras.",
+        "uso_principal": "Utiliza IA para identificar tratamientos potenciales para enfermedades raras. Acelera el desarrollo de fármacos para enfermedades que actualmente no tienen tratamientos.",
+        "url": "https://healx.io/",
+        "url_limpia": "healx.io",
+        "categoria": "Salud y Bienestar"
+    },
+    {
+        "titulo": "Salesforce Einstein",
+        "descripcion_corta": "Potencia tus ventas con la IA predictiva y automatizada de Salesforce Einstein.",
+        "uso_principal": "Einstein optimiza los procesos de ventas y marketing mediante el análisis de datos. Permite predecir el comportamiento del cliente y automatizar tareas repetitivas.",
+        "url": "https://www.salesforce.com/solutions/artificial-intelligence/einstein/",
+        "url_limpia": "salesforce.com",
+        "categoria": "Ventas y CRM"
+    },
+    {
+        "titulo": "HubSpot Sales Hub",
+        "descripcion_corta": "Cierra más tratos y gestiona mejor tus relaciones con HubSpot Sales Hub impulsado por IA.",
+        "uso_principal": "HubSpot Sales Hub utiliza IA para priorizar leads y proporcionar información valiosa. Ayuda a los equipos de ventas a personalizar las interacciones y mejorar la eficiencia.",
+        "url": "https://www.hubspot.com/products/sales",
+        "url_limpia": "hubspot.com",
+        "categoria": "Ventas y CRM"
+    },
+    {
+        "titulo": "Zoho CRM",
+        "descripcion_corta": "Impulsa tus ventas con la inteligencia artificial integrada en Zoho CRM.",
+        "uso_principal": "Zoho CRM con IA ofrece análisis predictivos y automatización inteligente para mejorar las ventas. Optimiza el flujo de trabajo y proporciona información procesable para una mejor toma de decisiones.",
+        "url": "https://www.zoho.com/crm/",
+        "url_limpia": "zoho.com",
+        "categoria": "Ventas y CRM"
+    },
+    {
+        "titulo": "Microsoft Dynamics 365 Sales",
+        "descripcion_corta": "Transforma tus ventas con las capacidades de IA de Microsoft Dynamics 365 Sales.",
+        "uso_principal": "Dynamics 365 Sales utiliza IA para proporcionar información sobre los clientes y automatizar tareas de ventas. Permite a los equipos centrarse en construir relaciones y cerrar acuerdos.",
+        "url": "https://dynamics.microsoft.com/en-us/sales/overview/",
+        "url_limpia": "dynamics.microsoft.com",
+        "categoria": "Ventas y CRM"
+    },
+    {
+        "titulo": "Gong",
+        "descripcion_corta": "Domina tus conversaciones de ventas con la IA de Gong.",
+        "uso_principal": "Gong graba y analiza las interacciones de ventas para proporcionar información valiosa sobre el rendimiento. Ayuda a mejorar las técnicas de venta y optimizar la estrategia de ventas.",
+        "url": "https://www.gong.io/",
+        "url_limpia": "gong.io",
+        "categoria": "Ventas y CRM"
+    },
+    {
+        "titulo": "Chorus.ai",
+        "descripcion_corta": "Potencia tus equipos de ventas con el poder de la IA conversacional de Chorus.ai.",
+        "uso_principal": "Chorus.ai analiza las conversaciones de ventas para proporcionar información y entrenamiento. Ayuda a mejorar la comunicación y aumentar las tasas de conversión.",
+        "url": "https://www.chorus.ai/",
+        "url_limpia": "chorus.ai",
+        "categoria": "Ventas y CRM"
+    },
+    {
+        "titulo": "Outreach",
+        "descripcion_corta": "Automatiza y optimiza tu alcance de ventas con la IA de Outreach.",
+        "uso_principal": "Outreach utiliza IA para automatizar el alcance de ventas y mejorar la participación del cliente. Permite a los equipos de ventas personalizar las interacciones y aumentar la productividad.",
+        "url": "https://www.outreach.io/",
+        "url_limpia": "outreach.io",
+        "categoria": "Ventas y CRM"
+    },
+    {
+        "titulo": "SalesLoft",
+        "descripcion_corta": "Acelera tus ventas con la plataforma de compromiso de ventas impulsada por IA de SalesLoft.",
+        "uso_principal": "SalesLoft utiliza IA para automatizar los flujos de trabajo de ventas y mejorar la participación del cliente. Proporciona información valiosa sobre el rendimiento y ayuda a optimizar la estrategia de ventas.",
+        "url": "https://salesloft.com/",
+        "url_limpia": "salesloft.com",
+        "categoria": "Ventas y CRM"
+    },
+    {
+        "titulo": "People.ai",
+        "descripcion_corta": "Maximiza el rendimiento de tus ventas con la IA de People.ai.",
+        "uso_principal": "People.ai analiza los datos de ventas para proporcionar información sobre el rendimiento y la productividad. Ayuda a identificar oportunidades de mejora y optimizar la estrategia de ventas.",
+        "url": "https://people.ai/",
+        "url_limpia": "people.ai",
+        "categoria": "Ventas y CRM"
+    },
+    {
+        "titulo": "Clari",
+        "descripcion_corta": "Obtén visibilidad completa de tu pipeline de ventas con la IA de Clari.",
+        "uso_principal": "Clari utiliza IA para proporcionar una visión completa del pipeline de ventas y predecir los ingresos. Ayuda a los equipos de ventas a gestionar el riesgo y optimizar la estrategia de ventas.",
+        "url": "https://www.clari.com/",
+        "url_limpia": "clari.com",
+        "categoria": "Ventas y CRM"
+    },
+    {
+        "titulo": "Tact.ai",
+        "descripcion_corta": "Simplifica tu flujo de trabajo de ventas con el asistente de ventas impulsado por IA de Tact.ai.",
+        "uso_principal": "Tact.ai proporciona un asistente de ventas impulsado por IA que automatiza tareas y proporciona información. Ayuda a los equipos de ventas a ser más productivos y eficientes.",
+        "url": "https://www.tact.ai/",
+        "url_limpia": "tact.ai",
+        "categoria": "Ventas y CRM"
+    },
+    {
+        "titulo": "Affinity",
+        "descripcion_corta": "Descubre y gestiona tus relaciones de manera inteligente con la IA de Affinity.",
+        "uso_principal": "Affinity utiliza IA para mapear automáticamente las relaciones y proporcionar información sobre la red. Ayuda a los equipos de ventas a encontrar nuevas oportunidades y construir relaciones más sólidas.",
+        "url": "https://www.affinity.co/",
+        "url_limpia": "affinity.co",
+        "categoria": "Ventas y CRM"
+    },
+    {
+        "titulo": "Lusha",
+        "descripcion_corta": "Encuentra la información de contacto que necesitas con la IA de Lusha.",
+        "uso_principal": "Lusha utiliza IA para encontrar información de contacto y perfiles de empresa. Ayuda a los equipos de ventas a encontrar leads cualificados y construir listas de contactos.",
+        "url": "https://www.lusha.com/",
+        "url_limpia": "lusha.com",
+        "categoria": "Ventas y CRM"
+    },
+    {
+        "titulo": "Crystal",
+        "descripcion_corta": "Entiende la personalidad de tus prospectos con la IA de Crystal.",
+        "uso_principal": "Crystal utiliza IA para analizar la personalidad de tus prospectos basándose en su huella digital. Ayuda a personalizar las interacciones y mejorar la comunicación.",
+        "url": "https://www.crystalknows.com/",
+        "url_limpia": "crystalknows.com",
+        "categoria": "Ventas y CRM"
+    },
+    {
+        "titulo": "Leadfeeder",
+        "descripcion_corta": "Identifica los leads que visitan tu sitio web con la IA de Leadfeeder.",
+        "uso_principal": "Leadfeeder utiliza IA para identificar las empresas que visitan tu sitio web, incluso si no se identifican directamente. Permite a los equipos de ventas encontrar leads cualificados y priorizar su alcance.",
+        "url": "https://www.leadfeeder.com/",
+        "url_limpia": "leadfeeder.com",
+        "categoria": "Ventas y CRM"
+    },
+    {
+        "titulo": "Brand24",
+        "descripcion_corta": "Monitoriza menciones de tu marca en tiempo real y obtén información valiosa sobre tu audiencia.",
+        "uso_principal": "Rastrea conversaciones online sobre tu marca, productos o competidores. Analiza el sentimiento y encuentra oportunidades para interactuar con tu audiencia.",
+        "url": "https://brand24.com/",
+        "url_limpia": "brand24.com",
+        "categoria": "Redes Sociales"
+    },
+    {
+        "titulo": "Buffer",
+        "descripcion_corta": "Programa y gestiona tus publicaciones en redes sociales de manera eficiente y ahorra tiempo.",
+        "uso_principal": "Planifica y programa contenido para múltiples plataformas sociales desde un solo lugar. Analiza el rendimiento de tus publicaciones y optimiza tu estrategia.",
+        "url": "https://buffer.com/",
+        "url_limpia": "buffer.com",
+        "categoria": "Redes Sociales"
+    },
+    {
+        "titulo": "Hootsuite",
+        "descripcion_corta": "Gestiona todas tus redes sociales desde un panel centralizado y maximiza tu impacto online.",
+        "uso_principal": "Programa publicaciones, monitoriza menciones y analiza el rendimiento de tus redes sociales. Colabora con tu equipo y responde a los mensajes de los clientes de manera eficiente.",
+        "url": "https://www.hootsuite.com/",
+        "url_limpia": "hootsuite.com",
+        "categoria": "Redes Sociales"
+    },
+    {
+        "titulo": "Sprout Social",
+        "descripcion_corta": "Construye relaciones significativas con tu audiencia y gestiona tu presencia en redes sociales de manera profesional.",
+        "uso_principal": "Gestiona tus perfiles sociales, programa contenido, monitoriza conversaciones y analiza el rendimiento. Ofrece una experiencia de cliente excepcional a través de las redes sociales.",
+        "url": "https://sproutsocial.com/",
+        "url_limpia": "sproutsocial.com",
+        "categoria": "Redes Sociales"
+    },
+    {
+        "titulo": "Synthesia",
+        "descripcion_corta": "Crea vídeos de IA realistas con avatares personalizables y cautiva a tu audiencia en redes sociales.",
+        "uso_principal": "Genera vídeos de marketing, tutoriales o presentaciones de forma rápida y sencilla. Ahorra tiempo y recursos en la producción de contenido visual atractivo.",
+        "url": "https://www.synthesia.io/",
+        "url_limpia": "synthesia.io",
+        "categoria": "Redes Sociales"
+    },
+    {
+        "titulo": "Simplified",
+        "descripcion_corta": "Diseña contenido visual impresionante para redes sociales con la ayuda de la IA y destaca entre la multitud.",
+        "uso_principal": "Crea gráficos, vídeos y animaciones de alta calidad de forma rápida y sencilla. Utiliza plantillas personalizables y herramientas de IA para optimizar tu contenido.",
+        "url": "https://simplified.com/",
+        "url_limpia": "simplified.com",
+        "categoria": "Redes Sociales"
+    },
+    {
+        "titulo": "Jasper.ai",
+        "descripcion_corta": "Genera textos persuasivos y creativos para tus publicaciones en redes sociales con la ayuda de la IA.",
+        "uso_principal": "Crea copies de anuncios, descripciones de productos, publicaciones en blogs y contenido para redes sociales. Ahorra tiempo y mejora la calidad de tus textos con la ayuda de la IA.",
+        "url": "https://www.jasper.ai/",
+        "url_limpia": "jasper.ai",
+        "categoria": "Redes Sociales"
+    },
+    {
+        "titulo": "Copy.ai",
+        "descripcion_corta": "Escribe contenido impactante para redes sociales en segundos con la ayuda de la IA y aumenta tu engagement.",
+        "uso_principal": "Genera copies para anuncios, publicaciones en redes sociales, emails y sitios web. Experimenta con diferentes estilos y tonos para encontrar el mensaje perfecto.",
+        "url": "https://www.copy.ai/",
+        "url_limpia": "copy.ai",
+        "categoria": "Redes Sociales"
+    },
+    {
+        "titulo": "Descript",
+        "descripcion_corta": "Edita audio y vídeo como si estuvieras editando un documento de texto y crea contenido atractivo para redes sociales.",
+        "uso_principal": "Transcribe, edita y mezcla audio y vídeo de forma intuitiva y colaborativa. Añade subtítulos, efectos de sonido y animaciones para mejorar la calidad de tu contenido.",
+        "url": "https://descript.com/",
+        "url_limpia": "descript.com",
+        "categoria": "Redes Sociales"
+    },
+    {
+        "titulo": "Murf.ai",
+        "descripcion_corta": "Crea voces en off realistas para tus vídeos de redes sociales con la ayuda de la IA y cautiva a tu audiencia.",
+        "uso_principal": "Genera voces en off de alta calidad para vídeos, podcasts y presentaciones. Elige entre una amplia variedad de voces y personaliza el tono y el estilo.",
+        "url": "https://murf.ai/",
+        "url_limpia": "murf.ai",
+        "categoria": "Redes Sociales"
+    },
+    {
+        "titulo": "Later",
+        "descripcion_corta": "Planifica, programa y analiza tu contenido de Instagram con facilidad y haz crecer tu presencia online.",
+        "uso_principal": "Programa publicaciones de Instagram, Stories y Reels. Analiza el rendimiento de tu contenido y optimiza tu estrategia de marketing.",
+        "url": "https://later.com/",
+        "url_limpia": "later.com",
+        "categoria": "Redes Sociales"
+    },
+    {
+        "titulo": "MeetEdgar",
+        "descripcion_corta": "Automatiza la republicación de tu contenido en redes sociales y mantén tu presencia online activa y constante.",
+        "uso_principal": "Organiza tu contenido en categorías y programa la republicación automática. Ahorra tiempo y asegura que tu contenido siempre esté visible para tu audiencia.",
+        "url": "https://meetedgar.com/",
+        "url_limpia": "meetedgar.com",
+        "categoria": "Redes Sociales"
+    },
+    {
+        "titulo": "HeyGen",
+        "descripcion_corta": "Crea videos con avatares de IA para redes sociales fácilmente y ahorra tiempo y costos de producción.",
+        "uso_principal": "Utiliza avatares de IA para presentaciones, tutoriales, y contenido de marketing. Personaliza los avatares y el contenido para diferentes audiencias.",
+        "url": "https://www.heygen.com/",
+        "url_limpia": "heygen.com",
+        "categoria": "Redes Sociales"
+    },
+    {
+        "titulo": "Lumen5",
+        "descripcion_corta": "Transforma artículos de blog en videos atractivos para redes sociales en minutos.",
+        "uso_principal": "Convierte contenido escrito en formatos visuales dinámicos para aumentar el alcance. Ideal para compartir información y generar engagement.",
+        "url": "https://lumen5.com/",
+        "url_limpia": "lumen5.com",
+        "categoria": "Redes Sociales"
+    },
+    {
+        "titulo": "Simplified AI Writer",
+        "descripcion_corta": "Genera contenido diverso para redes sociales, desde pies de foto hasta guiones, con IA potente.",
+        "uso_principal": "Crea copys atractivos, ideas para contenido y guiones de video rápidamente. Ahorra tiempo y mejora la calidad de tu comunicación en redes sociales.",
+        "url": "https://simplified.com/ai-writer/",
+        "url_limpia": "simplified.com",
+        "categoria": "Redes Sociales"
+    },
+    {
+        "titulo": "Murf AI",
+        "descripcion_corta": "Transforma texto en voces realistas con IA, ideal para profesionales.",
+        "uso_principal": "Genera voces en off para videos, presentaciones y más. Aporta calidad profesional a tus proyectos de audio.",
+        "url": "https://murf.ai/",
+        "url_limpia": "murf.ai",
+        "categoria": "Generación de Voz (Text-to-Speech)"
+    },
+    {
+        "titulo": "Lovo.ai",
+        "descripcion_corta": "Crea voces con IA para marketing, educación y entretenimiento, ¡fácilmente!",
+        "uso_principal": "Convierte texto a voz con control total sobre el tono y estilo. Ideal para contenido atractivo y personalizado.",
+        "url": "https://lovo.ai/",
+        "url_limpia": "lovo.ai",
+        "categoria": "Generación de Voz (Text-to-Speech)"
+    },
+    {
+        "titulo": "Speechify",
+        "descripcion_corta": "Escucha cualquier texto, en cualquier lugar, con voces naturales y fluidas.",
+        "uso_principal": "Convierte artículos, documentos y correos electrónicos en audio. Aumenta tu productividad y aprendizaje auditivo.",
+        "url": "https://speechify.com/",
+        "url_limpia": "speechify.com",
+        "categoria": "Generación de Voz (Text-to-Speech)"
+    },
+    {
+        "titulo": "Play.ht",
+        "descripcion_corta": "Genera voces de IA ultrarrealistas para narraciones, podcasts y más.",
+        "uso_principal": "Crea contenido de audio profesional con voces que suenan humanas. Ideal para creadores de contenido y empresas.",
+        "url": "https://play.ht/",
+        "url_limpia": "play.ht",
+        "categoria": "Generación de Voz (Text-to-Speech)"
+    },
+    {
+        "titulo": "Resemble AI",
+        "descripcion_corta": "Clona tu voz o crea voces únicas para experiencias de audio inmersivas.",
+        "uso_principal": "Ofrece personalización vocal avanzada para aplicaciones y contenido. Ideal para branding y experiencias únicas.",
+        "url": "https://www.resemble.ai/",
+        "url_limpia": "resemble.ai",
+        "categoria": "Generación de Voz (Text-to-Speech)"
+    },
+    {
+        "titulo": "WellSaid Labs",
+        "descripcion_corta": "Transforma texto en voces de IA excepcionalmente realistas y profesionales.",
+        "uso_principal": "Produce voces en off de alta calidad para capacitación, marketing y productos. Ahorra tiempo y recursos en producción de audio.",
+        "url": "https://wellsaidlabs.com/",
+        "url_limpia": "wellsaidlabs.com",
+        "categoria": "Generación de Voz (Text-to-Speech)"
+    },
+    {
+        "titulo": "Amazon Polly",
+        "descripcion_corta": "Integra la conversión de texto a voz en tus aplicaciones con la potencia de AWS.",
+        "uso_principal": "Permite la creación de aplicaciones con capacidades de voz. Ideal para chatbots, lectura de noticias y más.",
+        "url": "https://aws.amazon.com/polly/",
+        "url_limpia": "aws.amazon.com",
+        "categoria": "Generación de Voz (Text-to-Speech)"
+    },
+    {
+        "titulo": "Google Cloud Text-to-Speech",
+        "descripcion_corta": "Genera voz sintética de alta calidad con la infraestructura de Google Cloud.",
+        "uso_principal": "Ofrece una amplia gama de voces y personalización para diversas aplicaciones. Ideal para empresas que buscan escalabilidad.",
+        "url": "https://cloud.google.com/text-to-speech",
+        "url_limpia": "cloud.google.com",
+        "categoria": "Generación de Voz (Text-to-Speech)"
+    },
+    {
+        "titulo": "Microsoft Azure Text to Speech",
+        "descripcion_corta": "Convierte texto en voz con la tecnología de Microsoft Azure, flexible y adaptable.",
+        "uso_principal": "Permite crear aplicaciones y servicios accesibles con voces de alta calidad. Ideal para accesibilidad y automatización.",
+        "url": "https://azure.microsoft.com/en-us/products/cognitive-services/text-to-speech/",
+        "url_limpia": "azure.microsoft.com",
+        "categoria": "Generación de Voz (Text-to-Speech)"
+    },
+    {
+        "titulo": "Descript",
+        "descripcion_corta": "Edita audio y video transcribiendo texto, ¡una revolución en la creación de contenido!",
+        "uso_principal": "Ofrece una plataforma de edición basada en texto, con capacidades de text-to-speech integradas. Simplifica la edición de audio y video.",
+        "url": "https://www.descript.com/",
+        "url_limpia": "descript.com",
+        "categoria": "Generación de Voz (Text-to-Speech)"
+    },
+    {
+        "titulo": "Synthesia",
+        "descripcion_corta": "Crea videos con avatares de IA hablando desde texto, ¡sin necesidad de cámaras ni micrófonos!",
+        "uso_principal": "Genera videos de alta calidad con voces de IA realistas. Ideal para marketing, capacitación y comunicación interna.",
+        "url": "https://www.synthesia.io/",
+        "url_limpia": "synthesia.io",
+        "categoria": "Generación de Voz (Text-to-Speech)"
+    },
+    {
+        "titulo": "NaturalReaders",
+        "descripcion_corta": "Escucha cualquier documento, libro electrónico o página web con voces naturales.",
+        "uso_principal": "Convierte texto en audio para mejorar la accesibilidad y la productividad. Ideal para estudiantes, profesionales y personas con discapacidad visual.",
+        "url": "https://www.naturalreaders.com/",
+        "url_limpia": "naturalreaders.com",
+        "categoria": "Generación de Voz (Text-to-Speech)"
+    },
+    {
+        "titulo": "iSpeech",
+        "descripcion_corta": "Convierte texto en voz y voz en texto, una solución completa para todas tus necesidades de audio.",
+        "uso_principal": "Ofrece una variedad de herramientas para la conversión de texto a voz y viceversa. Ideal para desarrolladores y empresas.",
+        "url": "https://www.ispeech.org/",
+        "url_limpia": "ispeech.org",
+        "categoria": "Generación de Voz (Text-to-Speech)"
+    },
+    {
+        "titulo": "FakeYou",
+        "descripcion_corta": "Haz que personajes famosos digan lo que quieras con esta herramienta de texto a voz.",
+        "uso_principal": "Crea clips de audio divertidos y personalizados utilizando voces de personajes populares. Ideal para entretenimiento y redes sociales.",
+        "url": "https://fakeyou.com/",
+        "url_limpia": "fakeyou.com",
+        "categoria": "Generación de Voz (Text-to-Speech)"
+    },
+    {
+        "titulo": "Vocalid",
+        "descripcion_corta": "Crea voces únicas y personalizadas para personas que no pueden hablar.",
+        "uso_principal": "Ofrece soluciones de voz personalizadas para personas con discapacidades del habla. Ideal para mejorar la comunicación y la inclusión.",
+        "url": "https://www.vocalid.ai/",
+        "url_limpia": "vocalid.ai",
+        "categoria": "Generación de Voz (Text-to-Speech)"
+    },
+    {
+        "titulo": "AlphaFold",
+        "descripcion_corta": "Revoluciona la biología estructural prediciendo estructuras de proteínas con una precisión sin precedentes.",
+        "uso_principal": "Permite a los investigadores determinar la forma tridimensional de las proteínas, acelerando el descubrimiento de fármacos y la comprensión de procesos biológicos. Facilita la investigación en genómica y proteómica.",
+        "url": "https://www.deepmind.com/research/highlighted-research/alphafold",
+        "url_limpia": "deepmind.com",
+        "categoria": "Investigación Científica"
+    },
+    {
+        "titulo": "Papers with Code",
+        "descripcion_corta": "Un recurso esencial para mantenerse al día con los últimos avances en aprendizaje automático y ciencia de datos.",
+        "uso_principal": "Agrega artículos de investigación con código de implementación, facilitando la reproducibilidad y el avance del conocimiento. Esencial para investigadores que buscan implementar y comparar modelos.",
+        "url": "https://paperswithcode.com/",
+        "url_limpia": "paperswithcode.com",
+        "categoria": "Investigación Científica"
+    },
+    {
+        "titulo": "GenePattern",
+        "descripcion_corta": "Plataforma de análisis genómico de código abierto que simplifica el análisis de datos de alto rendimiento.",
+        "uso_principal": "Ofrece una amplia gama de herramientas para el análisis de datos genómicos, desde el preprocesamiento hasta la interpretación. Facilita la investigación en genómica, transcriptómica y proteómica.",
+        "url": "https://www.genepattern.org/",
+        "url_limpia": "genepattern.org",
+        "categoria": "Investigación Científica"
+    },
+    {
+        "titulo": "IBM Watson Discovery",
+        "descripcion_corta": "Extrae información valiosa de grandes volúmenes de datos no estructurados, acelerando el descubrimiento científico.",
+        "uso_principal": "Permite a los investigadores analizar rápidamente artículos científicos, patentes e informes para identificar tendencias y relaciones. Ayuda a generar hipótesis y a acelerar el proceso de investigación.",
+        "url": "https://www.ibm.com/products/watson-discovery",
+        "url_limpia": "ibm.com",
+        "categoria": "Investigación Científica"
+    },
+    {
+        "titulo": "ChemDraw",
+        "descripcion_corta": "El estándar de la industria para dibujar moléculas y reacciones químicas con precisión y facilidad.",
+        "uso_principal": "Permite a los químicos crear y editar estructuras moleculares, diagramas de reacciones y otros objetos químicos. Facilita la comunicación y la colaboración en la investigación química.",
+        "url": "https://perkinelmerinformatics.com/products/chemdraw/",
+        "url_limpia": "perkinelmerinformatics.com",
+        "categoria": "Investigación Científica"
+    },
+    {
+        "titulo": "GROMACS",
+        "descripcion_corta": "Un versátil paquete de simulación de dinámica molecular para estudiar el comportamiento de moléculas biológicas.",
+        "uso_principal": "Permite a los investigadores simular el movimiento de átomos y moléculas para comprender mejor los procesos biológicos. Utilizado en el diseño de fármacos, la investigación de proteínas y el estudio de membranas.",
+        "url": "http://www.gromacs.org/",
+        "url_limpia": "gromacs.org",
+        "categoria": "Investigación Científica"
+    },
+    {
+        "titulo": "MDAnalysis",
+        "descripcion_corta": "Una biblioteca de Python para analizar trayectorias de simulación de dinámica molecular.",
+        "uso_principal": "Facilita el análisis de datos generados por simulaciones de dinámica molecular, permitiendo extraer información sobre el comportamiento de moléculas. Esencial para la interpretación de simulaciones.",
+        "url": "https://www.mdanalysis.org/",
+        "url_limpia": "mdanalysis.org",
+        "categoria": "Investigación Científica"
+    },
+    {
+        "titulo": "BioPython",
+        "descripcion_corta": "Un conjunto de herramientas de Python para biología computacional y bioinformática.",
+        "uso_principal": "Proporciona funciones para el análisis de secuencias de ADN y proteínas, la manipulación de datos genómicos y la modelización de estructuras biológicas. Facilita el desarrollo de herramientas bioinformáticas personalizadas.",
+        "url": "https://biopython.org/",
+        "url_limpia": "biopython.org",
+        "categoria": "Investigación Científica"
+    },
+    {
+        "titulo": "Rosetta",
+        "descripcion_corta": "Un paquete de software integral para modelado y diseño de proteínas.",
+        "uso_principal": "Permite a los investigadores predecir la estructura de las proteínas, diseñar nuevas proteínas con funciones específicas y comprender mejor la interacción proteína-proteína. Ampliamente utilizado en el diseño de fármacos y la biotecnología.",
+        "url": "https://www.rosettacommons.org/",
+        "url_limpia": "rosettacommons.org",
+        "categoria": "Investigación Científica"
+    },
+    {
+        "titulo": "GraphPad Prism",
+        "descripcion_corta": "Software líder para análisis estadístico y gráficos científicos en investigación biológica.",
+        "uso_principal": "Proporciona herramientas para el análisis estadístico de datos experimentales, la creación de gráficos de alta calidad y la presentación de resultados. Esencial para el análisis de datos en biología, farmacología y medicina.",
+        "url": "https://www.graphpad.com/scientific-software/prism/",
+        "url_limpia": "graphpad.com",
+        "categoria": "Investigación Científica"
+    },
+    {
+        "titulo": "KNIME Analytics Platform",
+        "descripcion_corta": "Una plataforma de código abierto para la integración, el análisis y la exploración de datos.",
+        "uso_principal": "Permite a los investigadores construir flujos de trabajo para el análisis de datos, desde la integración de datos hasta la modelización y la visualización. Utilizado en diversas áreas de la investigación científica, como la genómica, la química y la medicina.",
+        "url": "https://www.knime.com/",
+        "url_limpia": "knime.com",
+        "categoria": "Investigación Científica"
+    },
+    {
+        "titulo": "Scikit-learn",
+        "descripcion_corta": "Una biblioteca de Python simple y eficiente para el aprendizaje automático.",
+        "uso_principal": "Ofrece una amplia gama de algoritmos de aprendizaje automático para la clasificación, la regresión, el agrupamiento y la reducción de la dimensionalidad. Utilizado en diversas áreas de la investigación científica, como la genómica, la química y la física.",
+        "url": "https://scikit-learn.org/",
+        "url_limpia": "scikit-learn.org",
+        "categoria": "Investigación Científica"
+    },
+    {
+        "titulo": "TensorFlow",
+        "descripcion_corta": "Una plataforma de código abierto para el aprendizaje automático, especialmente útil para redes neuronales profundas.",
+        "uso_principal": "Permite construir y entrenar modelos complejos de aprendizaje automático para tareas como la clasificación de imágenes, el procesamiento del lenguaje natural y la predicción de series temporales. Se utiliza en diversas áreas de la investigación científica.",
+        "url": "https://www.tensorflow.org/",
+        "url_limpia": "tensorflow.org",
+        "categoria": "Investigación Científica"
+    },
+    {
+        "titulo": "PyTorch",
+        "descripcion_corta": "Otro marco de aprendizaje automático de código abierto, popular por su flexibilidad y facilidad de uso.",
+        "uso_principal": "Ofrece herramientas para construir y entrenar modelos de aprendizaje automático, con un enfoque en redes neuronales dinámicas. Es muy utilizado en investigación por su capacidad de prototipado rápido.",
+        "url": "https://pytorch.org/",
+        "url_limpia": "pytorch.org",
+        "categoria": "Investigación Científica"
+    },
+    {
+        "titulo": "Amber",
+        "descripcion_corta": "Un conjunto de programas de dinámica molecular ampliamente utilizado para simular sistemas biomoleculares.",
+        "uso_principal": "Permite a los investigadores simular el comportamiento de proteínas, ácidos nucleicos y otros biomoléculas para comprender mejor su estructura, función e interacción. Utilizado en el descubrimiento de fármacos y la investigación biológica fundamental.",
+        "url": "https://ambermd.org/",
+        "url_limpia": "ambermd.org",
+        "categoria": "Investigación Científica"
+    },
+    {
+        "titulo": "ROSS Intelligence",
+        "descripcion_corta": "Tu asistente legal impulsado por IA, que realiza investigaciones legales exhaustivas en segundos.",
+        "uso_principal": "Agiliza la investigación legal analizando grandes cantidades de datos legales para encontrar precedentes relevantes y proporcionar información jurídica. Ayuda a los abogados a ahorrar tiempo y mejorar la precisión en su trabajo de investigación.",
+        "url": "https://www.rossintelligence.com/",
+        "url_limpia": "rossintelligence.com",
+        "categoria": "Legal y Contratos"
+    },
+    {
+        "titulo": "Kira Systems",
+        "descripcion_corta": "Descubre los secretos ocultos en tus contratos con la precisión de un halcón legal.",
+        "uso_principal": "Extrae y analiza información crítica de contratos y otros documentos legales. Permite a los usuarios identificar cláusulas clave, riesgos y oportunidades de manera eficiente, mejorando los procesos de diligencia debida y gestión de contratos.",
+        "url": "https://www.kirasystems.com/",
+        "url_limpia": "kirasystems.com",
+        "categoria": "Legal y Contratos"
+    },
+    {
+        "titulo": "Lex Machina",
+        "descripcion_corta": "Predice el futuro litigioso con análisis de datos legales de vanguardia.",
+        "uso_principal": "Proporciona análisis predictivos sobre resultados de litigios, jueces y despachos de abogados. Permite a los profesionales del derecho desarrollar estrategias legales más informadas y basadas en datos, evaluando las probabilidades de éxito y los posibles resultados.",
+        "url": "https://lexmachina.com/",
+        "url_limpia": "lexmachina.com",
+        "categoria": "Legal y Contratos"
+    },
+    {
+        "titulo": "CaseText",
+        "descripcion_corta": "La investigación legal nunca ha sido tan inteligente, rápida y asequible.",
+        "uso_principal": "Ofrece una plataforma integral de investigación legal impulsada por IA que incluye acceso a jurisprudencia, estatutos y regulaciones. Utiliza IA para mejorar la búsqueda y el análisis legal, facilitando el descubrimiento de información relevante y ahorrando tiempo a los profesionales del derecho.",
+        "url": "https://casetext.com/",
+        "url_limpia": "casetext.com",
+        "categoria": "Legal y Contratos"
+    },
+    {
+        "titulo": "eBrevia",
+        "descripcion_corta": "La IA que desvela los contratos, transformando datos en decisiones inteligentes.",
+        "uso_principal": "Automatiza la extracción y el análisis de información de documentos legales, como contratos y acuerdos. Ayuda a los usuarios a identificar cláusulas clave, riesgos y obligaciones contractuales, lo que permite una gestión de contratos más eficiente y una reducción de riesgos.",
+        "url": "https://ebrevia.com/",
+        "url_limpia": "ebrevia.com",
+        "categoria": "Legal y Contratos"
+    },
+    {
+        "titulo": "Seal Software",
+        "descripcion_corta": "Desbloquea el valor oculto en tus contratos con el poder de la IA.",
+        "uso_principal": "Proporciona una plataforma de análisis de contratos impulsada por IA que permite a las empresas descubrir, analizar y gestionar sus acuerdos contractuales. Facilita la identificación de riesgos, la optimización de términos y la garantía del cumplimiento normativo, mejorando la eficiencia y reduciendo los costos.",
+        "url": "https://www.sealsoftware.com/",
+        "url_limpia": "sealsoftware.com",
+        "categoria": "Legal y Contratos"
+    },
+    {
+        "titulo": "LawGeex",
+        "descripcion_corta": "Revisa y aprueba contratos con la velocidad y precisión de un abogado experto.",
+        "uso_principal": "Automatiza la revisión de contratos para identificar riesgos y garantizar el cumplimiento de las políticas internas. Permite a los usuarios acelerar el proceso de revisión de contratos, reducir los riesgos y mejorar la eficiencia general.",
+        "url": "https://www.lawgeex.com/",
+        "url_limpia": "lawgeex.com",
+        "categoria": "Legal y Contratos"
+    },
+    {
+        "titulo": "Logikcull",
+        "descripcion_corta": "Domina el descubrimiento electrónico con la simplicidad y velocidad de la IA.",
+        "uso_principal": "Simplifica el proceso de descubrimiento electrónico mediante la automatización de la recopilación, el procesamiento y la revisión de datos. Reduce los costos y el tiempo asociados con el descubrimiento electrónico, lo que permite a los profesionales del derecho centrarse en estrategias legales más complejas.",
+        "url": "https://www.logikcull.com/",
+        "url_limpia": "logikcull.com",
+        "categoria": "Legal y Contratos"
+    },
+    {
+        "titulo": "Disco",
+        "descripcion_corta": "Transforma el caos del descubrimiento electrónico en claridad con la inteligencia artificial.",
+        "uso_principal": "Ofrece una plataforma de descubrimiento electrónico integral que utiliza IA para acelerar y simplificar el proceso de revisión de documentos. Permite a los usuarios identificar rápidamente información relevante, reducir los costos y mejorar la precisión en los litigios.",
+        "url": "https://www.csdisco.com/",
+        "url_limpia": "csdisco.com",
+        "categoria": "Legal y Contratos"
+    },
+    {
+        "titulo": "Everlaw",
+        "descripcion_corta": "El poder del descubrimiento electrónico, redefinido con la agilidad de la IA.",
+        "uso_principal": "Proporciona una plataforma de descubrimiento electrónico basada en la nube que utiliza IA para agilizar la revisión y el análisis de documentos. Permite a los usuarios colaborar de manera eficiente, descubrir información relevante y construir estrategias legales sólidas.",
+        "url": "https://www.everlaw.com/",
+        "url_limpia": "everlaw.com",
+        "categoria": "Legal y Contratos"
+    },
+    {
+        "titulo": "Judicata",
+        "descripcion_corta": "Descubre la verdad legal con la precisión y profundidad de la IA.",
+        "uso_principal": "Ofrece una plataforma de investigación legal impulsada por IA que proporciona análisis detallados de jurisprudencia y argumentos legales. Permite a los profesionales del derecho obtener información valiosa y construir argumentos más convincentes.",
+        "url": "https://law.resource.org/",
+        "url_limpia": "law.resource.org",
+        "categoria": "Legal y Contratos"
+    },
+    {
+        "titulo": "Premonition",
+        "descripcion_corta": "Predice el éxito en los tribunales con la visión predictiva de la IA.",
+        "uso_principal": "Analiza datos judiciales para predecir los resultados de los litigios y el rendimiento de los abogados. Ayuda a los clientes a seleccionar los abogados más adecuados para sus casos y a evaluar las probabilidades de éxito.",
+        "url": "https://premonition.ai/",
+        "url_limpia": "premonition.ai",
+        "categoria": "Legal y Contratos"
+    },
+    {
+        "titulo": "Blue J Legal",
+        "descripcion_corta": "La IA que resuelve problemas legales complejos con claridad cristalina.",
+        "uso_principal": "Utiliza IA para analizar y predecir los resultados de casos legales complejos, como cuestiones fiscales y de empleo. Permite a los profesionales del derecho tomar decisiones más informadas y asesorar a sus clientes de manera más eficaz.",
+        "url": "https://www.bluejlegal.com/",
+        "url_limpia": "bluejlegal.com",
+        "categoria": "Legal y Contratos"
+    },
+    {
+        "titulo": "vLex Vincent AI",
+        "descripcion_corta": "Tu asistente de investigación legal, impulsado por la inteligencia artificial más avanzada.",
+        "uso_principal": "Un motor de búsqueda de investigación legal potenciado con IA para encontrar casos relevantes. Vincent AI funciona con IA para ofrecer resultados significativos.",
+        "url": "https://vlex.com/vincent/",
+        "url_limpia": "vlex.com",
+        "categoria": "Legal y Contratos"
+    },
+    {
+        "titulo": "Luminance",
+        "descripcion_corta": "Impulsa la inteligencia humana con la IA, para que puedas trabajar mejor, más rápido y más inteligente.",
+        "uso_principal": "Utiliza aprendizaje automático para extraer información de documentos legales. Luminance puede leer y comprender documentos en más de 80 idiomas para acelerar procesos como la debida diligencia, la gestión de contratos, el cumplimiento normativo y el descubrimiento electrónico.",
+        "url": "https://www.luminance.com/",
+        "url_limpia": "luminance.com",
+        "categoria": "Legal y Contratos"
+    },
+    {
+        "titulo": "Darktrace Antigena",
+        "descripcion_corta": "Autonomía de respuesta ante amenazas cibernéticas en tiempo real.",
+        "uso_principal": "Detecta y neutraliza automáticamente las amenazas internas y externas antes de que causen daños. Utiliza aprendizaje automático para comprender el 'patrón de vida' digital de una organización y responder a las anomalías.",
+        "url": "https://www.darktrace.com/en/antigena/",
+        "url_limpia": "darktrace.com",
+        "categoria": "Ciberseguridad"
+    },
+    {
+        "titulo": "CrowdStrike Falcon",
+        "descripcion_corta": "Protección integral de endpoints impulsada por la nube.",
+        "uso_principal": "Ofrece prevención, detección y respuesta a amenazas en endpoints. La plataforma utiliza inteligencia artificial para analizar el comportamiento y prevenir ataques.",
+        "url": "https://www.crowdstrike.com/platform/falcon-platform/",
+        "url_limpia": "crowdstrike.com",
+        "categoria": "Ciberseguridad"
+    },
+    {
+        "titulo": "IBM QRadar Advisor with Watson",
+        "descripcion_corta": "Inteligencia artificial para el análisis de seguridad.",
+        "uso_principal": "Analiza datos de seguridad para identificar y priorizar amenazas, reduciendo el tiempo de respuesta a incidentes. Watson proporciona información adicional y contexto para la investigación de seguridad.",
+        "url": "https://www.ibm.com/products/qradar-advisor-with-watson",
+        "url_limpia": "ibm.com",
+        "categoria": "Ciberseguridad"
+    },
+    {
+        "titulo": "Sophos Intercept X",
+        "descripcion_corta": "Protección de endpoints de última generación con IA.",
+        "uso_principal": "Utiliza aprendizaje profundo para detectar malware conocido y desconocido, y prevenir exploits. Ofrece funcionalidades de respuesta ante ransomware y otras amenazas avanzadas.",
+        "url": "https://www.sophos.com/en-us/products/intercept-x",
+        "url_limpia": "sophos.com",
+        "categoria": "Ciberseguridad"
+    },
+    {
+        "titulo": "CylancePROTECT",
+        "descripcion_corta": "Prevención de amenazas impulsada por IA, antes de la ejecución.",
+        "uso_principal": "Identifica y bloquea malware y amenazas persistentes avanzadas sin necesidad de actualizaciones de firmas. Emplea modelos matemáticos y aprendizaje automático para predecir y prevenir ataques.",
+        "url": "https://www.blackberry.com/us/en/products/cylanceprotect",
+        "url_limpia": "blackberry.com",
+        "categoria": "Ciberseguridad"
+    },
+    {
+        "titulo": "Vectra Cognito",
+        "descripcion_corta": "Detección y respuesta a amenazas en tiempo real con IA.",
+        "uso_principal": "Detecta ataques en la red mediante el análisis del tráfico y el comportamiento de los usuarios. Utiliza inteligencia artificial para priorizar incidentes y automatizar la respuesta.",
+        "url": "https://www.vectra.ai/platform/cognito",
+        "url_limpia": "vectra.ai",
+        "categoria": "Ciberseguridad"
+    },
+    {
+        "titulo": "Fortinet FortiAI",
+        "descripcion_corta": "Analista de seguridad virtual impulsado por IA.",
+        "uso_principal": "Automatiza el análisis de amenazas y la respuesta a incidentes, acelerando la identificación y mitigación de ataques. Utiliza aprendizaje profundo para detectar malware y anomalías.",
+        "url": "https://www.fortinet.com/products/artificial-intelligence/fortiai",
+        "url_limpia": "fortinet.com",
+        "categoria": "Ciberseguridad"
+    },
+    {
+        "titulo": "Anomali ThreatStream",
+        "descripcion_corta": "Inteligencia de amenazas impulsada por IA para una defensa proactiva.",
+        "uso_principal": "Agrega, enriquece y comparte inteligencia de amenazas para mejorar la detección y prevención de ataques. Utiliza aprendizaje automático para analizar la información y priorizar las amenazas más relevantes.",
+        "url": "https://www.anomali.com/platform/threatstream",
+        "url_limpia": "anomali.com",
+        "categoria": "Ciberseguridad"
+    },
+    {
+        "titulo": "LogRhythm NDR",
+        "descripcion_corta": "Detección y respuesta de red impulsada por IA.",
+        "uso_principal": "Detecta anomalías y amenazas en la red a través del análisis del tráfico y el comportamiento. Utiliza aprendizaje automático para identificar patrones sospechosos y priorizar alertas.",
+        "url": "https://logrhythm.com/products/network-detection-and-response/",
+        "url_limpia": "logrhythm.com",
+        "categoria": "Ciberseguridad"
+    },
+    {
+        "titulo": "Exabeam Security Management Platform",
+        "descripcion_corta": "Plataforma de gestión de seguridad impulsada por el comportamiento.",
+        "uso_principal": "Detecta amenazas internas y externas mediante el análisis del comportamiento de los usuarios. Utiliza aprendizaje automático para identificar anomalías y predecir posibles ataques.",
+        "url": "https://www.exabeam.com/product/security-management-platform/",
+        "url_limpia": "exabeam.com",
+        "categoria": "Ciberseguridad"
+    },
+    {
+        "titulo": "Recorded Future",
+        "descripcion_corta": "Inteligencia de amenazas en tiempo real con IA.",
+        "uso_principal": "Recopila y analiza información de amenazas de diversas fuentes para proporcionar inteligencia procesable. Utiliza aprendizaje automático para identificar patrones y predecir posibles ataques.",
+        "url": "https://www.recordedfuture.com/",
+        "url_limpia": "recordedfuture.com",
+        "categoria": "Ciberseguridad"
+    },
+    {
+        "titulo": "Trend Micro XDR",
+        "descripcion_corta": "Detección y respuesta extendida con IA para una visibilidad completa.",
+        "uso_principal": "Correlaciona datos de seguridad de múltiples capas para proporcionar una visión integral de las amenazas. Utiliza IA para detectar y priorizar incidentes, acelerando la respuesta.",
+        "url": "https://www.trendmicro.com/en_us/business/products/detection-response.html",
+        "url_limpia": "trendmicro.com",
+        "categoria": "Ciberseguridad"
+    },
+    {
+        "titulo": "Microsoft Defender for Endpoint",
+        "descripcion_corta": "Protección de endpoints de última generación con IA integrada.",
+        "uso_principal": "Ofrece prevención, detección, investigación y respuesta automatizadas para endpoints. Utiliza IA para analizar el comportamiento y proteger contra amenazas avanzadas.",
+        "url": "https://www.microsoft.com/en-us/security/business/endpoint-security-microsoft-defender-endpoint",
+        "url_limpia": "microsoft.com",
+        "categoria": "Ciberseguridad"
+    },
+    {
+        "titulo": "Malwarebytes Endpoint Detection and Response",
+        "descripcion_corta": "Detección y respuesta de endpoints simplificada con IA.",
+        "uso_principal": "Detecta y responde a amenazas en endpoints, proporcionando visibilidad y control. Utiliza IA para analizar el comportamiento y automatizar la respuesta a incidentes.",
+        "url": "https://www.malwarebytes.com/business/endpoint-detection-response/",
+        "url_limpia": "malwarebytes.com",
+        "categoria": "Ciberseguridad"
+    },
+    {
+        "titulo": "Palo Alto Networks Cortex XDR",
+        "descripcion_corta": "Detección y respuesta extendida con IA para una seguridad integral.",
+        "uso_principal": "Integra datos de seguridad de múltiples fuentes para proporcionar una visión completa de las amenazas. Utiliza IA para detectar y priorizar incidentes, acelerando la respuesta y la investigación.",
+        "url": "https://www.paloaltonetworks.com/cortex/cortex-xdr",
+        "url_limpia": "paloaltonetworks.com",
+        "categoria": "Ciberseguridad"
+    },
+    {
+        "titulo": "NVIDIA RTX Remix",
+        "descripcion_corta": "Revitaliza los clásicos de PC con trazado de rayos y texturas mejoradas por IA.",
+        "uso_principal": "Permite a los modders remasterizar juegos antiguos de DirectX 8 y 9 con herramientas basadas en IA. Mejora la calidad visual con trazado de rayos, texturas de alta resolución y activos generados por IA.",
+        "url": "https://www.nvidia.com/en-us/geforce/rtx/remix/",
+        "url_limpia": "nvidia.com",
+        "categoria": "Gaming y 3D"
+    },
+    {
+        "titulo": "DeepMotion",
+        "descripcion_corta": "Anima personajes 3D con captura de movimiento basada en IA desde cualquier cámara.",
+        "uso_principal": "Convierte vídeos en animaciones 3D realistas sin necesidad de trajes especiales. Agiliza el proceso de animación para desarrolladores de juegos y creadores de contenido.",
+        "url": "https://www.deepmotion.com/",
+        "url_limpia": "deepmotion.com",
+        "categoria": "Gaming y 3D"
+    },
+    {
+        "titulo": "RAD Game Tools (Oodle)",
+        "descripcion_corta": "Comprime texturas y datos de juegos con algoritmos de IA ultrarrápidos.",
+        "uso_principal": "Reduce el tamaño de los archivos de los juegos sin comprometer la calidad visual. Acelera los tiempos de carga y optimiza el rendimiento del juego.",
+        "url": "https://radgametools.com/",
+        "url_limpia": "radgametools.com",
+        "categoria": "Gaming y 3D"
+    },
+    {
+        "titulo": "Polycam",
+        "descripcion_corta": "Crea modelos 3D realistas del mundo real usando tu smartphone y la magia de la IA.",
+        "uso_principal": "Permite a los usuarios escanear objetos y entornos en 3D utilizando la cámara de su dispositivo móvil. Genera modelos 3D detallados para usar en juegos, diseño y otras aplicaciones.",
+        "url": "https://poly.cam/",
+        "url_limpia": "poly.cam",
+        "categoria": "Gaming y 3D"
+    },
+    {
+        "titulo": "Scenario",
+        "descripcion_corta": "Genera activos de juegos únicos y consistentes con IA entrenada en tu propio estilo.",
+        "uso_principal": "Crea texturas, personajes y otros elementos visuales para juegos con un estilo artístico consistente. Permite a los desarrolladores crear contenido personalizado sin necesidad de contratar artistas externos.",
+        "url": "https://www.scenario.gg/",
+        "url_limpia": "scenario.gg",
+        "categoria": "Gaming y 3D"
+    },
+    {
+        "titulo": "Unity Sentis",
+        "descripcion_corta": "Integra modelos de IA directamente en tu juego Unity para una jugabilidad más inteligente.",
+        "uso_principal": "Permite a los desarrolladores implementar IA directamente en el motor Unity para mejorar el comportamiento de los personajes no jugadores (NPC), la generación de contenido procedural y otras características del juego. Ejecuta modelos de IA en tiempo real en la plataforma Unity.",
+        "url": "https://unity.com/solutions/sentis",
+        "url_limpia": "unity.com",
+        "categoria": "Gaming y 3D"
+    },
+    {
+        "titulo": "Inworld AI",
+        "descripcion_corta": "Crea personajes de IA realistas con personalidades e historias complejas para tus juegos.",
+        "uso_principal": "Permite a los desarrolladores diseñar personajes no jugadores (NPC) con personalidades únicas, historias de fondo y comportamientos realistas. Mejora la inmersión y la interactividad del juego con personajes de IA avanzados.",
+        "url": "https://www.inworld.ai/",
+        "url_limpia": "inworld.ai",
+        "categoria": "Gaming y 3D"
+    },
+    {
+        "titulo": "Layer AI",
+        "descripcion_corta": "Genera texturas de alta calidad para tus modelos 3D al instante con IA.",
+        "uso_principal": "Simplifica el proceso de texturizado de modelos 3D mediante la generación automática de texturas realistas y de alta calidad. Ahorra tiempo y esfuerzo en la creación de activos 3D.",
+        "url": "https://layer.ai/",
+        "url_limpia": "layer.ai",
+        "categoria": "Gaming y 3D"
+    },
+    {
+        "titulo": "Rose AI",
+        "descripcion_corta": "Transforma descripciones textuales en assets 3D listos para usar en tus juegos.",
+        "uso_principal": "Permite la creación de modelos 3D a partir de descripciones textuales. Agiliza el proceso de creación de assets para videojuegos y otras aplicaciones 3D.",
+        "url": "https://www.roseai.com/",
+        "url_limpia": "roseai.com",
+        "categoria": "Gaming y 3D"
+    },
+    {
+        "titulo": "Charisma.ai",
+        "descripcion_corta": "Da vida a narrativas interactivas en tus juegos con personajes de IA conversacionales.",
+        "uso_principal": "Permite la creación de historias interactivas donde los jugadores interactúan con personajes de IA a través del diálogo. Amplía las posibilidades narrativas y la inmersión en los juegos.",
+        "url": "https://charisma.ai/",
+        "url_limpia": "charisma.ai",
+        "categoria": "Gaming y 3D"
+    },
+    {
+        "titulo": "Convai",
+        "descripcion_corta": "Implementa conversaciones de voz realistas con IA en tiempo real en tus mundos virtuales.",
+        "uso_principal": "Permite a los jugadores mantener conversaciones naturales con personajes de IA utilizando su voz. Mejora la inmersión y el realismo en juegos y metaversos.",
+        "url": "https://www.convai.com/",
+        "url_limpia": "convai.com",
+        "categoria": "Gaming y 3D"
+    },
+    {
+        "titulo": "Speech Graphics",
+        "descripcion_corta": "Sincroniza el habla de tus personajes 3D con animaciones faciales ultra-realistas impulsadas por IA.",
+        "uso_principal": "Genera animaciones faciales realistas a partir de audio, sincronizando el movimiento de los labios y las expresiones faciales con el habla. Mejora la credibilidad de los personajes 3D en juegos y películas.",
+        "url": "https://www.speech-graphics.com/",
+        "url_limpia": "speech-graphics.com",
+        "categoria": "Gaming y 3D"
+    },
+    {
+        "titulo": "Luma AI",
+        "descripcion_corta": "Captura y crea modelos 3D fotorrealistas con la potencia de la IA desde tu teléfono.",
+        "uso_principal": "Permite a los usuarios crear modelos 3D de alta calidad utilizando la cámara de su teléfono inteligente. Genera modelos 3D realistas para usar en juegos, diseño y otras aplicaciones creativas.",
+        "url": "https://lumalabs.ai/",
+        "url_limpia": "lumalabs.ai",
+        "categoria": "Gaming y 3D"
+    },
+    {
+        "titulo": "Ponzu",
+        "descripcion_corta": "Crea prototipos de juegos de forma rápida y sencilla con la ayuda de la IA.",
+        "uso_principal": "Ayuda a los desarrolladores a crear prototipos de juegos de forma rápida y sencilla utilizando herramientas impulsadas por IA. Acelera el proceso de desarrollo de juegos y reduce los costos.",
+        "url": "https://www.ponzu.gg/",
+        "url_limpia": "ponzu.gg",
+        "categoria": "Gaming y 3D"
+    },
+    {
+        "titulo": "Aflorithmic",
+        "descripcion_corta": "Genera voces sintéticas realistas para tus personajes de videojuegos con IA.",
+        "uso_principal": "Permite a los desarrolladores crear voces personalizadas para sus personajes utilizando tecnología de texto a voz impulsada por IA. Mejora la inmersión y la personalidad de los personajes en los videojuegos.",
+        "url": "https://www.aflorithmic.ai/",
+        "url_limpia": "aflorithmic.ai",
+        "categoria": "Gaming y 3D"
+    }
+]
