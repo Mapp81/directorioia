@@ -16,6 +16,17 @@ const typedHerramientas: Tool[] = herramientas as Tool[];
 
 // Obtenemos las categorías únicas para generar los botones automáticamente
 const categoriasUnicas = [...new Set(typedHerramientas.map(h => h.categoria))];
+
+const categoriasMadre: Record<string, string[]> = {
+  "Imagen": ["Generación de Imágenes Artísticas", "IA para Retoque Fotográfico Profesional", "Generadores de Logos y Branding", "IA para Generar Tipografías", "Restauración de Fotos Antiguas", "IA para Diseño de Interiores", "Generadores de Paletas de Colores", "IA para Crear Íconos y Vectores"],
+  "Video": ["Edición de Video Automática para Shorts", "IA para Clonación de Rostros (Deepfake)", "Generadores de Avatares para YouTube", "IA para Quitar Objetos de Videos", "Generadores de Video a partir de Texto", "IA para Subtitulado Multilingüe", "Mejora de Resolución de Video (Upscaling)", "Animación de Fotos Estáticas"],
+  "Escritura": ["Redacción de Artículos para Blogs", "IA para Guiones de YouTube y TikTok", "Herramientas de Copywriting para Ads", "Correctores Estilísticos Avanzados", "Optimización de Contenido para SEO", "IA para Resumir Libros y PDFs", "Generadores de Nombres de Marca", "IA para Escribir Libros de Ficción"],
+  "Código": ["Copilotos para Programadores Python", "IA para Generar Código Frontend (React/Vue)", "Convertidores de Lenguajes de Programación", "IA para Crear Consultas SQL", "Generadores de Documentación de Código", "IA para Testeo Automático de Software", "Creadores de Sitios Web con IA", "IA para Análisis de Ciberseguridad"],
+  "Audio": ["Generadores de Música sin Copyright", "IA para Clonación de Voz", "Limpieza de Ruido de Fondo en Audio", "Generadores de Efectos de Sonido", "IA para Transcribir Entrevistas", "Separación de Voces e Instrumentos", "IA para Componer Letras de Canciones", "Podcasting con Inteligencia Artificial"],
+  "Negocios": ["IA para Presentaciones de Negocios (Slides)", "Analizadores de Datos con IA", "Automatización de Tareas (Zapier/Make con IA)", "Asistentes de Correo Electrónico", "IA para Gestión de Proyectos", "Generadores de Ideas de Negocio", "IA para Lectura de Contratos Legales", "Contabilidad Automatizada con IA"],
+  "Marketing": ["IA para Gestión de Redes Sociales", "Generadores de Estrategias de Marketing", "Chatbots Inteligentes para E-commerce", "IA para Análisis de Sentimiento de Clientes", "Generadores de Leads y Ventas", "IA para Email Marketing Personalizado"],
+  "Educación": ["IA para Crear Cursos Online", "Tutores de Idiomas con IA", "Generadores de Flashcards para Estudiar", "IA para Resolver Problemas Matemáticos", "Asistentes de Salud y Bienestar Mental", "IA para Gaming y Desarrollo 3D"]
+};
 ---
 
 
@@ -23,7 +34,7 @@ const categoriasUnicas = [...new Set(typedHerramientas.map(h => h.categoria))];
 <main class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grow">
     <div class="text-center mb-12 sm:mb-20">
         <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight mb-4">
-            <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">
+            <span class="bg-clip-text text-transparent bg-linear-to-r from-blue-500 to-teal-400">
                 Explora el Mundo de la IA
             </span>
         </h1>
@@ -32,28 +43,39 @@ const categoriasUnicas = [...new Set(typedHerramientas.map(h => h.categoria))];
         </p>
     </div>
 
-    <div class="flex flex-wrap justify-center gap-2 mb-12">
+    <div class="flex flex-wrap justify-center gap-3 mb-12">
+    <button 
+        onclick="filtrarGrupo('todas', this)" 
+        class="grupo-btn active px-6 py-2 rounded-full text-sm font-bold border border-blue-500 bg-blue-500 text-white transition-all shadow-lg shadow-blue-900/20"
+    >
+        Todas
+    </button>
+    
+    {Object.keys(categoriasMadre).map(nombreGrupo => (
         <button 
-            onclick="filtrar('todas', this)" 
-            class="filter-btn active px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest border border-blue-500 bg-blue-500 text-white transition-all"
+            onclick={`filtrarGrupo('${categoriasMadre[nombreGrupo].join(',')}', this)`} 
+            class="grupo-btn px-6 py-2 rounded-full text-sm font-bold border border-gray-700 text-gray-400 hover:border-blue-500 hover:text-blue-500 transition-all bg-[#0B1120]"
         >
-            Todas
+            {nombreGrupo}
         </button>
-        {categoriasUnicas.map(cat => (
-            <button 
-                onclick={`filtrar('${cat}', this)`} 
-                class="filter-btn px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest border border-gray-700 text-gray-400 hover:border-blue-500 hover:text-blue-500 transition-all"
-            >
-                {cat}
-            </button>
-        ))}
-    </div>
-
+    ))}
+</div>
+<div id="contenedor-subcats" class="flex flex-wrap justify-center gap-2 mb-8 px-4">
+</div>
+    <div class="max-w-xl mx-auto mb-12">
+    <input 
+        type="text" 
+        id="input-buscador" 
+        placeholder="Buscar herramienta por nombre o uso..." 
+        class="w-full bg-[#1e293b] text-white border border-gray-700 rounded-full px-6 py-4 outline-none focus:border-blue-500 transition-all shadow-xl"
+    />
+</div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="grid-herramientas">
         {typedHerramientas.map((h) => (
             <div 
                 class="tool-card bg-[#151e32] rounded-xl shadow-lg hover:shadow-2xl dark:border border-gray-800 transition-all duration-300 transform hover:-translate-y-1 overflow-hidden p-8 flex flex-col items-center text-center"
                 data-categoria={h.categoria}
+                data-search={h.titulo.toLowerCase() + " " + h.descripcion_corta.toLowerCase() + " " + h.categoria.toLowerCase()}
             >
                 <div class="mb-6 w-16 h-16 bg-white rounded-lg p-2 flex items-center justify-center shadow-inner">
                     <img 
@@ -89,32 +111,91 @@ const categoriasUnicas = [...new Set(typedHerramientas.map(h => h.categoria))];
 </main>
 
 <script is:inline>
-    function filtrar(categoria, elemento) {
-        const cards = document.querySelectorAll('.tool-card');
-        const buttons = document.querySelectorAll('.filter-btn');
+    function filtrarGrupo(listaSubcategorias, elemento) {
+        const tarjetas = document.querySelectorAll('.tool-card');
+        const botonesMadre = document.querySelectorAll('.grupo-btn');
+        const contenedorSub = document.getElementById('contenedor-subcats');
 
-        // 1. Resetear todos los botones a gris
-        buttons.forEach(btn => {
-            btn.classList.remove('bg-blue-500', 'text-white', 'border-blue-500');
+        // 1. Marcar botón Madre como activo
+        botonesMadre.forEach(btn => {
+            btn.classList.remove('bg-blue-500', 'text-white', 'border-blue-500', 'active');
             btn.classList.add('border-gray-700', 'text-gray-400');
         });
+        elemento.classList.add('bg-blue-500', 'text-white', 'border-blue-500', 'active');
 
-        // 2. Activar el botón clickeado
-        if (elemento) {
-            elemento.classList.remove('border-gray-700', 'text-gray-400');
-            elemento.classList.remove('hover:text-blue-500');
-            elemento.classList.add('bg-blue-500', 'text-white', 'border-blue-500');
+        // 2. Limpiar subcategorías anteriores
+        contenedorSub.innerHTML = '';
+
+        // 3. Si no es "todas", crear los botoncitos de subcategoría
+        if (listaSubcategorias !== 'todas') {
+            const subcats = listaSubcategorias.split(',');
+            subcats.forEach(sub => {
+                const btnSub = document.createElement('button');
+                btnSub.textContent = sub;
+                btnSub.className = 'px-3 py-1 text-[11px] font-medium rounded-full border border-blue-400/30 text-blue-300 hover:bg-blue-500/20 transition-all';
+                btnSub.onclick = () => filtrarPorSubcategoria(sub, btnSub);
+                contenedorSub.appendChild(btnSub);
+            });
         }
 
-        // 3. Filtrar las tarjetas
-        cards.forEach(card => {
-            if (categoria === 'todas' || card.getAttribute('data-categoria') === categoria) {
-                card.style.display = 'flex';
-            } else {
-                card.style.display = 'none';
-            }
+        // 4. Mostrar todas las tarjetas del grupo seleccionado
+        const subcatsArray = listaSubcategorias.split(',');
+        tarjetas.forEach(t => {
+            const cat = t.getAttribute('data-categoria');
+            t.style.display = (listaSubcategorias === 'todas' || subcatsArray.includes(cat)) ? 'flex' : 'none';
         });
     }
+
+    // Nueva función para el segundo nivel de filtro
+    function filtrarPorSubcategoria(sub, elemento) {
+        const tarjetas = document.querySelectorAll('.tool-card');
+        const botonesSub = document.querySelectorAll('#contenedor-subcats button');
+
+        // Estilo de los botoncitos
+        botonesSub.forEach(b => b.classList.remove('bg-blue-500', 'text-white'));
+        elemento.classList.add('bg-blue-500', 'text-white');
+
+        // Filtrar tarjetas
+        tarjetas.forEach(t => {
+            t.style.display = (t.getAttribute('data-categoria') === sub) ? 'flex' : 'none';
+        });
+    }
+    // BUSCADOR
+    const input = document.getElementById('input-buscador');
+    const tarjetas = document.querySelectorAll('.tool-card');
+
+    // Función mágica para quitar tildes
+    const normalizarTexto = (texto) => {
+        return texto
+            .toLowerCase()
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "") // Quita los acentos
+            .trim();
+    };
+
+    input.addEventListener('input', (e) => {
+        const busquedaOriginal = e.target.value;
+        const busquedaLimpia = normalizarTexto(busquedaOriginal);
+
+        // Lógica simple para plurales/singulares básicos (quita la 's' al final si existe)
+        const busquedaRaiz = busquedaLimpia.length > 3 && busquedaLimpia.endsWith('s') 
+            ? busquedaLimpia.slice(0, -1) 
+            : busquedaLimpia;
+
+        tarjetas.forEach(t => {
+            const contenidoOriginal = t.getAttribute('data-search') || "";
+            const contenidoLimpio = normalizarTexto(contenidoOriginal);
+            
+            // Comparamos contra la búsqueda limpia o la raíz (para plurales)
+            if (contenidoLimpio.includes(busquedaLimpia) || contenidoLimpio.includes(busquedaRaiz)) {
+                t.style.display = 'flex';
+                t.style.opacity = '1';
+            } else {
+                t.style.display = 'none';
+                t.style.opacity = '0';
+            }
+        });
+    });
 </script>
 
 <style>
@@ -124,6 +205,31 @@ const categoriasUnicas = [...new Set(typedHerramientas.map(h => h.categoria))];
         -webkit-box-orient: vertical;
         overflow: hidden;
     }
+
+    /* El botón seleccionado no responde al mouse y no cambia el cursor */
+    .grupo-btn.active {
+        pointer-events: none; 
+        cursor: default;
+    }
+
+    /* Opcional: Para que los botones no se amontonen en celulares */
+    @media (max-width: 640px) {
+        .flex-wrap {
+            gap: 0.5rem;
+            justify-content: flex-start;
+            overflow-x: auto;
+            padding-bottom: 10px;
+            white-space: nowrap;
+            display: flex;
+            flex-wrap: nowrap; /* Esto hace que se deslicen de costado */
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        .grupo-btn {
+            flex-shrink: 0; /* Evita que los botones se achiquen */
+        }
+    }
+
 </style>
 
 </Layout>

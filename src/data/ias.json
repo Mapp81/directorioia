@@ -1,0 +1,16 @@
+[
+  {
+    "id": "1",
+    "nombre": "ChatGPT",
+    "uso_principal": "Generación de texto y asistencia con inteligencia artificial.",
+    "categoria": "Texto",
+    "url": "https://chat.openai.com"
+  },
+  {
+    "id": "2",
+    "nombre": "Midjourney",
+    "uso_principal": "Creación de imágenes artísticas a partir de prompts de texto.",
+    "categoria": "Imagen",
+    "url": "https://midjourney.com"
+  }
+]
