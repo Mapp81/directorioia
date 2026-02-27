@@ -35,15 +35,24 @@ const categoriasMadre: Record<string, string[]> = {
     <div class="text-center mb-12 sm:mb-20">
         <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight mb-4">
             <span class="bg-clip-text text-transparent bg-linear-to-r from-blue-500 to-teal-400">
-                Explora el Mundo de la IA
+                Explora el mundo de  la IA
             </span>
         </h1>
         <p class="text-lg sm:text-xl text-gray-600 dark:text-gray-400 font-light max-w-2xl mx-auto">
-            Más de {typedHerramientas.length} herramientas seleccionadas para potenciar tu trabajo
+            mas de 900 herramientas seleccionadas para potenciar tu trabajo
         </p>
     </div>
 
-    <div class="flex flex-wrap justify-center gap-3 mb-12">
+    <div class="flex flex-wrap justify-between items-center max-w-3xl mx-auto gap-4 mb-10">
+    <input 
+        type="text" 
+        id="input-buscador" 
+        placeholder="Buscar herramienta por nombre o uso..." 
+        class="w-full bg-[#1e293b] text-white border border-gray-700 rounded-full px-6 py-4 outline-none focus:border-blue-500 transition-all shadow-xl"
+    />
+</div>
+
+    <div class="flex flex-wrap justify-center gap-3 mb-8">
     <button 
         onclick="filtrarGrupo('todas', this)" 
         class="grupo-btn active px-6 py-2 rounded-full text-sm font-bold border border-blue-500 bg-blue-500 text-white transition-all shadow-lg shadow-blue-900/20"
@@ -60,25 +69,19 @@ const categoriasMadre: Record<string, string[]> = {
         </button>
     ))}
 </div>
-<div id="contenedor-subcats" class="flex flex-wrap justify-center gap-2 mb-8 px-4">
+<div id="contenedor-subcats" class="flex flex-wrap justify-center gap-2 mb-10 px-4 min-h-[42px]">
 </div>
-    <div class="flex flex-wrap justify-between max-w-xl mx-auto mb-12">
-    <input 
-        type="text" 
-        id="input-buscador" 
-        placeholder="Buscar herramienta por nombre o uso..." 
-        class="w-full bg-[#1e293b] text-white border border-gray-700 rounded-full px-6 py-4 outline-none focus:border-blue-500 transition-all shadow-xl"
-    />
-    <div class="">
-    <a href="/Promptindex"><button 
-        
-        class="grupo-btn active px-6 py-2 rounded-full text-sm font-bold border border-blue-500 bg-blue-500 text-white transition-all shadow-lg shadow-blue-900/20"
-    >
-        Prompt Builder
-    </button></a>
-    </div>
-</div>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="grid-herramientas">
+
+    <section class="mb-20 relative">
+        <div class="flex items-center justify-between mb-6">
+            <h2 class="text-2xl sm:text-3xl font-bold text-white">Herramientas destacadas</h2>
+            <div class="hidden sm:flex gap-3">
+                <button id="carousel-prev" class="px-4 py-2 rounded-full border border-gray-700 text-gray-300 hover:border-blue-500 hover:text-blue-400 transition">←</button>
+                <button id="carousel-next" class="px-4 py-2 rounded-full border border-gray-700 text-gray-300 hover:border-blue-500 hover:text-blue-400 transition">→</button>
+            </div>
+        </div>
+
+        <div class="carousel-track" id="grid-herramientas">
         {typedHerramientas.map((h) => (
             <div 
                 class="tool-card bg-[#151e32] rounded-xl shadow-lg hover:shadow-2xl dark:border border-gray-800 transition-all duration-300 transform hover:-translate-y-1 overflow-hidden p-8 flex flex-col items-center text-center"
@@ -115,6 +118,32 @@ const categoriasMadre: Record<string, string[]> = {
             </div>
         ))}
     </div>
+    </section>
+
+    <section class="mb-10">
+        <div class="bg-[#101b31] border border-blue-500/20 rounded-2xl p-8 sm:p-10 grid md:grid-cols-2 gap-8 items-center">
+            <div>
+                <span class="text-xs uppercase tracking-[0.25em] text-blue-400 font-bold">Potencia tu creatividad</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3 mb-4">Prompt Builder</h2>
+                <p class="text-gray-300 leading-relaxed mb-6">
+                    Creá prompts más claros, completos y efectivos en segundos. Con nuestro Prompt Builder podés combinar ideas,
+                    estilos y objetivos para obtener mejores resultados en cualquier herramienta de IA.
+                </p>
+                <a href="/Promptindex" class="inline-flex items-center px-6 py-3 rounded-full text-sm font-bold border border-blue-500 bg-blue-500 text-white transition-all shadow-lg shadow-blue-900/20 hover:bg-blue-400">
+                    Ir al Prompt Builder
+                </a>
+            </div>
+
+            <div class="rounded-xl overflow-hidden border border-gray-700/60 shadow-xl">
+                <img
+                    src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=80"
+                    alt="Interfaz creativa de generación de prompts"
+                    class="w-full h-full object-cover min-h-[260px]"
+                    loading="lazy"
+                />
+            </div>
+        </div>
+    </section>
 
 </main>
 
@@ -171,6 +200,18 @@ const categoriasMadre: Record<string, string[]> = {
     // BUSCADOR
     const input = document.getElementById('input-buscador');
     const tarjetas = document.querySelectorAll('.tool-card');
+    const carrusel = document.getElementById('grid-herramientas');
+    const prev = document.getElementById('carousel-prev');
+    const next = document.getElementById('carousel-next');
+
+    const moverCarrusel = (direccion) => {
+        if (!carrusel) return;
+        const paso = carrusel.clientWidth * 0.85;
+        carrusel.scrollBy({ left: direccion * paso, behavior: 'smooth' });
+    }
+
+    prev?.addEventListener('click', () => moverCarrusel(-1));
+    next?.addEventListener('click', () => moverCarrusel(1));
 
     // Función mágica para quitar tildes
     const normalizarTexto = (texto) => {
@@ -212,6 +253,48 @@ const categoriasMadre: Record<string, string[]> = {
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
         overflow: hidden;
+    }
+
+    .carousel-track {
+        display: flex;
+        gap: 1.5rem;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        padding-bottom: 0.5rem;
+    }
+
+    .tool-card {
+        flex: 0 0 calc(25% - 1.125rem);
+        scroll-snap-align: start;
+        min-height: 100%;
+    }
+
+    .carousel-track::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    .carousel-track::-webkit-scrollbar-thumb {
+        background: rgba(59, 130, 246, 0.45);
+        border-radius: 999px;
+    }
+
+    @media (max-width: 1200px) {
+        .tool-card {
+            flex-basis: calc(33.333% - 1rem);
+        }
+    }
+
+    @media (max-width: 900px) {
+        .tool-card {
+            flex-basis: calc(50% - 0.75rem);
+        }
+    }
+
+    @media (max-width: 640px) {
+        .tool-card {
+            flex-basis: 90%;
+        }
     }
 
     /* El botón seleccionado no responde al mouse y no cambia el cursor */
