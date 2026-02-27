@@ -4,23 +4,70 @@ const filterGroups = [
   {
     id: 'artType',
     label: 'Art Type',
-    options: ['Fotografía', 'Render 3D', 'Arte Digital', 'Acuarela', 'Anime', 'Minimalist Art']
+    options: ['Fotografía', 'Fotografía Analógica', 'Polaroid Photo', 'Documentary Photo',
+    'Render 3D', 'CGI', 'Game Art', 'Character Design', 'Concept Art', 'Isometric 3D', 'Low Poly 3D', 'Voxel Art', 'Clay Render',
+    'Arte Digital', 'Digital Painting', 'Matte Painting', 'Pixel Art', 'Vector Art', 'Flat Illustration', 'Line Art', 'Minimal Illustration', 'Sticker Style',
+    'Óleo Clásico', 'Acuarela', 'Acrílico', 'Gouache', 'Pastel', 'Carbón', 'Sketch', 'Ink Drawing', 'Chinese Ink Painting', 'Fresco Painting',
+    'Anime', 'Manga Style', 'Cartoon Style', 'Comic Book Style', 'Disney Style', 'Pixar Style', 'Chibi Style', 'Studio Ghibli Style',
+    'Arquitectura Minimalista', 'Interior Design', 'Industrial Design', 'Product Design Sketch', 'Blueprint Drawing',
+    'Abstract Art', 'Surreal Art', 'Pop Art', 'Street Art', 'Graffiti Art', 'Collage Art', 'Glitch Art', 'Psychedelic Art',
+    'Cyberpunk', 'Steampunk', 'Futuristic Art', 'Retrofuturism', 'Dark Fantasy Art', 'Fantasy Illustration', 'Sci-Fi Art', 'Minimalist Art']
   },
   {
     id: 'photoStyle',
     label: 'Photo Style',
-    options: ['Retrato', 'Street Photography', 'Paisaje', 'Fotografía de Producto', 'Cinematic Photography', 'Minimalist Photography']
+    options: ['Retrato', 'Fashion Photography', 'Editorial Photography', 'Beauty Photography', 'Headshot Photography', 'Lifestyle Photography', 'Couple Photography', 'Family Photography', 'Wedding Photography', 'Maternity Photography',
+    'Street Photography', 'Documentary Photography', 'Photojournalism', 'Candid Photography', 'Travel Photography', 'Event Photography', 'Concert Photography', 'Sports Photography',
+    'Paisaje', 'Seascape Photography', 'Forest Photography', 'Mountain Photography', 'Sunset Photography', 'Night Photography', 'Astrophotography', 'Wildlife Photography',
+    'Fotografía de Producto', 'Advertising Photography', 'Catalog Photography', 'E-commerce Photography', 'Still Life Photography', 'Flat Lay Photography', 'Luxury Product Photography',
+    'Fotografía de Comida', 'Food Styling Photography', 'Restaurant Photography', 'Top View Food Photography', 'Dark Food Photography',
+    'Fotografía Inmobiliaria', 'Interior Photography', 'Architecture Photography', 'Minimalist Interior Photography', 'Drone Photography', 'Aerial Photography',
+    'Macro Photography', 'Close-Up Photography', 'Texture Photography',
+    'Fine Art Photography', 'Conceptual Photography', 'Surreal Photography', 'Cinematic Photography', 'Black and White Photography', 'Minimalist Photography', 'Vintage Photography']
   },
   {
     id: 'lighting',
     label: 'Lighting / Technique',
-    options: ['Golden Hour', 'Natural Light', 'Studio Light', 'Long Exposure', 'HDR', 'Volumetric Lighting']
+    options: ['Golden Hour', 'Blue Hour', 'Sunset Light', 'Sunrise Light', 'Midday Light', 'Night Photography',
+    'Natural Light', 'Studio Light', 'Soft Light', 'Hard Light', 'Diffused Light', 'Directional Light', 'Side Lighting', 'Top Lighting', 'Rim Light', 'Backlight', 'Front Lighting', 'Spotlight', 'Volumetric Lighting',
+    'Rembrandt Lighting', 'Butterfly Lighting', 'Split Lighting', 'Loop Lighting', 'High Key Lighting', 'Low Key Lighting',
+    'Neon Glow', 'RGB Lighting', 'Color Gel Lighting', 'Cinematic Lighting', 'Dramatic Lighting', 'Softbox Lighting', 'Ring Light', 'Lens Flare', 'Light Leaking',
+    'Long Exposure', 'Motion Blur', 'Shallow Depth of Field', 'Deep Depth of Field', 'Bokeh', 'HDR', 'Focus Stacking', 'Panorama Shot', 'Time-lapse Effect',
+    'Ray Tracing', 'Global Illumination', 'Ambient Occlusion', 'Subsurface Scattering', 'Physically Based Rendering', 'Volumetric Fog', 'Bloom Effect'
+  ]
   },
   {
     id: 'mood',
     label: 'Mood / Aesthetic',
-    options: ['Cinematic', 'Dreamy', 'Dark', 'Bright', 'Vintage', 'Cyberpunk Mood']
-  }
+    options: ['Cinematic', 'Dramatic', 'Epic', 'Emotional', 'Romantic', 'Mystery', 'Suspense', 'Film Noir', 'Dark Fantasy',
+    'Moody', 'Dreamy', 'Soft', 'Warm', 'Cold', 'Dark', 'Bright', 'Melancholic', 'Peaceful', 'Energetic', 'Whimsical', 'Magical', 'Ethereal',
+    'Surreal', 'Minimalist', 'Vintage', 'Retro 80s', 'Retro 90s', 'Y2K Aesthetic', 'Boho Style', 'Grunge Style', 'Pastel Colors', 'Muted Colors', 'Neon Style', 'Monochrome',
+    'Instagram Aesthetic', 'Tumblr Style', 'Clean Girl Aesthetic', 'Soft Girl Aesthetic', 'VSCO Style', 'Pinterest Style',
+    'Dark Academia', 'Light Academia', 'Cottagecore', 'Royalcore', 'Goblincore', 'Fairycore', 'Barbiecore', 'Old Money Style', 'High Fashion', 'Street Style',
+    'Summer Vibes', 'Winter Mood', 'Golden Hour Mood', 'Blue Hour Mood', 'Cozy Atmosphere', 'Beach Vibes', 'Forest Mood',
+    'Luxury Mood', 'Cute Style', 'Playful', 'Elegant', 'Minimal Luxury', 'Futuristic', 'Cyberpunk Mood']
+  },
+  {
+    id: 'camara',
+    label: 'Camera / Engine',
+    options: ['35mm Lens', '50mm Lens', '85mm Lens', '135mm Lens', '200mm Lens', '24mm Wide Angle', 'Ultra Wide Angle', 'Macro Lens', 'Tilt Shift Lens', 'Fish Eye Lens',
+    'Shallow Depth of Field', 'Deep Focus', 'Soft Focus', 'Bokeh Lens', 'Motion Blur', 'Long Exposure Lens', 'HDR Capture', 'Panorama Shot',
+    'Drone Shot', 'Aerial Shot', 'Top View Shot', 'Low Angle Shot', 'High Angle Shot', 'Close Up Shot', 'Extreme Close Up', 'Overhead Shot', 'POV Shot',
+    'Canon EOS R5', 'Canon 5D Mark IV', 'Sony A7 IV', 'Sony A7R V', 'Nikon Z8', 'Nikon D850', 'Fujifilm X-T5', 'Leica Q2', 'Hasselblad X2D',
+    'Kodak Portra Film', 'Kodak Gold Film', 'Fujifilm Velvia Film', 'Fujifilm Provia Film', 'Polaroid Film', 'Ilford Black and White Film',
+    'Unreal Engine 5', 'Octane Render', 'V-Ray', 'Cycles Render', 'Redshift Render', 'Arnold Render', 'Blender Eevee', 'Cinema 4D Render',
+    'Shot on iPhone', 'Vintage Camera', 'Disposable Camera', 'GoPro Camera', '4K Video Frame', '8K Cinema Camera']
+  },
+  {
+    id: 'calidad',
+    label: 'Quality',
+    options: ['Highly Detailed', 'Intricate Details', 'Ultra Detailed', 'Extreme Detail', 'Fine Details', 'Sharp Focus', 'Ultra Sharp Focus', 'Crisp Details',
+    '4K Resolution', '8K Resolution', '16K Resolution', 'Ultra High Resolution', 'HD Quality', 'Studio Quality',
+    'Hyper-realistic', 'Photorealistic', 'Ultra Realistic', 'True to Life', 'Realistic Texture', 'Realistic Shadows', 'Natural Skin Texture', 'Photorealistic Skin', 'Realistic Lighting', 'Global Illumination',
+    'Raw Photo', 'Professional Photography', 'Professional Lighting', 'Studio Shot', 'Perfect Exposure', 'Balanced Colors', 'Color Graded', 'High Dynamic Range',
+    'Masterpiece', 'Award Winning Photo', 'Portfolio Quality', 'Magazine Quality', 'Commercial Quality', 'Print Ready', 'Luxury Finish', 'Clean Background', 'No Noise', 'No Grain']
+  },
+
 ];
 
 // Datos mock de productos para demostrar filtrado
