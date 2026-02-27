@@ -1,723 +1,500 @@
 ---
-// Definimos las etiquetas por categoría
-const categories = [
+// Configuración de categorías de filtros (mock)
+const filterGroups = [
   {
-    id: 'sujeto',
-    label: '1. Sujeto',
-    tags: []
+    id: 'artType',
+    label: 'Art Type',
+    options: ['Fotografía', 'Render 3D', 'Arte Digital', 'Acuarela', 'Anime', 'Minimalist Art']
   },
   {
-  id: 'tipoarte',
-  label: '2. Art Type',
-  tags: [
-
-    // 📸 REAL
-    'Fotografía',
-    'Fotografía Analógica',
-    'Polaroid Photo',
-    'Documentary Photo',
-
-    // 🎮 3D / CGI
-    'Render 3D',
-    'CGI',
-    'Game Art',
-    'Character Design',
-    'Concept Art',
-    'Isometric 3D',
-    'Low Poly 3D',
-    'Voxel Art',
-    'Clay Render',
-
-    // 🖥️ DIGITAL
-    'Arte Digital',
-    'Digital Painting',
-    'Matte Painting',
-    'Pixel Art',
-    'Vector Art',
-    'Flat Illustration',
-    'Line Art',
-    'Minimal Illustration',
-    'Sticker Style',
-
-    // 🎨 PINTURA CLÁSICA
-    'Óleo Clásico',
-    'Acuarela',
-    'Acrílico',
-    'Gouache',
-    'Pastel',
-    'Carbón',
-    'Sketch',
-    'Ink Drawing',
-    'Chinese Ink Painting',
-    'Fresco Painting',
-
-    // 📺 ANIMACIÓN / CARTOON
-    'Anime',
-    'Manga Style',
-    'Cartoon Style',
-    'Comic Book Style',
-    'Disney Style',
-    'Pixar Style',
-    'Chibi Style',
-    'Studio Ghibli Style',
-
-    // 🏛️ ARQUITECTURA / DISEÑO
-    'Arquitectura Minimalista',
-    'Interior Design',
-    'Industrial Design',
-    'Product Design Sketch',
-    'Blueprint Drawing',
-
-    // 🌈 ARTE MODERNO
-    'Abstract Art',
-    'Surreal Art',
-    'Pop Art',
-    'Street Art',
-    'Graffiti Art',
-    'Collage Art',
-    'Glitch Art',
-    'Psychedelic Art',
-
-    // 🚀 ESTÉTICAS MODERNAS
-    'Cyberpunk',
-    'Steampunk',
-    'Futuristic Art',
-    'Retrofuturism',
-    'Dark Fantasy Art',
-    'Fantasy Illustration',
-    'Sci-Fi Art',
-    'Minimalist Art'
-  ]
-},
+    id: 'photoStyle',
+    label: 'Photo Style',
+    options: ['Retrato', 'Street Photography', 'Paisaje', 'Fotografía de Producto', 'Cinematic Photography', 'Minimalist Photography']
+  },
   {
-  id: 'estilo',
-  label: '3. Photo Style',
-  tags: [
-
-    // 👤 PERSONAS
-    'Retrato',
-    'Fashion Photography',
-    'Editorial Photography',
-    'Beauty Photography',
-    'Headshot Photography',
-    'Lifestyle Photography',
-    'Couple Photography',
-    'Family Photography',
-    'Wedding Photography',
-    'Maternity Photography',
-
-    // 🏙️ VIDA REAL
-    'Street Photography',
-    'Documentary Photography',
-    'Photojournalism',
-    'Candid Photography',
-    'Travel Photography',
-    'Event Photography',
-    'Concert Photography',
-    'Sports Photography',
-
-    // 🌄 NATURALEZA
-    'Paisaje',
-    'Seascape Photography',
-    'Forest Photography',
-    'Mountain Photography',
-    'Sunset Photography',
-    'Night Photography',
-    'Astrophotography',
-    'Wildlife Photography',
-
-    // 🛍️ COMERCIAL
-    'Fotografía de Producto',
-    'Advertising Photography',
-    'Catalog Photography',
-    'E-commerce Photography',
-    'Still Life Photography',
-    'Flat Lay Photography',
-    'Luxury Product Photography',
-
-    // 🍔 COMIDA
-    'Fotografía de Comida',
-    'Food Styling Photography',
-    'Restaurant Photography',
-    'Top View Food Photography',
-    'Dark Food Photography',
-
-    // 🏠 ARQUITECTURA
-    'Fotografía Inmobiliaria',
-    'Interior Photography',
-    'Architecture Photography',
-    'Minimalist Interior Photography',
-    'Drone Photography',
-    'Aerial Photography',
-
-    // 🔬 DETALLE
-    'Macro Photography',
-    'Close-Up Photography',
-    'Texture Photography',
-
-    // 🌙 ARTÍSTICO
-    'Fine Art Photography',
-    'Conceptual Photography',
-    'Surreal Photography',
-    'Cinematic Photography',
-    'Black and White Photography',
-    'Minimalist Photography',
-    'Vintage Photography'
-  ]
-},
+    id: 'lighting',
+    label: 'Lighting / Technique',
+    options: ['Golden Hour', 'Natural Light', 'Studio Light', 'Long Exposure', 'HDR', 'Volumetric Lighting']
+  },
   {
-  id: 'tecnica',
-  label: '5. Lighting / Technique',
-  tags: [
+    id: 'mood',
+    label: 'Mood / Aesthetic',
+    options: ['Cinematic', 'Dreamy', 'Dark', 'Bright', 'Vintage', 'Cyberpunk Mood']
+  }
+];
 
-    // 🌅 MOMENTO DEL DÍA
-    'Golden Hour',
-    'Blue Hour',
-    'Sunset Light',
-    'Sunrise Light',
-    'Midday Light',
-    'Night Photography',
-
-    // 💡 TIPOS DE LUZ
-    'Natural Light',
-    'Studio Light',
-    'Soft Light',
-    'Hard Light',
-    'Diffused Light',
-    'Directional Light',
-    'Side Lighting',
-    'Top Lighting',
-    'Rim Light',
-    'Backlight',
-    'Front Lighting',
-    'Spotlight',
-    'Volumetric Lighting',
-
-    // 🎨 LUZ CLÁSICA DE RETRATO
-    'Rembrandt Lighting',
-    'Butterfly Lighting',
-    'Split Lighting',
-    'Loop Lighting',
-    'High Key Lighting',
-    'Low Key Lighting',
-
-    // 🌈 EFECTOS MODERNOS
-    'Neon Glow',
-    'RGB Lighting',
-    'Color Gel Lighting',
-    'Cinematic Lighting',
-    'Dramatic Lighting',
-    'Softbox Lighting',
-    'Ring Light',
-    'Lens Flare',
-    'Light Leaking',
-
-    // 🧪 TÉCNICAS DE FOTO
-    'Long Exposure',
-    'Motion Blur',
-    'Shallow Depth of Field',
-    'Deep Depth of Field',
-    'Bokeh',
-    'HDR',
-    'Focus Stacking',
-    'Panorama Shot',
-    'Time-lapse Effect',
-
-    // 🎮 TÉCNICAS 3D
-    'Ray Tracing',
-    'Global Illumination',
-    'Ambient Occlusion',
-    'Subsurface Scattering',
-    'Physically Based Rendering',
-    'Volumetric Fog',
-    'Bloom Effect'
-  ]
-},
+// Datos mock de productos para demostrar filtrado
+const mockProducts = [
   {
-  id: 'mood',
-  label: '4. Mood / Aesthetic',
-  tags: [
-
-    // 🎬 CINE
-    'Cinematic',
-    'Dramatic',
-    'Epic',
-    'Emotional',
-    'Romantic',
-    'Mystery',
-    'Suspense',
-    'Film Noir',
-    'Dark Fantasy',
-
-    // 🌙 TONO / ATMÓSFERA
-    'Moody',
-    'Dreamy',
-    'Soft',
-    'Warm',
-    'Cold',
-    'Dark',
-    'Bright',
-    'Melancholic',
-    'Peaceful',
-    'Energetic',
-    'Whimsical',
-    'Magical',
-    'Ethereal',
-
-    // 🎨 ARTE / ESTÉTICA
-    'Surreal',
-    'Minimalist',
-    'Vintage',
-    'Retro 80s',
-    'Retro 90s',
-    'Y2K Aesthetic',
-    'Boho Style',
-    'Grunge Style',
-    'Pastel Colors',
-    'Muted Colors',
-    'Neon Style',
-    'Monochrome',
-
-    // 📱 INTERNET / PINTEREST
-    'Instagram Aesthetic',
-    'Tumblr Style',
-    'Clean Girl Aesthetic',
-    'Soft Girl Aesthetic',
-    'VSCO Style',
-    'Pinterest Style',
-
-    // 🌿 ESTÉTICAS DE MODA / CULTURA
-    'Dark Academia',
-    'Light Academia',
-    'Cottagecore',
-    'Royalcore',
-    'Goblincore',
-    'Fairycore',
-    'Barbiecore',
-    'Old Money Style',
-    'High Fashion',
-    'Street Style',
-
-    // 🌍 NATURALEZA / TURISMO
-    'Summer Vibes',
-    'Winter Mood',
-    'Golden Hour Mood',
-    'Blue Hour Mood',
-    'Cozy Atmosphere',
-    'Beach Vibes',
-    'Forest Mood',
-
-    // ✨ EXTRA PODEROSOS
-    'Luxury Mood',
-    'Cute Style',
-    'Playful',
-    'Elegant',
-    'Minimal Luxury',
-    'Futuristic',
-    'Cyberpunk Mood'
-  ]
-},
+    id: 1,
+    name: 'Portrait Neon Editorial',
+    subject: 'Modelo urbana en calle nocturna',
+    tags: {
+      artType: ['Fotografía'],
+      photoStyle: ['Retrato', 'Cinematic Photography'],
+      lighting: ['Studio Light', 'HDR'],
+      mood: ['Cinematic', 'Cyberpunk Mood']
+    }
+  },
   {
-  id: 'camara',
-  label: '6. Camera / Engine',
-  tags: [
-
-    // 📸 LENTES CLÁSICOS
-    '35mm Lens',
-    '50mm Lens',
-    '85mm Lens',
-    '135mm Lens',
-    '200mm Lens',
-    '24mm Wide Angle',
-    'Ultra Wide Angle',
-    'Macro Lens',
-    'Tilt Shift Lens',
-    'Fish Eye Lens',
-
-    // 🎬 EFECTOS DE LENTE
-    'Shallow Depth of Field',
-    'Deep Focus',
-    'Soft Focus',
-    'Bokeh Lens',
-    'Motion Blur',
-    'Long Exposure Lens',
-    'HDR Capture',
-    'Panorama Shot',
-
-    // 🚁 TIPO DE TOMA
-    'Drone Shot',
-    'Aerial Shot',
-    'Top View Shot',
-    'Low Angle Shot',
-    'High Angle Shot',
-    'Close Up Shot',
-    'Extreme Close Up',
-    'Overhead Shot',
-    'POV Shot',
-
-    // 📷 CÁMARAS REALES (PRO)
-    'Canon EOS R5',
-    'Canon 5D Mark IV',
-    'Sony A7 IV',
-    'Sony A7R V',
-    'Nikon Z8',
-    'Nikon D850',
-    'Fujifilm X-T5',
-    'Leica Q2',
-    'Hasselblad X2D',
-
-    // 🎞️ FILM ANALÓGICO
-    'Kodak Portra Film',
-    'Kodak Gold Film',
-    'Fujifilm Velvia Film',
-    'Fujifilm Provia Film',
-    'Polaroid Film',
-    'Ilford Black and White Film',
-
-    // 🎮 MOTORES 3D
-    'Unreal Engine 5',
-    'Octane Render',
-    'V-Ray',
-    'Cycles Render',
-    'Redshift Render',
-    'Arnold Render',
-    'Blender Eevee',
-    'Cinema 4D Render',
-
-    // ✨ EXTRA REALISMO
-    'Shot on iPhone',
-    'Vintage Camera',
-    'Disposable Camera',
-    'GoPro Camera',
-    '4K Video Frame',
-    '8K Cinema Camera'
-  ]
-},
+    id: 2,
+    name: 'Bosque Etéreo',
+    subject: 'Paisaje mágico al amanecer',
+    tags: {
+      artType: ['Acuarela', 'Minimalist Art'],
+      photoStyle: ['Paisaje'],
+      lighting: ['Golden Hour', 'Natural Light'],
+      mood: ['Dreamy', 'Bright']
+    }
+  },
   {
-  id: 'calidad',
-  label: '7. Quality',
-  tags: [
-
-    // 🔎 DETALLE
-    'Highly Detailed',
-    'Intricate Details',
-    'Ultra Detailed',
-    'Extreme Detail',
-    'Fine Details',
-    'Sharp Focus',
-    'Ultra Sharp Focus',
-    'Crisp Details',
-
-    // 📺 RESOLUCIÓN
-    '4K Resolution',
-    '8K Resolution',
-    '16K Resolution',
-    'Ultra High Resolution',
-    'HD Quality',
-    'Studio Quality',
-
-    // 🧠 REALISMO
-    'Hyper-realistic',
-    'Photorealistic',
-    'Ultra Realistic',
-    'True to Life',
-    'Realistic Texture',
-    'Realistic Shadows',
-    'Natural Skin Texture',
-    'Photorealistic Skin',
-    'Realistic Lighting',
-    'Global Illumination',
-
-    // 📷 FOTO PROFESIONAL
-    'Raw Photo',
-    'Professional Photography',
-    'Professional Lighting',
-    'Studio Shot',
-    'Perfect Exposure',
-    'Balanced Colors',
-    'Color Graded',
-    'High Dynamic Range',
-
-    // ✨ ACABADO FINAL
-    'Masterpiece',
-    'Award Winning Photo',
-    'Portfolio Quality',
-    'Magazine Quality',
-    'Commercial Quality',
-    'Print Ready',
-    'Luxury Finish',
-    'Clean Background',
-    'No Noise',
-    'No Grain'
-  ]
-}
+    id: 3,
+    name: 'Producto Premium Studio',
+    subject: 'Reloj de lujo sobre fondo negro',
+    tags: {
+      artType: ['Arte Digital'],
+      photoStyle: ['Fotografía de Producto'],
+      lighting: ['Studio Light', 'Volumetric Lighting'],
+      mood: ['Dark', 'Vintage']
+    }
+  },
+  {
+    id: 4,
+    name: 'Tokyo Motion Shot',
+    subject: 'Cruce urbano con lluvia',
+    tags: {
+      artType: ['Render 3D'],
+      photoStyle: ['Street Photography'],
+      lighting: ['Long Exposure', 'HDR'],
+      mood: ['Cinematic', 'Dark']
+    }
+  }
 ];
 ---
-<div class="flex">
-  
-  <!-- BOTON MOBILE -->
-<button id="toggleHistory"
-  class="fixed top-4 left-4 z-50 bg-white shadow-lg p-2 md:hidden">
-  ☰ Historial
-</button>
 
-<!-- MINI SIDEBAR (tipo ChatGPT) -->
-<div id="miniSidebar"
-  class="fixed top-0 left-0 h-full w-10 bg-white shadow-xl
-         flex items-start justify-center pt-4 z-50 invisible">
+<section class="relative mx-auto mt-8 max-w-7xl px-4 pb-10 sm:px-6 lg:px-8">
+  <div class="grid grid-cols-1 gap-6 lg:grid-cols-[260px_minmax(0,1fr)]">
+    <aside id="historyPanel" class="hidden rounded-2xl border border-slate-200 bg-white shadow-sm lg:block" aria-label="Historial de prompts">
+      <div class="flex items-center justify-between border-b border-slate-200 px-4 py-3">
+        <h3 class="text-sm font-semibold text-slate-700">Historial</h3>
+        <button id="clearHistoryBtn" type="button" class="text-xs font-medium text-indigo-600 hover:text-indigo-700">Limpiar</button>
+      </div>
+      <div id="historyList" class="max-h-[70vh] space-y-2 overflow-y-auto p-3 text-sm"></div>
+    </aside>
 
-  <button id="expandHistory"
-    class="text-slate-500 hover:text-indigo-600 text-xl">
-    ➡
-  </button>
-</div>
-
-<!-- SIDEBAR HISTORIAL -->
-<div id="historyPanel"
-  class="fixed top-0 left-0 h-full w-72 bg-white shadow-xl
-         transform -translate-x-full md:translate-x-0
-         transition-transform duration-300 z-40">
-
-  <div class="p-4 font-bold flex justify-between items-center border-b">
-    🕒 Historial
-
-    <div class="flex gap-2 items-center">
-      <!-- cerrar mobile -->
-      <button id="closeHistory" class="md:hidden">✖</button>
-
-      <!-- colapsar desktop -->
-      <button id="collapseHistory"
-        class="text-slate-500 hover:text-indigo-600 text-lg transition">
-        ⬅
-      </button>
-    </div>
-  </div>
-
-  <div id="history"
-    class="overflow-y-auto h-full p-2 text-sm">
-  </div>
-</div>
-
-
-<div class="max-w-5xl mx-auto p-6 bg-slate-50 rounded-2xl shadow-xl border border-slate-200 mt-10">
-  
-
-
-  <h2 class="text-3xl font-bold text-slate-800 mb-6 text-center">AI Prompt Builder 🚀</h2>
-  
-  <div class="space-y-8">
-  {categories.map((cat) => (
-    <div class="category-group" data-category={cat.id}>
-      <h3 class="text-sm font-bold uppercase tracking-wider text-slate-500 mb-3">{cat.label}</h3>
-      
-      {cat.id === 'sujeto' ? (
-        /* Renderizamos el INPUT para el sujeto */
-        <input 
-          type="text" 
-          id="sujeto-input"
-          placeholder="Ej: Un astronauta montando un unicornio..."
-          class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition-all text-slate-700"
-        />
-      ) : (
-        /* Mantenemos los BOTONES para el resto de categorías */
-        <div class="flex flex-wrap gap-2">
-          {cat.tags.map((tag) => (
-            <button 
-              type="button"
-              class="tag-btn px-4 py-2 rounded-full border border-slate-300 bg-white text-slate-600 hover:border-indigo-500 hover:text-indigo-500 transition-all cursor-pointer text-sm font-medium active:scale-95"
-              data-tag={tag}
-            >
-              {tag}
-            </button>
-          ))}
+    <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4 shadow-sm sm:p-6">
+      <header class="mb-6 flex flex-wrap items-center justify-between gap-3">
+        <div>
+          <h2 class="text-2xl font-bold text-slate-900">Prompt Builder</h2>
+          <p class="text-sm text-slate-600">Seleccioná múltiples filtros para construir prompts más precisos.</p>
         </div>
-      )}
-    </div>
-  ))}
-</div>
+        <button
+          id="openFiltersMobile"
+          type="button"
+          class="inline-flex items-center rounded-xl border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:border-indigo-400 hover:text-indigo-600 lg:hidden"
+          aria-controls="mobileFiltersDialog"
+          aria-expanded="false"
+        >
+          Filtros
+        </button>
+      </header>
 
-  <div class="mt-10 p-6 bg-indigo-900 rounded-xl text-white shadow-inner relative">
-    <label class="text-xs uppercase font-bold text-indigo-300 block mb-2">Prompt Generado:</label>
-    <p id="result-prompt" class="text-lg italic min-h-[1.5rem] pr-20">Selecciona etiquetas arriba...</p>
-    <button 
-      id="copy-btn" 
-      class="absolute right-4 bottom-4 bg-indigo-500 hover:bg-indigo-400 text-white px-3 py-1 rounded text-sm transition-colors hidden"
-    >
-      Copiar
-    </button>
+      <div class="grid grid-cols-1 gap-6 lg:grid-cols-[320px_minmax(0,1fr)]">
+        <aside class="hidden h-fit rounded-2xl border border-slate-200 bg-white p-4 lg:block" aria-label="Filtros">
+          <div class="mb-3 flex items-center justify-between">
+            <h3 class="text-sm font-semibold text-slate-700">Filtros</h3>
+            <span id="activeCountDesktop" class="rounded-full bg-indigo-50 px-2 py-1 text-xs font-semibold text-indigo-700">0 activos</span>
+          </div>
+          <div id="filtersDesktop" class="space-y-3"></div>
+          <button id="applyFiltersDesktop" type="button" class="mt-4 w-full rounded-xl bg-indigo-600 px-4 py-2 text-sm font-semibold text-white hover:bg-indigo-700">Aplicar filtros</button>
+        </aside>
+
+        <div class="space-y-5">
+          <div class="rounded-xl border border-slate-200 bg-white p-4">
+            <label for="subjectInput" class="mb-2 block text-xs font-semibold uppercase tracking-wide text-slate-500">Sujeto</label>
+            <input id="subjectInput" type="text" class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm text-slate-700 outline-none ring-indigo-500 focus:ring-2" placeholder="Ej: astronauta caminando en Marte" />
+          </div>
+
+          <div class="rounded-xl border border-slate-200 bg-white p-4">
+            <div class="mb-3 flex flex-wrap items-center justify-between gap-2">
+              <h3 class="text-sm font-semibold text-slate-700">Filtros activos</h3>
+              <button id="clearAllFilters" type="button" class="text-sm font-medium text-indigo-600 hover:text-indigo-700">Limpiar todo</button>
+            </div>
+            <div id="activeFiltersChips" class="flex min-h-8 flex-wrap gap-2"></div>
+          </div>
+
+          <div class="rounded-xl border border-slate-200 bg-white p-4">
+            <div class="mb-3 flex items-center justify-between">
+              <h3 class="text-sm font-semibold text-slate-700">Resultados (<span id="resultsCount">0</span>)</h3>
+            </div>
+            <ul id="resultsList" class="space-y-3"></ul>
+          </div>
+
+          <div class="relative rounded-xl bg-indigo-900 p-4 text-white">
+            <p class="mb-1 text-xs font-semibold uppercase tracking-wider text-indigo-200">Prompt generado</p>
+            <p id="resultPrompt" class="min-h-8 pr-24 text-sm italic text-indigo-50">Completá el sujeto y aplicá filtros.</p>
+            <button id="copyPromptBtn" type="button" class="absolute bottom-4 right-4 hidden rounded-lg bg-indigo-500 px-3 py-1 text-xs font-semibold hover:bg-indigo-400">Copiar</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
- <div class="flex gap-4 mt-6">
-  <button 
-    id="reset-btn"
-    class="flex-1 bg-slate-200 hover:bg-slate-300 text-slate-700 font-bold py-4 rounded-xl transition-all active:scale-[0.98]"
-  >
-    Limpiar Todo
-  </button>
-  
-  <button 
-    id="submit-btn"
-    class="flex-[2] bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 rounded-xl transition-all shadow-lg hover:shadow-indigo-200 active:scale-[0.98]"
-  >
-    Generar Prompt
-  </button>
-</div>
-</div>
-</div>
-<script>
-  const selectedTags = {
-    sujeto: '',
-    tipoarte: '',
-    estilo: '',
-    tecnica: '',
-    mood: '',
-    camara: '',
-    calidad: '',
+  <div id="mobileFiltersDialog" class="fixed inset-0 z-50 hidden bg-slate-900/45 p-4 lg:hidden" role="dialog" aria-modal="true" aria-labelledby="mobileFiltersTitle">
+    <div class="mx-auto mt-8 max-w-md rounded-2xl bg-white p-4 shadow-2xl">
+      <div class="mb-3 flex items-center justify-between">
+        <h3 id="mobileFiltersTitle" class="text-sm font-semibold text-slate-700">Filtros</h3>
+        <button id="closeFiltersMobile" type="button" class="rounded-lg border border-slate-300 px-2 py-1 text-sm">Cerrar</button>
+      </div>
+      <div class="mb-3 flex items-center justify-between">
+        <span id="activeCountMobile" class="rounded-full bg-indigo-50 px-2 py-1 text-xs font-semibold text-indigo-700">0 activos</span>
+      </div>
+      <div id="filtersMobile" class="max-h-[55vh] space-y-3 overflow-y-auto"></div>
+      <button id="applyFiltersMobile" type="button" class="mt-4 w-full rounded-xl bg-indigo-600 px-4 py-2 text-sm font-semibold text-white">Aplicar filtros</button>
+    </div>
+  </div>
+</section>
 
+<script define:vars={{ filterGroups, mockProducts }}>
+  /**
+   * Estado principal del componente
+   */
+  const STORAGE_FILTERS_KEY = 'promptBuilderFilters';
+  const STORAGE_HISTORY_KEY = 'promptBuilderHistory';
+
+  const state = {
+    subject: '',
+    selectedFilters: Object.fromEntries(filterGroups.map((group) => [group.id, []])),
+    filteredProducts: [...mockProducts]
   };
 
-  // Mapeo de IDs a nombres legibles para el prompt final
-  const categoryLabels = {
-      sujeto: 'Subject',
-      tipoarte: 'Art Type',
-      estilo: 'Photo Style',
-      mood: 'Mood',
-      tecnica: 'Lighting / Technique',
-      camara: 'Camera / Engine',
-      calidad: 'Quality'
+  const refs = {
+    desktopContainer: document.getElementById('filtersDesktop'),
+    mobileContainer: document.getElementById('filtersMobile'),
+    activeCountDesktop: document.getElementById('activeCountDesktop'),
+    activeCountMobile: document.getElementById('activeCountMobile'),
+    chips: document.getElementById('activeFiltersChips'),
+    resultsList: document.getElementById('resultsList'),
+    resultsCount: document.getElementById('resultsCount'),
+    resultPrompt: document.getElementById('resultPrompt'),
+    copyPromptBtn: document.getElementById('copyPromptBtn'),
+    subjectInput: document.getElementById('subjectInput'),
+    historyList: document.getElementById('historyList')
   };
 
-  const sujetoInput = document.getElementById('sujeto-input');
-  const groups = document.querySelectorAll('.category-group');
-  
-  // Lógica para botones de categorías
-  groups.forEach(group => {
-    const category = group.getAttribute('data-category');
-    if (category === 'sujeto') return;
+  /**
+   * Renderiza acordeones de filtros (desktop + mobile)
+   */
+  function renderFilterGroups(container, suffix) {
+    container.innerHTML = filterGroups
+      .map(
+        (group, groupIndex) => `
+          <section class="rounded-xl border border-slate-200" data-group="${group.id}">
+            <button
+              type="button"
+              class="accordion-toggle flex w-full items-center justify-between px-3 py-2 text-left text-sm font-semibold text-slate-700"
+              aria-expanded="${groupIndex === 0 ? 'true' : 'false'}"
+              aria-controls="panel-${group.id}-${suffix}"
+            >
+              <span>${group.label}</span>
+              <span aria-hidden="true">▾</span>
+            </button>
+            <div id="panel-${group.id}-${suffix}" class="accordion-panel overflow-hidden px-3 transition-all duration-300 ease-out" style="max-height: ${groupIndex === 0 ? '480px' : '0px'}">
+              <fieldset class="space-y-2 pb-3" aria-label="${group.label}">
+                ${group.options
+                  .map(
+                    (option, optionIndex) => `
+                    <label class="flex cursor-pointer items-center gap-2 rounded-lg p-1 text-sm text-slate-600 hover:bg-slate-50" for="${group.id}-${suffix}-${optionIndex}">
+                      <input
+                        id="${group.id}-${suffix}-${optionIndex}"
+                        class="filter-checkbox h-4 w-4 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"
+                        type="checkbox"
+                        data-group-id="${group.id}"
+                        data-option="${option}"
+                      />
+                      <span>${option}</span>
+                    </label>
+                  `
+                  )
+                  .join('')}
+              </fieldset>
+            </div>
+          </section>
+        `
+      )
+      .join('');
+  }
 
-    const buttons = group.querySelectorAll('.tag-btn');
-    buttons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        buttons.forEach(b => b.classList.remove('bg-indigo-600', 'text-white', 'border-indigo-600'));
-        btn.classList.add('bg-indigo-600', 'text-white', 'border-indigo-600');
-        selectedTags[category] = btn.getAttribute('data-tag');
+  function setupAccordionHandlers(container) {
+    container.querySelectorAll('.accordion-toggle').forEach((button) => {
+      button.addEventListener('click', () => {
+        const panelId = button.getAttribute('aria-controls');
+        const panel = document.getElementById(panelId);
+        const isOpen = button.getAttribute('aria-expanded') === 'true';
+
+        button.setAttribute('aria-expanded', String(!isOpen));
+        panel.style.maxHeight = isOpen ? '0px' : `${panel.scrollHeight}px`;
       });
     });
-  });
+  }
 
-  const submitBtn = document.getElementById('submit-btn');
-  const resultDisplay = document.getElementById('result-prompt');
-  const copyBtn = document.getElementById('copy-btn');
+  function setupCheckboxHandlers(container) {
+    container.querySelectorAll('.filter-checkbox').forEach((checkbox) => {
+      checkbox.addEventListener('change', (event) => {
+        const target = event.currentTarget;
+        const groupId = target.dataset.groupId;
+        const option = target.dataset.option;
 
-  // BOTÓN SUBMIT CORREGIDO
-  submitBtn.addEventListener('click', () => {
-    // Actualizamos el sujeto desde el input
-    selectedTags.sujeto = sujetoInput.value.trim();
+        if (target.checked) {
+          state.selectedFilters[groupId] = [...new Set([...state.selectedFilters[groupId], option])];
+        } else {
+          state.selectedFilters[groupId] = state.selectedFilters[groupId].filter((item) => item !== option);
+        }
 
-    // Construimos el prompt combinando Categoría + Valor
-    const finalPrompt = Object.keys(selectedTags)
-      .filter(key => selectedTags[key] !== '') // Solo procesamos si hay algo seleccionado/escrito
-      .map(key => `${categoryLabels[key]}: ${selectedTags[key]}`) // Formato "Subject: Perro"
-      .join(' | '); // Separador visual (puedes cambiarlo por coma si prefieres)
-
-    if (finalPrompt) {
-      resultDisplay.innerText = finalPrompt;
-      copyBtn.classList.remove('hidden');
-      savePromptToHistory(finalPrompt);
-      renderHistory();
-  } else {
-      resultDisplay.innerText = "Escribe un sujeto y elige etiquetas.";
-      copyBtn.classList.add('hidden');
-    }
-  });
-
-  // Botón Reset
-  const resetBtn = document.getElementById('reset-btn');
-  resetBtn.addEventListener('click', () => {
-    if (sujetoInput) sujetoInput.value = ''; 
-    for (let key in selectedTags) { selectedTags[key] = ''; }
-    document.querySelectorAll('.tag-btn').forEach(btn => {
-      btn.classList.remove('bg-indigo-600', 'text-white', 'border-indigo-600');
+        syncCheckboxes(groupId, option, target.checked);
+        updateActiveUI();
+        persistFilters();
+      });
     });
-    resultDisplay.innerText = "Selecciona etiquetas arriba...";
-    copyBtn.classList.add('hidden');
-  });
+  }
 
-  // Botón Copiar
-  copyBtn.addEventListener('click', () => {
-    navigator.clipboard.writeText(resultDisplay.innerText);
-    const originalText = copyBtn.innerText;
-    copyBtn.innerText = "¡Copiado!";
-    setTimeout(() => copyBtn.innerText = originalText, 2000);
-  });
+  function syncCheckboxes(groupId, option, checked) {
+    document.querySelectorAll(`.filter-checkbox[data-group-id="${groupId}"][data-option="${option}"]`).forEach((input) => {
+      input.checked = checked;
+    });
+  }
 
-  // ----- HISTORIAL PROMPTS -----
+  function hydrateSelectionsInDOM() {
+    Object.entries(state.selectedFilters).forEach(([groupId, options]) => {
+      options.forEach((option) => syncCheckboxes(groupId, option, true));
+    });
+  }
 
-function savePromptToHistory(prompt) {
-  let history = JSON.parse(localStorage.getItem("promptHistory")) || [];
-  history.unshift({
-    text: prompt,
-    date: new Date().toLocaleString()
-  });
+  function totalActiveFilters() {
+    return Object.values(state.selectedFilters).reduce((acc, groupSelection) => acc + groupSelection.length, 0);
+  }
 
-  history = history.slice(0, 30); // máximo 30 prompts
-  localStorage.setItem("promptHistory", JSON.stringify(history));
-}
+  function updateActiveUI() {
+    const total = totalActiveFilters();
+    refs.activeCountDesktop.textContent = `${total} activos`;
+    refs.activeCountMobile.textContent = `${total} activos`;
 
-function loadHistory() {
-  return JSON.parse(localStorage.getItem("promptHistory")) || [];
-}
+    refs.chips.innerHTML = Object.entries(state.selectedFilters)
+      .flatMap(([groupId, options]) => options.map((option) => ({ groupId, option })))
+      .map(
+        ({ groupId, option }) => `
+          <button type="button" class="rounded-full border border-indigo-200 bg-indigo-50 px-3 py-1 text-xs font-medium text-indigo-700" data-remove-group="${groupId}" data-remove-option="${option}">
+            ${option} ✕
+          </button>
+        `
+      )
+      .join('');
 
-function renderHistory() {
-  const historyDiv = document.getElementById("history");
-  if (!historyDiv) return;
+    if (!refs.chips.innerHTML.trim()) {
+      refs.chips.innerHTML = '<p class="text-sm text-slate-400">No hay filtros activos.</p>';
+    }
 
-  const history = loadHistory();
-  historyDiv.innerHTML = history
-    .map(item => `<div class="p-2 rounded-2xl cursor-pointer hover:bg-slate-100"
-          onclick="usePrompt('${item.text.replace(/'/g, "\\'")}')">
-          ${item.text}
-        </div>`)
-    .join("");
-}
+    refs.chips.querySelectorAll('button[data-remove-group]').forEach((button) => {
+      button.addEventListener('click', () => {
+        const groupId = button.dataset.removeGroup;
+        const option = button.dataset.removeOption;
+        state.selectedFilters[groupId] = state.selectedFilters[groupId].filter((item) => item !== option);
+        syncCheckboxes(groupId, option, false);
+        updateActiveUI();
+        persistFilters();
+      });
+    });
+  }
 
-function usePrompt(text) {
-  document.getElementById("result-prompt").innerText = text;
-}
+  /**
+   * Ejemplo real de aplicación de filtros sobre un array de productos mock.
+   */
+  function applyFiltersToProducts() {
+    const hasActiveFilters = totalActiveFilters() > 0;
 
-renderHistory();
+    state.filteredProducts = mockProducts.filter((product) => {
+      if (!hasActiveFilters) return true;
 
-document.addEventListener("DOMContentLoaded", () => {
+      return Object.entries(state.selectedFilters).every(([groupId, selectedOptions]) => {
+        if (!selectedOptions.length) return true;
+        return selectedOptions.some((selectedOption) => product.tags[groupId]?.includes(selectedOption));
+      });
+    });
 
-  const panel = document.getElementById("historyPanel");
-  const toggleBtn = document.getElementById("toggleHistory");
-  const closeBtn = document.getElementById("closeHistory");
-  const collapseBtn = document.getElementById("collapseHistory");
-  const miniSidebar = document.getElementById("miniSidebar");
-  const expandBtn = document.getElementById("expandHistory");
+    renderProducts();
+    generatePrompt();
+  }
 
-  // -------- MOBILE abrir
-  toggleBtn?.addEventListener("click", () => {
-    panel.classList.remove("-translate-x-full");
-  });
+  function renderProducts() {
+    refs.resultsCount.textContent = String(state.filteredProducts.length);
 
-  // -------- MOBILE cerrar
-  closeBtn?.addEventListener("click", () => {
-    panel.classList.add("-translate-x-full");
-  });
+    refs.resultsList.innerHTML = state.filteredProducts
+      .map(
+        (product) => `
+          <li class="rounded-xl border border-slate-200 p-3">
+            <p class="font-semibold text-slate-800">${product.name}</p>
+            <p class="text-sm text-slate-600">${product.subject}</p>
+          </li>
+        `
+      )
+      .join('');
 
-  // -------- DESKTOP colapsar
-  collapseBtn?.addEventListener("click", () => {
-    panel.classList.add("-translate-x-full");
-    miniSidebar.classList.remove("invisible");
-  });
+    if (!state.filteredProducts.length) {
+      refs.resultsList.innerHTML = '<li class="text-sm text-slate-500">Sin resultados para la combinación elegida.</li>';
+    }
+  }
 
-  // -------- DESKTOP expandir
-  expandBtn?.addEventListener("click", () => {
-    panel.classList.remove("-translate-x-full");
-    miniSidebar.classList.add("hidden");
-  });
+  function generatePrompt() {
+    const groupedTokens = Object.entries(state.selectedFilters)
+      .filter(([, options]) => options.length)
+      .map(([groupId, options]) => `${groupId}: ${options.join(', ')}`);
 
-});
+    const subject = state.subject.trim();
+    const promptParts = [subject ? `subject: ${subject}` : '', ...groupedTokens].filter(Boolean);
+    const prompt = promptParts.join(' | ');
 
+    refs.resultPrompt.textContent = prompt || 'Completá el sujeto y aplicá filtros.';
+    refs.copyPromptBtn.classList.toggle('hidden', !prompt);
+
+    if (prompt) {
+      savePromptToHistory(prompt);
+      renderHistory();
+    }
+  }
+
+  function persistFilters() {
+    localStorage.setItem(STORAGE_FILTERS_KEY, JSON.stringify(state.selectedFilters));
+  }
+
+  function restoreFilters() {
+    const saved = localStorage.getItem(STORAGE_FILTERS_KEY);
+    if (!saved) return;
+
+    try {
+      const parsed = JSON.parse(saved);
+      filterGroups.forEach((group) => {
+        if (Array.isArray(parsed[group.id])) {
+          state.selectedFilters[group.id] = parsed[group.id];
+        }
+      });
+    } catch (error) {
+      localStorage.removeItem(STORAGE_FILTERS_KEY);
+    }
+  }
+
+  function savePromptToHistory(prompt) {
+    const history = JSON.parse(localStorage.getItem(STORAGE_HISTORY_KEY) || '[]');
+    const nextHistory = [
+      { text: prompt, createdAt: new Date().toISOString() },
+      ...history.filter((entry) => entry.text !== prompt)
+    ].slice(0, 30);
+
+    localStorage.setItem(STORAGE_HISTORY_KEY, JSON.stringify(nextHistory));
+  }
+
+  function renderHistory() {
+    const history = JSON.parse(localStorage.getItem(STORAGE_HISTORY_KEY) || '[]');
+    refs.historyList.innerHTML = history
+      .map(
+        (item) => `
+          <button type="button" class="w-full rounded-lg border border-transparent px-3 py-2 text-left text-xs text-slate-600 hover:border-slate-200 hover:bg-slate-50" data-history-text="${item.text.replaceAll('"', '&quot;')}">
+            ${item.text}
+          </button>
+        `
+      )
+      .join('');
+
+    refs.historyList.querySelectorAll('[data-history-text]').forEach((button) => {
+      button.addEventListener('click', () => {
+        refs.resultPrompt.textContent = button.dataset.historyText;
+        refs.copyPromptBtn.classList.remove('hidden');
+      });
+    });
+  }
+
+  function clearAllFilters() {
+    state.selectedFilters = Object.fromEntries(filterGroups.map((group) => [group.id, []]));
+    document.querySelectorAll('.filter-checkbox').forEach((input) => {
+      input.checked = false;
+    });
+    updateActiveUI();
+    applyFiltersToProducts();
+    persistFilters();
+  }
+
+  function setupModalControls() {
+    const modal = document.getElementById('mobileFiltersDialog');
+    const openBtn = document.getElementById('openFiltersMobile');
+    const closeBtn = document.getElementById('closeFiltersMobile');
+
+    const closeModal = () => {
+      modal.classList.add('hidden');
+      openBtn.setAttribute('aria-expanded', 'false');
+      openBtn.focus();
+    };
+
+    openBtn.addEventListener('click', () => {
+      modal.classList.remove('hidden');
+      openBtn.setAttribute('aria-expanded', 'true');
+      closeBtn.focus();
+    });
+
+    closeBtn.addEventListener('click', closeModal);
+    modal.addEventListener('click', (event) => {
+      if (event.target === modal) closeModal();
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && !modal.classList.contains('hidden')) {
+        closeModal();
+      }
+    });
+
+    document.getElementById('applyFiltersMobile').addEventListener('click', () => {
+      applyFiltersToProducts();
+      closeModal();
+    });
+  }
+
+  function bindEvents() {
+    document.getElementById('applyFiltersDesktop').addEventListener('click', applyFiltersToProducts);
+    document.getElementById('clearAllFilters').addEventListener('click', clearAllFilters);
+    document.getElementById('clearHistoryBtn').addEventListener('click', () => {
+      localStorage.removeItem(STORAGE_HISTORY_KEY);
+      renderHistory();
+    });
+
+    refs.subjectInput.addEventListener('input', (event) => {
+      state.subject = event.target.value;
+    });
+
+    refs.copyPromptBtn.addEventListener('click', async () => {
+      await navigator.clipboard.writeText(refs.resultPrompt.textContent);
+      refs.copyPromptBtn.textContent = '¡Copiado!';
+      setTimeout(() => {
+        refs.copyPromptBtn.textContent = 'Copiar';
+      }, 1200);
+    });
+  }
+
+  function init() {
+    renderFilterGroups(refs.desktopContainer, 'desktop');
+    renderFilterGroups(refs.mobileContainer, 'mobile');
+
+    setupAccordionHandlers(refs.desktopContainer);
+    setupAccordionHandlers(refs.mobileContainer);
+    setupCheckboxHandlers(refs.desktopContainer);
+    setupCheckboxHandlers(refs.mobileContainer);
+
+    restoreFilters();
+    hydrateSelectionsInDOM();
+    updateActiveUI();
+    renderHistory();
+    renderProducts();
+
+    setupModalControls();
+    bindEvents();
+  }
+
+  init();
 </script>
