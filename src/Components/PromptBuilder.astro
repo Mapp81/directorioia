@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+
 // Configuración de categorías de filtros (mock)
 const filterGroups = [
   {
@@ -74,13 +76,13 @@ const filterGroups = [
 const mockProducts = [
   {
     id: 1,
-    name: 'Portrait Neon Editorial',
-    subject: 'Modelo urbana en calle nocturna',
+    name: 'Bosque Etéreo',
+    subject: 'Paisaje mágico al amanecer',
     tags: {
-      artType: ['Fotografía'],
-      photoStyle: ['Retrato', 'Cinematic Photography'],
-      lighting: ['Studio Light', 'HDR'],
-      mood: ['Cinematic', 'Cyberpunk Mood']
+      artType: ['Acuarela', 'Minimalist Art'],
+      photoStyle: ['Paisaje'],
+      lighting: ['Golden Hour', 'Natural Light'],
+      mood: ['Dreamy', 'Bright']
     }
   },
   {
@@ -132,8 +134,9 @@ const mockProducts = [
     <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4 shadow-sm sm:p-6">
       <header class="mb-6 flex flex-wrap items-center justify-between gap-3">
         <div>
-          <h2 class="text-2xl font-bold text-slate-900">Prompt Builder</h2>
-          <p class="text-sm text-slate-600">Seleccioná múltiples filtros para construir prompts más precisos.</p>
+          <h2 class="text-2xl font-bold text-slate-900 mb-2">Prompt Builder</h2>
+          <p class="text-sm text-slate-600">Seleccioná filtros para construir tu prompt como un profesional.<br>
+          Copialo y pegalo en tu IA favorita para generar imágenes más precisas.</p>
         </div>
         <button
           id="openFiltersMobile"
@@ -170,18 +173,25 @@ const mockProducts = [
             <div id="activeFiltersChips" class="flex min-h-8 flex-wrap gap-2"></div>
           </div>
 
-          <div class="rounded-xl border border-slate-200 bg-white p-4">
+         <!--<div class="rounded-xl border border-slate-200 bg-white p-4">
             <div class="mb-3 flex items-center justify-between">
               <h3 class="text-sm font-semibold text-slate-700">Resultados (<span id="resultsCount">0</span>)</h3>
             </div>
             <ul id="resultsList" class="space-y-3"></ul>
-          </div>
+          </div>-->
 
           <div class="relative rounded-xl bg-indigo-900 p-4 text-white">
             <p class="mb-1 text-xs font-semibold uppercase tracking-wider text-indigo-200">Prompt generado</p>
             <p id="resultPrompt" class="min-h-8 pr-24 text-sm italic text-indigo-50">Completá el sujeto y aplicá filtros.</p>
             <button id="copyPromptBtn" type="button" class="absolute bottom-4 right-4 hidden rounded-lg bg-indigo-500 px-3 py-1 text-xs font-semibold hover:bg-indigo-400">Copiar</button>
           </div>
+
+          <div class="flex flex-wrap lg:flex-nowrap justify-center gap-1.5 ">
+             <a href="https://openai.com/es-419/index/dall-e-3/" class="w-full lg:w-1/3"><button id="" type="button" class="mt-4 w-full rounded-xl bg-indigo-600 px-8 py-2 text-sm font-semibold text-white hover:bg-indigo-700">Dall-E-3</button></a>
+             <a href="https://leonardo.ai/" class="w-full lg:w-1/3"><button id="" type="button" class="mt-4 w-full rounded-xl bg-indigo-600 px-8 py-2 text-sm font-semibold text-white hover:bg-indigo-700">Leonardo AI</button></a>
+             <a href="https://ideogram.ai/t/explore" class="w-full lg:w-1/3"><button id="" type="button" class="mt-4 w-full rounded-xl bg-indigo-600 px-8 py-2 text-sm font-semibold text-white hover:bg-indigo-700">Ideogram</button></a>
+          </div>
+
         </div>
       </div>
     </div>
@@ -368,7 +378,7 @@ const mockProducts = [
       });
     });
 
-    renderProducts();
+  //  renderProducts();
     generatePrompt();
   }
 
@@ -381,6 +391,11 @@ const mockProducts = [
           <li class="rounded-xl border border-slate-200 p-3">
             <p class="font-semibold text-slate-800">${product.name}</p>
             <p class="text-sm text-slate-600">${product.subject}</p>
+            <img 
+          src="${product.img}" 
+          alt="${product.name}"
+          class="w-full h-48 object-cover rounded-lg"
+        />
           </li>
         `
       )
@@ -537,7 +552,7 @@ const mockProducts = [
     hydrateSelectionsInDOM();
     updateActiveUI();
     renderHistory();
-    renderProducts();
+   // renderProducts();
 
     setupModalControls();
     bindEvents();
